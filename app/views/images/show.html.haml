@@ -1,0 +1,11 @@
+%p#notice= notice
+
+=image_tag @image.url
+
+#br
+
+= link_to 'Edit', edit_image_path(@image)
+\|
+= link_to 'Destroy', @image, :confirm => 'Are you sure?', :method => :delete
+\|
+= link_to 'Back', images_path
