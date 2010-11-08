@@ -11,7 +11,7 @@
       = album.name
     %li
       %b Narrative: 
-      = truncate album.narrative
+      = truncate album.narrative, :length => 128, :separator => ' ', :omission => '... (continued)'
     %li
       %b Image Count: 
       = album.images.size.to_s
