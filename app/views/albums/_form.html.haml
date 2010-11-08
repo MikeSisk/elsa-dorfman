@@ -11,6 +11,7 @@
     = f.input :narrative
     = f.semantic_fields_for :images do |image|
       = image.input :resource, :label => "Image File"
+      = image_tag image.object.url(:thumb) unless image.object.new_record?
   = f.buttons
 
 
