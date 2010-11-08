@@ -1,8 +1,12 @@
 Dorfman::Application.routes.draw do
+  
   devise_for :admins
 
   resources :images
-  
+  resources :albums do
+    resources :images
+  end
+      
   root :to => "images#index"
 
   # The priority is based upon order of creation:

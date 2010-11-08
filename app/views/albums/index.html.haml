@@ -1,0 +1,21 @@
+- title "Listing " + pluralize(@albums.size, "Album")
+
+- if admin_signed_in?
+  = link_to 'New Album', new_album_path
+  %br
+
+- @albums.each do |album|
+  %ul
+    %li
+      %b Name: 
+      = album.name
+    %li
+      %b Narrative: 
+      = truncate album.narrative
+    %li
+      %b Image Count: 
+      = album.images.size.to_s
+    %li= link_to "View Album", album
+    - if admin_signed_in?
+      %li
+        = link_to "Edit Album", edit_album_path(album)

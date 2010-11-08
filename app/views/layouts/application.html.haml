@@ -9,9 +9,8 @@
     = csrf_meta_tag
     = yield(:head)
   %body
-    #container_two
-      #container
-        - flash.each do |name, msg|
-          = content_tag :div, msg, :id => "flash_#{name}"
-        = content_tag :h1, yield(:title) if show_title?
-        = yield
+    #container
+      - flash.each do |name, msg|
+        = content_tag :div, msg, :id => "flash_#{name}"
+      = content_tag :h1, yield(:title) if show_title?
+      = yield
