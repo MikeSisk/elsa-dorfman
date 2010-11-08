@@ -1,7 +1,8 @@
--title "Listing " + pluralize(@images.size, "Image")
+- title "Listing " + pluralize(@images.size, "Image")
 
-= link_to 'New Image', new_image_path
-%br
+- if admin_signed_in?
+  = link_to 'New Image', new_image_path
+  %br
 
 %ul.image_master_index
   - @images.each do |image|

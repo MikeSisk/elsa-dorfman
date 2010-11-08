@@ -4,8 +4,9 @@
 
 #br
 
-= link_to 'Edit', edit_image_path(@image)
-\|
-= link_to 'Destroy', @image, :confirm => 'Are you sure?', :method => :delete
-\|
+- if admin_signed_in?
+  = link_to 'Edit', edit_image_path(@image)
+  \|
+  = link_to 'Destroy', @image, :confirm => 'Are you sure?', :method => :delete
+  \|
 = link_to 'Back', images_path

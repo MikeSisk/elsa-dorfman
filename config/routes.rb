@@ -1,4 +1,6 @@
 Dorfman::Application.routes.draw do
+  devise_for :admins
+
   resources :images
   
   root :to => "images#index"
