@@ -48,4 +48,7 @@ Dorfman::Application.configure do
   config.active_support.deprecation = :notify
   
   Paperclip.options[:command_path] = "/usr/bin"
+  
+  config.action_mailer.default_url_options = { :host => 'dorfman-production.heroku.com' }
+  
 end
