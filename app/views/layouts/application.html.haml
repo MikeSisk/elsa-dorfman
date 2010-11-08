@@ -10,6 +10,13 @@
     = yield(:head)
   %body
     #container
+      #user_nav
+        - if admin_signed_in?
+          = "Signed in as " + current_admin.email + ". Not you?"
+          = link_to "Sign out", destroy_admin_session_path
+        - else
+          Are you someone special? 
+          = link_to("Sign in!", new_admin_session_path)
       - flash.each do |name, msg|
         = content_tag :div, msg, :id => "flash_#{name}"
       = content_tag :h1, yield(:title) if show_title?
