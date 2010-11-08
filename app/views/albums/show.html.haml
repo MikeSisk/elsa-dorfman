@@ -1,11 +1,8 @@
-%p
-  %b Name:
-  = @album.name
-%p
-  %b Narrative:
-  = @album.narrative
+- title @album.name
 
-%ul
+%p= simple_format @album.narrative
+
+%ul.album_thumbs
   - @album.images.each do |image|
     %li= link_to(image_tag(image.url :thumb), album_image_path(@album, image))
 

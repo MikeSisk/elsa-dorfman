@@ -51,3 +51,20 @@
 .error_messages ul {
   margin: 0;
 }
+
+#container {
+  width: 75%;
+
+  margin-top: 10px;
+  padding: 0 0 0 20px;
+
+/*  background-color: #FFF;
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px;*/
+}
+
+/* Albums */
+ul.album_thumbs { clear: both; display: block; margin: auto; overflow: hidden }
+ul.album_thumbs li { display: inline; }
+ul.album_thumbs li a { /*background: #000; color: #fff;*/ display: block; float: left; margin-right: 0px; padding: 5px 5px; /*text-decoration: none; width: 138px;*/} /*MC width; changed (removed) background color and color */
