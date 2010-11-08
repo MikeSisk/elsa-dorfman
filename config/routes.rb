@@ -7,7 +7,7 @@ Dorfman::Application.routes.draw do
     resources :images
   end
       
-  root :to => "images#index"
+  root :to => "albums#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
