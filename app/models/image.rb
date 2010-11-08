@@ -1,5 +1,7 @@
 class Image < ActiveRecord::Base
   
+  belongs_to :imageable, :polymorphic => true
+  
   has_attached_file :resource, 
     :styles => { :thumb => "128x128#" },
     :storage => :s3,
