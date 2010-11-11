@@ -1,0 +1,87 @@
+/* ------ Flash Notices ------ */
+/* line 10, ../../../app/stylesheets/application.scss */
+#flash_notice {
+  color: red;
+  padding: 5px 8px;
+  margin: 10px 0 0 20px;
+  border: red dotted 3px;
+  display: relative;
+  background-color: #CFC;
+  border: white dotted 3px;
+  width: 24%;
+  margin: 20px;
+}
+
+/* line 20, ../../../app/stylesheets/application.scss */
+#flash_error, #flash_alert {
+  color: red;
+  padding: 5px 8px;
+  margin: 10px 0 0 20px;
+  border: red dotted 3px;
+  background-color: #FCC;
+  border: red dotted 3px;
+  width: 50%;
+  margin: 20px;
+}
+
+/* line 29, ../../../app/stylesheets/application.scss */
+.fieldWithErrors {
+  display: inline;
+}
+
+/* line 33, ../../../app/stylesheets/application.scss */
+.error_messages {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px 0 0 20px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+}
+/* line 42, ../../../app/stylesheets/application.scss */
+.error_messages h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #c00;
+  color: red;
+}
+/* line 51, ../../../app/stylesheets/application.scss */
+.error_messages p {
+  margin: 8px 10px;
+}
+/* line 52, ../../../app/stylesheets/application.scss */
+.error_messages ul {
+  margin: 0;
+}
+
+/* ------ Primary Content ------ */
+/* line 57, ../../../app/stylesheets/application.scss */
+#container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 0 0 0 20px;
+}
+
+/* ------ Albums ------ */
+/* line 65, ../../../app/stylesheets/application.scss */
+ul.album_thumbs {
+  clear: both;
+  display: block;
+  margin: auto;
+  overflow: hidden;
+}
+/* line 71, ../../../app/stylesheets/application.scss */
+ul.album_thumbs li {
+  display: inline;
+}
+/* line 74, ../../../app/stylesheets/application.scss */
+ul.album_thumbs li a {
+  display: block;
+  float: left;
+  margin-right: 0px;
+  padding: 5px 5px;
+}

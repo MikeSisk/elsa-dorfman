@@ -1,0 +1,81 @@
+/* ------ Flash Notices ------ */
+
+@mixin flash-base {
+  color: red;
+  padding: 5px 8px;
+  margin: 10px 0 0 20px;
+  border: red dotted 3px;
+}
+
+#flash_notice {
+  @include flash-base;
+
+  display: relative;
+  background-color: #CFC;
+  border: white dotted 3px;
+  width: 24%;
+  margin: 20px;
+}
+
+#flash_error, #flash_alert {
+  @include flash-base;
+
+  background-color: #FCC;
+  border: red dotted 3px;
+  width: 50%;
+  margin: 20px;
+}
+
+.fieldWithErrors {
+  display: inline;
+}
+
+.error_messages {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px 0 0 20px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin: 0;
+    background-color: #c00;
+    color: red;
+  }
+  p { margin: 8px 10px; }
+  ul { margin: 0; }
+}
+
+/* ------ Primary Content ------ */
+
+#container { 
+  width: 75%;
+  margin: 0 auto;
+  padding: 0 0 0 20px;
+}
+
+/* ------ Albums ------ */
+
+ul.album_thumbs { 
+  clear: both;
+  display: block;
+  margin: auto;
+  overflow: hidden;
+
+  li {
+    display: inline;
+
+    a {
+      display: block;
+      float: left;
+      margin-right: 0px;
+      padding: 5px 5px;
+    }
+  }
+}
