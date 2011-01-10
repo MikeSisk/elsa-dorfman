@@ -2,6 +2,20 @@
 
 %p= simple_format @album.narrative
 
+%ul.album_pages
+  - @album.album_pages.each do |page|
+    %li.album_page
+      - unless page.album_page_elements.empty?
+        %ul.album_page_elements
+          - page.album_page_elements.each do |element|
+            %li.album_page_element
+              = render_page_element element
+
+
+
+
+
+
 %ul.album_thumbs
   - @album.images.each do |image|
     %li= link_to(image_tag(image.url :thumb), album_image_path(@album, image))

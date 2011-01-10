@@ -1,0 +1,6 @@
+.image_fields
+  %fieldset.inputs
+    %ol.nested-fields
+      = f.input :resource, :label => "Image File"
+      = image_tag f.object.url(:thumb) unless f.object.new_record?
+      = link_to_remove_fields "Remove Image", f

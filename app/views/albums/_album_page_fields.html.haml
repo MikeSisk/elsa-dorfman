@@ -1,0 +1,5 @@
+.album_page_fields
+  = f.semantic_fields_for :album_page_elements do |builder|
+    = render :partial => "album_page_element_fields", :locals => { :f => builder }
+  .links
+    = link_to_add_fields "Add Page Element", f, :album_page_elements

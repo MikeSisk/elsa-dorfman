@@ -1,0 +1,5 @@
+%div{:class => "pe_#{element.style}"}
+  %ul.images
+    - element.images.each do |image|
+      %li= link_to(image_tag(image.url(:thumb)), image.url)
+  %p= element.narrative

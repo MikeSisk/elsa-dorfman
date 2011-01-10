@@ -1,3 +1,5 @@
+@import "compass/reset";
+
 /* ------ Flash Notices ------ */
 
 @mixin flash-base {
@@ -55,7 +57,7 @@
 /* ------ Primary Content ------ */
 
 #container { 
-  width: 75%;
+  /* width: 75%; */
   margin: 0 auto;
   padding: 0 0 0 20px;
 }
@@ -78,4 +80,33 @@ ul.album_thumbs {
       padding: 5px 5px;
     }
   }
+}
+
+/* ----- Album Pages ----- */
+.pe_test1 {
+  border: red dashed 1px;
+//  margin: 10px;
+
+  ul.images {
+	clear: both;
+	display: block;
+	margin: auto;
+	overflow: hidden;
+    
+	li {
+	  display: inline;
+    
+	  a {
+	    display: block;
+	    float: left;
+	    margin-right: 0px;
+	    //padding: 5px 5px;
+	  }
+	}	
+  }
+}
+
+.pe_test2 {
+  border: blue dashed 1px;
+ // margin: 10px;
 }

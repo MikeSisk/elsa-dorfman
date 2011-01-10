@@ -3,4 +3,7 @@ class Album < ActiveRecord::Base
   
   has_many  :images, :as => :imageable
   accepts_nested_attributes_for :images, :allow_destroy => true, :reject_if => :all_blank
+  
+  has_many :album_pages
+  accepts_nested_attributes_for :album_pages, :allow_destroy => true
 end

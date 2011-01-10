@@ -1,0 +1,11 @@
+.album_page_element_fields
+  %fieldset.inputs
+    %ol.nested-fields
+      = f.input :style, :as => :select, :collection => AlbumPageElement.styles
+      = f.input :narrative
+      = link_to_remove_fields "Remove Page Element", f
+      #images
+        = f.semantic_fields_for :images do |builder|
+          = render :partial => "image_fields", :locals => { :f => builder }
+        .links
+          = link_to_add_fields "Add Image", f, :images
