@@ -59,7 +59,7 @@ a img {
 }
 
 /* ------ Flash Notices ------ */
-/* line 12, ../../../app/stylesheets/application.scss */
+/* line 13, ../../../app/stylesheets/application.scss */
 #flash_notice {
   color: red;
   padding: 5px 8px;
@@ -72,7 +72,7 @@ a img {
   margin: 20px;
 }
 
-/* line 22, ../../../app/stylesheets/application.scss */
+/* line 23, ../../../app/stylesheets/application.scss */
 #flash_error, #flash_alert {
   color: red;
   padding: 5px 8px;
@@ -84,12 +84,12 @@ a img {
   margin: 20px;
 }
 
-/* line 31, ../../../app/stylesheets/application.scss */
+/* line 32, ../../../app/stylesheets/application.scss */
 .fieldWithErrors {
   display: inline;
 }
 
-/* line 35, ../../../app/stylesheets/application.scss */
+/* line 36, ../../../app/stylesheets/application.scss */
 .error_messages {
   width: 400px;
   border: 2px solid #CF0000;
@@ -99,7 +99,7 @@ a img {
   background-color: #f0f0f0;
   font-size: 12px;
 }
-/* line 44, ../../../app/stylesheets/application.scss */
+/* line 45, ../../../app/stylesheets/application.scss */
 .error_messages h2 {
   text-align: left;
   font-weight: bold;
@@ -109,36 +109,106 @@ a img {
   background-color: #c00;
   color: red;
 }
-/* line 53, ../../../app/stylesheets/application.scss */
+/* line 54, ../../../app/stylesheets/application.scss */
 .error_messages p {
   margin: 8px 10px;
 }
-/* line 54, ../../../app/stylesheets/application.scss */
+/* line 55, ../../../app/stylesheets/application.scss */
 .error_messages ul {
   margin: 0;
 }
 
 /* ------ Primary Content ------ */
-/* line 59, ../../../app/stylesheets/application.scss */
+/* line 61, ../../../app/stylesheets/application.scss */
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 30px;
+}
+
+/* line 68, ../../../app/stylesheets/application.scss */
 #container {
   /* width: 75%; */
   margin: 0 auto;
   padding: 0 0 0 20px;
+  float: left;
+}
+
+/* line 75, ../../../app/stylesheets/application.scss */
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 0px;
+}
+
+/* ------ Train line side bar ------ */
+/* line 85, ../../../app/stylesheets/application.scss */
+#sidebar {
+  width: 40px;
+  height: 800px;
+  float: left;
+  padding-left: 30px;
+  position: relative;
+}
+/* line 92, ../../../app/stylesheets/application.scss */
+#sidebar #train_line {
+  width: 24px;
+  background-color: red;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -o-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -khtml-border-radius: 12px;
+  border-radius: 12px;
+}
+/* line 101, ../../../app/stylesheets/application.scss */
+#sidebar #train_line .stop {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  margin-left: 1px;
+  position: absolute;
+  overflow: visible;
+  left: 0px;
+  border: solid red 1px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 113, ../../../app/stylesheets/application.scss */
+#sidebar #train_line .stop .stop_label {
+  display: none;
+}
+/* line 120, ../../../app/stylesheets/application.scss */
+#sidebar .popup_label {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
 }
 
 /* ------ Albums ------ */
-/* line 67, ../../../app/stylesheets/application.scss */
+/* line 127, ../../../app/stylesheets/application.scss */
 ul.album_thumbs {
   clear: both;
   display: block;
   margin: auto;
   overflow: hidden;
 }
-/* line 73, ../../../app/stylesheets/application.scss */
+/* line 133, ../../../app/stylesheets/application.scss */
 ul.album_thumbs li {
   display: inline;
 }
-/* line 76, ../../../app/stylesheets/application.scss */
+/* line 136, ../../../app/stylesheets/application.scss */
 ul.album_thumbs li a {
   display: block;
   float: left;
@@ -146,30 +216,120 @@ ul.album_thumbs li a {
   padding: 5px 5px;
 }
 
-/* ----- Album Pages ----- */
-/* line 86, ../../../app/stylesheets/application.scss */
-.pe_test1 {
-  border: red dashed 1px;
-}
-/* line 90, ../../../app/stylesheets/application.scss */
-.pe_test1 ul.images {
-  clear: both;
-  display: block;
-  margin: auto;
-  overflow: hidden;
-}
-/* line 96, ../../../app/stylesheets/application.scss */
-.pe_test1 ul.images li {
-  display: inline;
-}
-/* line 99, ../../../app/stylesheets/application.scss */
-.pe_test1 ul.images li a {
-  display: block;
-  float: left;
-  margin-right: 0px;
+/* line 145, ../../../app/stylesheets/application.scss */
+.album_page_element_fields {
+  padding: 10px;
+  margin: 10px;
+  border: black solid 1px;
 }
 
-/* line 109, ../../../app/stylesheets/application.scss */
+/* line 151, ../../../app/stylesheets/application.scss */
+.image_fields {
+  padding: 10px;
+  margin: 10px;
+  border: black dashed 1px;
+}
+
+/* line 157, ../../../app/stylesheets/application.scss */
+#gallery {
+  clear: both;
+  border: red dotted 2px;
+  padding: 2px;
+  overflow: auto;
+}
+/* line 165, ../../../app/stylesheets/application.scss */
+#gallery #thumbs {
+  width: 1200px;
+  height: 132px;
+  padding: 6px;
+}
+/* line 166, ../../../app/stylesheets/application.scss */
+#gallery ul {
+  display: inline;
+}
+/* line 168, ../../../app/stylesheets/application.scss */
+#gallery ul li {
+  display: inline;
+}
+/* line 170, ../../../app/stylesheets/application.scss */
+#gallery ul li a {
+  padding: 5px 5px;
+}
+
+/* ----- Album Pages ----- */
+/* line 176, ../../../app/stylesheets/application.scss */
+.album {
+  border: red solid 1px;
+  padding: 0px 10px 10px 10px;
+  width: 640px;
+}
+
+/* line 182, ../../../app/stylesheets/application.scss */
+p.top_narritive {
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+/* line 188, ../../../app/stylesheets/application.scss */
+.pe_test1 {
+  clear: both;
+}
+/* line 193, ../../../app/stylesheets/application.scss */
+.pe_test1 ul.images {
+  float: right;
+  margin-left: 10px;
+}
+/* line 196, ../../../app/stylesheets/application.scss */
+.pe_test1 ul.images li {
+  margin-bottom: 10px;
+}
+/* line 197, ../../../app/stylesheets/application.scss */
+.pe_test1 ul.images li:last-child {
+  margin-bottom: 0px;
+}
+/* line 200, ../../../app/stylesheets/application.scss */
+.pe_test1 p {
+  margin-bottom: 10px;
+}
+
+/* line 203, ../../../app/stylesheets/application.scss */
 .pe_test2 {
-  border: blue dashed 1px;
+  clear: both;
+}
+/* line 208, ../../../app/stylesheets/application.scss */
+.pe_test2 ul.images {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+/* line 212, ../../../app/stylesheets/application.scss */
+.pe_test2 ul.images li {
+  margin-bottom: 10px;
+}
+/* line 213, ../../../app/stylesheets/application.scss */
+.pe_test2 ul.images li:last-child {
+  margin-bottom: -10px;
+}
+/* line 216, ../../../app/stylesheets/application.scss */
+.pe_test2 p {
+  margin-bottom: 10px;
+}
+
+/* line 219, ../../../app/stylesheets/application.scss */
+.pe_test3 {
+  overflow: hidden;
+}
+/* line 224, ../../../app/stylesheets/application.scss */
+.pe_test3 img.image1 {
+  float: left;
+  margin-right: 10px;
+}
+/* line 229, ../../../app/stylesheets/application.scss */
+.pe_test3 img.image2 {
+  float: right;
+  margin-left: 10px;
+}
+/* line 234, ../../../app/stylesheets/application.scss */
+.pe_test3 p {
+  margin-bottom: 10px;
 }

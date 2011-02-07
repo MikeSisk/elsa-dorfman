@@ -1,7 +1,18 @@
 = semantic_form_for @album, :html => { :multipart => true } do |form|
+  -if @album.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@album.errors.count, "error")} prohibited this image from being saved:"
+      %ul
+        - @album.errors.full_messages.each do |msg|
+          %li= msg
   = form.inputs do
     = form.input :name
     = form.input :narrative
+    #images
+      = form.semantic_fields_for :images do |builder|
+        = render :partial => "image_fields", :locals => { :f => builder }
+      .links
+        = link_to_add_fields "Add Image", form, :images
     #album_pages
       = form.semantic_fields_for :album_pages do |builder|
         = render :partial => "album_page_fields", :locals => { :f => builder }

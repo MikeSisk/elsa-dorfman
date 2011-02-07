@@ -1,5 +1,6 @@
 @import "compass/reset";
-
+@import "compass/css3/border-radius";
+@import "compass/css3/transition";
 /* ------ Flash Notices ------ */
 
 @mixin flash-base {
@@ -54,12 +55,71 @@
   ul { margin: 0; }
 }
 
+
 /* ------ Primary Content ------ */
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 15px;	
+  margin-top: 30px;//remove
+}
 
 #container { 
   /* width: 75%; */
   margin: 0 auto;
   padding: 0 0 0 20px;
+  float: left;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 0px;
+}
+
+/* ------ Train line side bar ------ */
+$stop_circum: 20px;// should be even number
+$stop_circum_hover: 40px;
+
+#sidebar {
+  width: $stop_circum * 2;
+  height: 800px;
+  float: left;
+  padding-left: 30px;
+  position: relative;
+
+  #train_line {
+	width: $stop_circum + 4;
+	background-color: red;
+	padding-top: $stop_circum;
+	padding-bottom: $stop_circum;
+	position: relative;
+	
+	@include border-radius(24px / 2);
+	
+    .stop {
+	  height: $stop_circum;
+	  width:  $stop_circum;
+	  background-color: white;
+	  margin-left: 1px;
+	  position: absolute;
+	  overflow: visible;
+	  left: 0px;
+
+	  border: solid red 1px;
+	  @include border-radius($stop_circum / 2);
+	
+      .stop_label {
+        display: none;
+      }
+
+    }
+  }
+
+  .popup_label {
+    @include border-radius(5px);
+  }
 }
 
 /* ------ Albums ------ */
@@ -82,31 +142,94 @@ ul.album_thumbs {
   }
 }
 
-/* ----- Album Pages ----- */
-.pe_test1 {
-  border: red dashed 1px;
-//  margin: 10px;
+.album_page_element_fields {
+  padding: 10px;
+  margin:  10px;
+  border: black solid 1px;
+}
 
-  ul.images {
-	clear: both;
-	display: block;
-	margin: auto;
-	overflow: hidden;
-    
-	li {
+.image_fields {
+  padding: 10px;
+  margin:  10px;
+  border: black dashed 1px;
+}
+
+#gallery {
+  clear: both;
+
+  border: red dotted 2px;
+  padding: 2px;
+ // width: 600px;
+  overflow: auto;
+
+  #thumbs {width:1200px; height: 132px; padding: 6px;}
+  ul {
+	display: inline;
+    li {
 	  display: inline;
-    
-	  a {
-	    display: block;
-	    float: left;
-	    margin-right: 0px;
-	    //padding: 5px 5px;
-	  }
-	}	
+      a { padding: 5px 5px; }
+    }	
   }
 }
 
+/* ----- Album Pages ----- */
+.album {
+  border: red solid 1px;
+  padding: 0px 10px 10px 10px;	
+  width: 640px;
+}
+
+p.top_narritive {
+  margin-bottom: 10px;
+ // width: 600px;
+  font-style:italic;
+}
+
+.pe_test1 {
+//  border: red dashed 1px;
+//  width: 600px;
+  clear: both;
+
+  ul.images {
+	float: right;
+	margin-left: 10px;
+	li { margin-bottom: 10px; }
+	li:last-child { margin-bottom: 0px; }
+  }
+
+  p { margin-bottom: 10px; }
+}
+
 .pe_test2 {
-  border: blue dashed 1px;
- // margin: 10px;
+//  border: blue dashed 1px;
+//  width: 600px;
+  clear: both;
+
+  ul.images {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	li { margin-bottom: 10px; }
+	li:last-child { margin-bottom: -10px; }
+  }
+
+  p { margin-bottom: 10px; }
+}
+
+.pe_test3 {
+//  border: green dashed 1px;
+//  width: 600px;
+  overflow: hidden; // so that this box wraps the floating elements.
+
+  img.image1 {
+	float: left;
+	margin-right: 10px;
+  }
+
+  img.image2 {
+	float: right;
+	margin-left: 10px;
+  }
+  
+  p { margin-bottom: 10px; }
 }

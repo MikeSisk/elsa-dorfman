@@ -1,0 +1,6 @@
+%div{:class => "pe_#{element.style}"}
+  - unless element.images.empty?
+    = image_tag element.images.first.url(:small), :class => :image1
+  - unless element.images.size < 2
+    = image_tag element.images.second.url(:small), :class => :image2
+  = simple_format element.narrative

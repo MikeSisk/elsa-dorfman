@@ -27,7 +27,7 @@ class AlbumsController < ApplicationController
   # GET /albums/new.xml
   def new
     @album = Album.new
-    3.times { @album.images.build }
+    # 3.times { @album.images.build }
     
     respond_to do |format|
       format.html # new.html.erb
@@ -38,7 +38,7 @@ class AlbumsController < ApplicationController
   # GET /albums/1/edit
   def edit
     @album = Album.find(params[:id])
-    3.times { @album.images.build }
+    # 3.times { @album.images.build }
   end
 
   # POST /albums

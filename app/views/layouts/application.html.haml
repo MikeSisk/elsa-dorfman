@@ -4,11 +4,24 @@
     %title= content_for?(:title) ? yield(:title) : "Elsa Dorfman"
     = stylesheet_link_tag "compiled/application"
     = stylesheet_link_tag "compiled/scaffold"
+    = stylesheet_link_tag "jquery.lightbox-0.5"
     = formtastic_stylesheet_link_tag
-    = javascript_include_tag :defaults
+    = javascript_include_tag "jquery.js"
+    = javascript_include_tag "jquery.galleriffic.js"
+    = javascript_include_tag "jquery.lightbox-0.5.js"
+    = javascript_include_tag "rails.js"
+    = javascript_include_tag "application.js"
     = csrf_meta_tag
     = yield(:head)
   %body
+    #sidebar
+      #train_line
+        - Album.all.each do |album|
+          = link_to "", album, :class => "stop", :label => album.name
+        - Album.all.each do |album|
+          = link_to "", album, :class => "stop", :label => album.name         
+        - Album.all.each do |album|
+          = link_to "", album, :class => "stop", :label => album.name
     #container
       #user_nav
         - if admin_signed_in?
