@@ -109,11 +109,6 @@ $stop_circum_hover: 40px;
 
 	  border: solid red 1px;
 	  @include border-radius($stop_circum / 2);
-	
-      .stop_label {
-        display: none;
-      }
-
     }
   }
 

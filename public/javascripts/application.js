@@ -27,7 +27,7 @@ $(document).ready(function() {
 	var $train_line = $('#sidebar #train_line');
 	var num_stops  = $train_line.children('.stop').size();
 	$train_line.css('height', (num_stops-1) * 40 - 17); // 17 is the hack... wtf??
-	console.log("num_stops: " + num_stops);
+//	console.log("num_stops: " + num_stops);
 	
 	// subway line map test
 	$('#sidebar #train_line > .stop').hover(
