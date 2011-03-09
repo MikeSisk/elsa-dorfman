@@ -79,41 +79,57 @@ h1 {
 }
 
 /* ------ Train line side bar ------ */
+@mixin train-stop($color) {
+  background-color: $color;
+  .stop { border-color: $color; }
+}
+
 $stop_circum: 20px;// should be even number
 $stop_circum_hover: 40px;
 
 #sidebar {
-  width: $stop_circum * 2;
+  width: $stop_circum * 10;
   height: 800px;
   float: left;
   padding-left: 30px;
-  position: relative;
 
-  #train_line {
-	width: $stop_circum + 4;
-	background-color: red;
-	padding-top: $stop_circum;
-	padding-bottom: $stop_circum;
+  .train_line_wrap {
+	width: $stop_circum * 2;
 	position: relative;
+	float: left;
 	
-	@include border-radius(24px / 2);
-	
-    .stop {
-	  height: $stop_circum;
-	  width:  $stop_circum;
-	  background-color: white;
-	  margin-left: 1px;
-	  position: absolute;
-	  overflow: visible;
-	  left: 0px;
-
-	  border: solid red 1px;
-	  @include border-radius($stop_circum / 2);
+    .train_line {
+      width: $stop_circum + 4;
+      background-color: pink;
+      padding-top: $stop_circum;
+      padding-bottom: $stop_circum;
+      position: relative;
+      
+      @include border-radius(24px / 2);
+      
+      .stop {
+        height: $stop_circum;
+        width:  $stop_circum;
+        background-color: white;
+        margin-left: 1px;
+        position: absolute;
+        overflow: visible;
+        left: 0px;
+    
+        border: solid black 1px;
+        @include border-radius($stop_circum / 2);
+      }
     }
-  }
 
-  .popup_label {
-    @include border-radius(5px);
+    .train_line.ginsburge  	{ @include train-stop(orange); }
+    .train_line.no-hair-day { @include train-stop(blue); }
+    .train_line.portraits  	{ @include train-stop(red); }
+    .train_line.essays 		{ @include train-stop(green); }
+    .train_line.friends  	{ @include train-stop(silver); }
+    
+    .popup_label {
+      @include border-radius(5px);
+    }
   }
 }
 

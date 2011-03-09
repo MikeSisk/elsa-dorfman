@@ -7,6 +7,7 @@
     = stylesheet_link_tag "jquery.lightbox-0.5"
     = formtastic_stylesheet_link_tag
     = javascript_include_tag "jquery.js"
+    = javascript_include_tag "jquery.easing.1.3.js"
     = javascript_include_tag "jquery.galleriffic.js"
     = javascript_include_tag "jquery.lightbox-0.5.js"
     = javascript_include_tag "rails.js"
@@ -15,13 +16,34 @@
     = yield(:head)
   %body
     #sidebar
-      #train_line
-        - Album.all.each do |album|
-          = link_to "", album, :class => "stop", :label => album.name
-        - Album.all.each do |album|
-          = link_to "", album, :class => "stop", :label => album.name         
-        - Album.all.each do |album|
-          = link_to "", album, :class => "stop", :label => album.name
+      .train_line_wrap
+        .train_line.ginsburge
+          - Album.all.each do |album|
+            = link_to "", album, :class => "stop", :label => album.name
+      .train_line_wrap
+        .train_line.no-hair-day
+          - Album.all.each do |album|
+            = link_to "", album, :class => "stop", :label => album.name
+          - Album.all.each do |album|
+            = link_to "", album, :class => "stop", :label => album.name
+      .train_line_wrap
+        .train_line.portraits
+          - Album.all.each do |album|
+            = link_to "", album, :class => "stop", :label => album.name
+      .train_line_wrap
+        .train_line.essays
+          - Album.all.each do |album|
+            = link_to "", album, :class => "stop", :label => album.name
+          - Album.all.each do |album|
+            = link_to "", album, :class => "stop", :label => album.name
+          - Album.all.each do |album|
+            = link_to "", album, :class => "stop", :label => album.name
+      .train_line_wrap
+        .train_line.friends
+          - Album.all.each do |album|
+            = link_to "", album, :class => "stop", :label => album.name
+          - Album.all.each do |album|
+            = link_to "", album, :class => "stop", :label => album.name
     #container
       #user_nav
         - if admin_signed_in?

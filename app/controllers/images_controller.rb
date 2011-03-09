@@ -1,6 +1,6 @@
 class ImagesController < ApplicationController
   respond_to :html, :xml
-  before_filter :authenticate_admin!, :only => [:new, :create, :edit, :update, :destroy]
+  before_filter :authenticate_admin!, :except => [:index, :show]
 
   def index
     @images = Image.all
