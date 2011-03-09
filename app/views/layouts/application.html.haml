@@ -28,3 +28,6 @@
         = image_tag '/images/shared/elsa_name_header.png'
         = content_tag :h1, yield(:title) if show_title?
         = yield
+      #right-sidebar
+        = link_to image_tag("/images/shared/mail-sm.jpg"), new_subscriber_path
+        = link_to image_tag("/images/shared/donate_xs.jpg"), 'donate_path'

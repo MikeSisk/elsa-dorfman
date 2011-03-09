@@ -2,6 +2,7 @@
 @import "compass/css3/border-radius";
 @import "compass/css3/transition";
 @import "compass/css3/transform";
+@import "compass/utilities/general/min";
 
 /* ------ Flash Notices ------ */
 
@@ -19,7 +20,7 @@
   background-color: #CFC;
   border: white dotted 3px;
   width: 100%;
-  margin: 20px;
+  margin: 20px 0px;
 }
 
 #flash_error, #flash_alert {
@@ -28,7 +29,7 @@
   background-color: #FCC;
   border: red dotted 3px;
   width: 100%;
-  margin: 20px;
+  margin: 20px 0px;
 }
 
 .fieldWithErrors {
@@ -40,7 +41,7 @@
   border: 2px solid #CF0000;
   padding: 0px;
   padding-bottom: 12px;
-  margin-bottom: 20px 0 0 20px;
+  margin: 20px 0px;
   background-color: #f0f0f0;
   font-size: 12px;
 
@@ -70,21 +71,30 @@ body {
 
 #wrap {
 	margin: 20px auto;
-	width: 900px;
+	width: 1100px;
 }
 #content { 
   width: 650px;
   margin: 0 auto;
-  padding: 0 0 0 20px;
+  padding: 0 20px;
   float: left;
   margin-top:70px;
   background: url(/images/shared/20x24_sketch_ghosted.png) no-repeat 70px 100px;
+  @include min-height(790px);
 }
 
 h1 {
   font-size: 24px;
   font-weight: bold;
   padding: 10px 0px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0px;
+  color: #666;
+ // text-decoration: underline;
 }
 
 /* ------ Train line side bar ------ */
@@ -96,20 +106,20 @@ h1 {
 $stop_circum: 20px;// should be even number
 $stop_circum_hover: 40px;
 
+$sidebar_width: $stop_circum * 10;
+
 #sidebar {
-/*  top: 0;
-left:0;
-position:fixed;*/
-  width: $stop_circum * 10;
+  width: $sidebar_width;
   height: 800px;
   float: left;
- // padding-left: 30px;
-	p.label {
-	  margin-top: -15px;
-	  position: absolute;
-	  width: 100px;
-	  @include rotate(-45deg, 0px, 0px);
-	}
+  
+  p.label {
+    margin-top: -15px;
+    position: absolute;
+    width: 100px;
+    @include rotate(-45deg, 0px, 0px);
+  }
+
   .train_line_wrap {
 	width: $stop_circum * 2;
 	position: relative;
@@ -152,6 +162,18 @@ position:fixed;*/
   }
 }
 
+
+#right-sidebar {
+  width: 150px;
+  height: 800px;
+  float: left;
+  //background-color: red;
+  margin-top: 130px;
+ 
+  a img {
+    margin-bottom: 50px;
+  }
+}
 /* ------ Albums ------ */
 
 ul.album_thumbs { 
@@ -205,8 +227,8 @@ ul.album_thumbs {
 /* ----- Album Pages ----- */
 .album {
 //  border: red solid 1px;
-  padding: 0px 10px 10px 10px;	
-  width: 640px;
+//  padding: 0px 10px 10px 10px;	
+//  width: 640px;
   
 }
 
@@ -283,6 +305,18 @@ p.top_narritive {
 // ----- subscribers
 .subscriber {
   margin-bottom: 20px;
+}
+
+// ------ static pages
+#about-camera {
+  ol {
+    list-style-type: decimal; 
+    li {
+  	  color: #ccc;
+      margin-bottom: 8px;
+  	  span.text {color: black;}
+    }
+  }  	
 }
 
 // ------ admin links

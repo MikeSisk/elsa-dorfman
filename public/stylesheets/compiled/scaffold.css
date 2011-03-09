@@ -28,12 +28,6 @@ a:visited {
   color: #666;
 }
 
-/* line 17, ../../../app/stylesheets/scaffold.scss */
-a:hover {
-  color: #fff;
-  background-color: #000;
-}
-
 /* line 19, ../../../app/stylesheets/scaffold.scss */
 div.field, div.actions {
   margin-bottom: 10px;

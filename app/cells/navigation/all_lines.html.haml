@@ -14,10 +14,8 @@
   .train_line_wrap
     %p.label Portraits
     .train_line.portraits
-      - Album.all.each do |album|
-        = link_to "", album, :class => "stop", :label => album.name
-      - Album.limit(2).each do |album|
-        = link_to "", album, :class => "stop", :label => album.name
+      - @portraits_stops.each do |nl|
+        = link_to "", nl.dest, :class => "stop", :label => nl.label
   .train_line_wrap
     %p.label Essays
     .train_line.essays

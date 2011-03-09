@@ -59,7 +59,7 @@ a img {
 }
 
 /* ------ Flash Notices ------ */
-/* line 15, ../../../app/stylesheets/application.scss */
+/* line 16, ../../../app/stylesheets/application.scss */
 #flash_notice {
   color: red;
   padding: 5px 8px;
@@ -69,10 +69,10 @@ a img {
   background-color: #CFC;
   border: white dotted 3px;
   width: 100%;
-  margin: 20px;
+  margin: 20px 0px;
 }
 
-/* line 25, ../../../app/stylesheets/application.scss */
+/* line 26, ../../../app/stylesheets/application.scss */
 #flash_error, #flash_alert {
   color: red;
   padding: 5px 8px;
@@ -81,25 +81,25 @@ a img {
   background-color: #FCC;
   border: red dotted 3px;
   width: 100%;
-  margin: 20px;
+  margin: 20px 0px;
 }
 
-/* line 34, ../../../app/stylesheets/application.scss */
+/* line 35, ../../../app/stylesheets/application.scss */
 .fieldWithErrors {
   display: inline;
 }
 
-/* line 38, ../../../app/stylesheets/application.scss */
+/* line 39, ../../../app/stylesheets/application.scss */
 .error_messages {
   width: 400px;
   border: 2px solid #CF0000;
   padding: 0px;
   padding-bottom: 12px;
-  margin-bottom: 20px 0 0 20px;
+  margin: 20px 0px;
   background-color: #f0f0f0;
   font-size: 12px;
 }
-/* line 47, ../../../app/stylesheets/application.scss */
+/* line 48, ../../../app/stylesheets/application.scss */
 .error_messages h2 {
   text-align: left;
   font-weight: bold;
@@ -109,17 +109,17 @@ a img {
   background-color: #c00;
   color: red;
 }
-/* line 56, ../../../app/stylesheets/application.scss */
+/* line 57, ../../../app/stylesheets/application.scss */
 .error_messages p {
   margin: 8px 10px;
 }
-/* line 57, ../../../app/stylesheets/application.scss */
+/* line 58, ../../../app/stylesheets/application.scss */
 .error_messages ul {
   margin: 0;
 }
 
 /* ------ Primary Content ------ */
-/* line 63, ../../../app/stylesheets/application.scss */
+/* line 64, ../../../app/stylesheets/application.scss */
 body {
   font-family: Helvetica, sans-serif;
   font-size: 12px;
@@ -128,40 +128,48 @@ body {
   margin: 0 auto;
 }
 
-/* line 71, ../../../app/stylesheets/application.scss */
+/* line 72, ../../../app/stylesheets/application.scss */
 #wrap {
   margin: 20px auto;
-  width: 900px;
+  width: 1100px;
 }
 
-/* line 75, ../../../app/stylesheets/application.scss */
+/* line 76, ../../../app/stylesheets/application.scss */
 #content {
   width: 650px;
   margin: 0 auto;
-  padding: 0 0 0 20px;
+  padding: 0 20px;
   float: left;
   margin-top: 70px;
   background: url(/images/shared/20x24_sketch_ghosted.png) no-repeat 70px 100px;
+  min-height: 790px;
+  height: auto !important;
+  height: 790px;
 }
 
-/* line 84, ../../../app/stylesheets/application.scss */
+/* line 86, ../../../app/stylesheets/application.scss */
 h1 {
   font-size: 24px;
   font-weight: bold;
   padding: 10px 0px;
 }
 
+/* line 92, ../../../app/stylesheets/application.scss */
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0px;
+  color: #666;
+}
+
 /* ------ Train line side bar ------ */
-/* line 99, ../../../app/stylesheets/application.scss */
+/* line 111, ../../../app/stylesheets/application.scss */
 #sidebar {
-  /*  top: 0;
-  left:0;
-  position:fixed;*/
   width: 200px;
   height: 800px;
   float: left;
 }
-/* line 107, ../../../app/stylesheets/application.scss */
+/* line 116, ../../../app/stylesheets/application.scss */
 #sidebar p.label {
   margin-top: -15px;
   position: absolute;
@@ -175,14 +183,14 @@ h1 {
   -o-transform-origin: 0px 0px;
   transform-origin: 0px 0px;
 }
-/* line 113, ../../../app/stylesheets/application.scss */
+/* line 123, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap {
   width: 40px;
   position: relative;
   float: left;
   margin-top: 70px;
 }
-/* line 120, ../../../app/stylesheets/application.scss */
+/* line 130, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line {
   width: 24px;
   background-color: pink;
@@ -196,7 +204,7 @@ h1 {
   -khtml-border-radius: 12px;
   border-radius: 12px;
 }
-/* line 129, ../../../app/stylesheets/application.scss */
+/* line 139, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line .stop {
   height: 20px;
   width: 20px;
@@ -213,47 +221,47 @@ h1 {
   -khtml-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 143, ../../../app/stylesheets/application.scss */
+/* line 153, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.ginsburge {
   background-color: orange;
 }
-/* line 93, ../../../app/stylesheets/application.scss */
+/* line 103, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.ginsburge .stop {
   border-color: orange;
 }
-/* line 144, ../../../app/stylesheets/application.scss */
+/* line 154, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.no-hair-day {
   background-color: blue;
 }
-/* line 93, ../../../app/stylesheets/application.scss */
+/* line 103, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.no-hair-day .stop {
   border-color: blue;
 }
-/* line 145, ../../../app/stylesheets/application.scss */
+/* line 155, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.portraits {
   background-color: red;
 }
-/* line 93, ../../../app/stylesheets/application.scss */
+/* line 103, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.portraits .stop {
   border-color: red;
 }
-/* line 146, ../../../app/stylesheets/application.scss */
+/* line 156, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.essays {
   background-color: green;
 }
-/* line 93, ../../../app/stylesheets/application.scss */
+/* line 103, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.essays .stop {
   border-color: green;
 }
-/* line 147, ../../../app/stylesheets/application.scss */
+/* line 157, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.friends {
   background-color: silver;
 }
-/* line 93, ../../../app/stylesheets/application.scss */
+/* line 103, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.friends .stop {
   border-color: silver;
 }
-/* line 149, ../../../app/stylesheets/application.scss */
+/* line 159, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .popup_label {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -263,19 +271,31 @@ h1 {
   border-radius: 5px;
 }
 
+/* line 166, ../../../app/stylesheets/application.scss */
+#right-sidebar {
+  width: 150px;
+  height: 800px;
+  float: left;
+  margin-top: 130px;
+}
+/* line 173, ../../../app/stylesheets/application.scss */
+#right-sidebar a img {
+  margin-bottom: 50px;
+}
+
 /* ------ Albums ------ */
-/* line 157, ../../../app/stylesheets/application.scss */
+/* line 179, ../../../app/stylesheets/application.scss */
 ul.album_thumbs {
   clear: both;
   display: block;
   margin: auto;
   overflow: hidden;
 }
-/* line 163, ../../../app/stylesheets/application.scss */
+/* line 185, ../../../app/stylesheets/application.scss */
 ul.album_thumbs li {
   display: inline;
 }
-/* line 166, ../../../app/stylesheets/application.scss */
+/* line 188, ../../../app/stylesheets/application.scss */
 ul.album_thumbs li a {
   display: block;
   float: left;
@@ -283,151 +303,159 @@ ul.album_thumbs li a {
   padding: 5px 5px;
 }
 
-/* line 175, ../../../app/stylesheets/application.scss */
+/* line 197, ../../../app/stylesheets/application.scss */
 .album_page_element_fields {
   padding: 10px;
   margin: 10px;
   border: black solid 1px;
 }
 
-/* line 181, ../../../app/stylesheets/application.scss */
+/* line 203, ../../../app/stylesheets/application.scss */
 .image_fields {
   padding: 10px;
   margin: 10px;
   border: black dashed 1px;
 }
 
-/* line 187, ../../../app/stylesheets/application.scss */
+/* line 209, ../../../app/stylesheets/application.scss */
 #gallery {
   clear: both;
   border: red dotted 2px;
   padding: 2px;
   overflow: auto;
 }
-/* line 195, ../../../app/stylesheets/application.scss */
+/* line 217, ../../../app/stylesheets/application.scss */
 #gallery #thumbs {
   width: 1200px;
   height: 132px;
   padding: 6px;
 }
-/* line 196, ../../../app/stylesheets/application.scss */
+/* line 218, ../../../app/stylesheets/application.scss */
 #gallery ul {
   display: inline;
 }
-/* line 198, ../../../app/stylesheets/application.scss */
+/* line 220, ../../../app/stylesheets/application.scss */
 #gallery ul li {
   display: inline;
 }
-/* line 200, ../../../app/stylesheets/application.scss */
+/* line 222, ../../../app/stylesheets/application.scss */
 #gallery ul li a {
   padding: 5px 5px;
 }
 
 /* ----- Album Pages ----- */
-/* line 206, ../../../app/stylesheets/application.scss */
-.album {
-  padding: 0px 10px 10px 10px;
-  width: 640px;
-}
-
-/* line 213, ../../../app/stylesheets/application.scss */
+/* line 235, ../../../app/stylesheets/application.scss */
 p.top_narritive {
   margin-bottom: 10px;
   font-style: italic;
 }
 
-/* line 219, ../../../app/stylesheets/application.scss */
+/* line 241, ../../../app/stylesheets/application.scss */
 .pe_test1 {
   clear: both;
 }
-/* line 224, ../../../app/stylesheets/application.scss */
+/* line 246, ../../../app/stylesheets/application.scss */
 .pe_test1 ul.images {
   float: right;
   margin-left: 10px;
 }
-/* line 227, ../../../app/stylesheets/application.scss */
+/* line 249, ../../../app/stylesheets/application.scss */
 .pe_test1 ul.images li {
   margin-bottom: 10px;
 }
-/* line 228, ../../../app/stylesheets/application.scss */
+/* line 250, ../../../app/stylesheets/application.scss */
 .pe_test1 ul.images li:last-child {
   margin-bottom: 0px;
 }
-/* line 231, ../../../app/stylesheets/application.scss */
+/* line 253, ../../../app/stylesheets/application.scss */
 .pe_test1 p {
   margin-bottom: 10px;
 }
 
-/* line 234, ../../../app/stylesheets/application.scss */
+/* line 256, ../../../app/stylesheets/application.scss */
 .pe_test2 {
   clear: both;
 }
-/* line 239, ../../../app/stylesheets/application.scss */
+/* line 261, ../../../app/stylesheets/application.scss */
 .pe_test2 ul.images {
   float: left;
   margin-right: 10px;
   margin-bottom: 10px;
 }
-/* line 243, ../../../app/stylesheets/application.scss */
+/* line 265, ../../../app/stylesheets/application.scss */
 .pe_test2 ul.images li {
   margin-bottom: 10px;
 }
-/* line 244, ../../../app/stylesheets/application.scss */
+/* line 266, ../../../app/stylesheets/application.scss */
 .pe_test2 ul.images li:last-child {
   margin-bottom: -10px;
 }
-/* line 247, ../../../app/stylesheets/application.scss */
+/* line 269, ../../../app/stylesheets/application.scss */
 .pe_test2 p {
   margin-bottom: 10px;
 }
 
-/* line 250, ../../../app/stylesheets/application.scss */
+/* line 272, ../../../app/stylesheets/application.scss */
 .pe_test3 {
   overflow: hidden;
 }
-/* line 255, ../../../app/stylesheets/application.scss */
+/* line 277, ../../../app/stylesheets/application.scss */
 .pe_test3 img.image1 {
   float: left;
   margin-right: 10px;
 }
-/* line 260, ../../../app/stylesheets/application.scss */
+/* line 282, ../../../app/stylesheets/application.scss */
 .pe_test3 img.image2 {
   float: right;
   margin-left: 10px;
 }
-/* line 265, ../../../app/stylesheets/application.scss */
+/* line 287, ../../../app/stylesheets/application.scss */
 .pe_test3 p {
   margin-bottom: 10px;
 }
 
-/* line 268, ../../../app/stylesheets/application.scss */
+/* line 290, ../../../app/stylesheets/application.scss */
 .pe_test4 {
   clear: both;
 }
-/* line 273, ../../../app/stylesheets/application.scss */
+/* line 295, ../../../app/stylesheets/application.scss */
 .pe_test4 ul.images {
   float: right;
   margin-left: 10px;
 }
-/* line 276, ../../../app/stylesheets/application.scss */
+/* line 298, ../../../app/stylesheets/application.scss */
 .pe_test4 ul.images li {
   margin-bottom: 10px;
 }
-/* line 277, ../../../app/stylesheets/application.scss */
+/* line 299, ../../../app/stylesheets/application.scss */
 .pe_test4 ul.images li:last-child {
   margin-bottom: 0px;
 }
-/* line 280, ../../../app/stylesheets/application.scss */
+/* line 302, ../../../app/stylesheets/application.scss */
 .pe_test4 p {
   margin-bottom: 10px;
 }
 
-/* line 284, ../../../app/stylesheets/application.scss */
+/* line 306, ../../../app/stylesheets/application.scss */
 .subscriber {
   margin-bottom: 20px;
 }
 
-/* line 289, ../../../app/stylesheets/application.scss */
+/* line 312, ../../../app/stylesheets/application.scss */
+#about-camera ol {
+  list-style-type: decimal;
+}
+/* line 314, ../../../app/stylesheets/application.scss */
+#about-camera ol li {
+  color: #ccc;
+  margin-bottom: 8px;
+}
+/* line 317, ../../../app/stylesheets/application.scss */
+#about-camera ol li span.text {
+  color: black;
+}
+
+/* line 323, ../../../app/stylesheets/application.scss */
 .admin_links.new {
   margin-top: 20px;
   background-color: red;
@@ -440,12 +468,12 @@ p.top_narritive {
   -khtml-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 291, ../../../app/stylesheets/application.scss */
+/* line 325, ../../../app/stylesheets/application.scss */
 .admin_links.new a {
   color: white;
 }
 
-/* line 299, ../../../app/stylesheets/application.scss */
+/* line 333, ../../../app/stylesheets/application.scss */
 .simple_form label {
   float: left;
   width: 100px;
@@ -453,17 +481,17 @@ p.top_narritive {
   margin: 2px 10px;
 }
 
-/* line 306, ../../../app/stylesheets/application.scss */
+/* line 340, ../../../app/stylesheets/application.scss */
 .simple_form div.input {
   margin-bottom: 10px;
 }
 
-/* line 310, ../../../app/stylesheets/application.scss */
+/* line 344, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean, .simple_form input[type='submit'] {
   margin-left: 120px;
 }
 
-/* line 314, ../../../app/stylesheets/application.scss */
+/* line 348, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean label {
   float: none;
   margin: 0;
