@@ -1,7 +1,7 @@
 class AlbumPageElement < ActiveRecord::Base
   validates :style, :presence => true
 
-  @@Styles = %w[test1 test2 test3]
+  @@Styles = %w[test1 test2 test3 test4]
   def self.styles
     @@Styles
   end

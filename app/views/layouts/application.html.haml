@@ -30,6 +30,8 @@
         .train_line.portraits
           - Album.all.each do |album|
             = link_to "", album, :class => "stop", :label => album.name
+          - Album.limit(2).each do |album|
+            = link_to "", album, :class => "stop", :label => album.name
       .train_line_wrap
         .train_line.essays
           - Album.all.each do |album|
@@ -42,7 +44,7 @@
         .train_line.friends
           - Album.all.each do |album|
             = link_to "", album, :class => "stop", :label => album.name
-          - Album.all.each do |album|
+          - Album.limit(4).each do |album|
             = link_to "", album, :class => "stop", :label => album.name
     #container
       #user_nav

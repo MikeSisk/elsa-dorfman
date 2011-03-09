@@ -88,6 +88,9 @@ $stop_circum: 20px;// should be even number
 $stop_circum_hover: 40px;
 
 #sidebar {
+/*  top: 0;
+left:0;
+position:fixed;*/
   width: $stop_circum * 10;
   height: 800px;
   float: left;
@@ -185,7 +188,7 @@ ul.album_thumbs {
 
 /* ----- Album Pages ----- */
 .album {
-  border: red solid 1px;
+//  border: red solid 1px;
   padding: 0px 10px 10px 10px;	
   width: 640px;
 }
@@ -242,5 +245,20 @@ p.top_narritive {
 	margin-left: 10px;
   }
   
+  p { margin-bottom: 10px; }
+}
+
+.pe_test4 {
+//  border: red dashed 1px;
+//  width: 600px;
+  clear: both;
+
+  ul.images {
+	float: right;
+	margin-left: 10px;
+	li { margin-bottom: 10px; }
+	li:last-child { margin-bottom: 0px; }
+  }
+
   p { margin-bottom: 10px; }
 }
