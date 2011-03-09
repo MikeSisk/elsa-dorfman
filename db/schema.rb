@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110110034604) do
+ActiveRecord::Schema.define(:version => 20110309074027) do
 
   create_table "admins", :force => true do |t|
     t.string    "email",                               :default => "", :null => false
@@ -33,19 +33,19 @@ ActiveRecord::Schema.define(:version => 20110110034604) do
   add_index "admins", ["reset_password_token"], :name => "index_admins_on_reset_password_token", :unique => true
 
   create_table "album_page_elements", :force => true do |t|
-    t.integer  "position",      :default => 99999
-    t.integer  "album_page_id"
-    t.text     "narrative"
-    t.string   "style"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer   "position",      :default => 99999
+    t.integer   "album_page_id"
+    t.text      "narrative"
+    t.string    "style"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
   create_table "album_pages", :force => true do |t|
-    t.integer  "position",   :default => 99999
-    t.integer  "album_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer   "position",   :default => 99999
+    t.integer   "album_id"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
   create_table "albums", :force => true do |t|
@@ -63,6 +63,19 @@ ActiveRecord::Schema.define(:version => 20110110034604) do
     t.timestamp "updated_at"
     t.integer   "imageable_id"
     t.string    "imageable_type"
+  end
+
+  create_table "subscribers", :force => true do |t|
+    t.string   "name"
+    t.string   "address1"
+    t.string   "address2"
+    t.string   "city"
+    t.string   "state"
+    t.string   "postal_code"
+    t.string   "country"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

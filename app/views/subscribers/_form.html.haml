@@ -1,0 +1,20 @@
+= simple_form_for @subscriber do |f|
+  -if @subscriber.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@subscriber.errors.count, "error")} prohibited this subscriber from being saved:"
+      %ul
+        - @subscriber.errors.full_messages.each do |msg|
+          %li= msg
+
+  .inputs
+    = f.input :name
+    = f.input :address1
+    = f.input :address2
+    = f.input :city
+    = f.input :postal_code
+    = f.input :state
+    = f.input :country, :blank => false
+    = f.input :email
+
+  .actions
+    = f.button :submit

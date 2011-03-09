@@ -32,6 +32,7 @@ gem 'aws-s3', :require => 'aws/s3'
 gem "jquery-rails"
 gem 'hirb'
 gem 'formtastic'
+gem 'simple_form'
 gem 'nifty-generators'
 gem 'ruby_parser'
 gem 'hpricot'

@@ -1,5 +1,7 @@
 Dorfman::Application.routes.draw do
   
+  resources :subscribers
+
   devise_for :admins
 
   resources :images
