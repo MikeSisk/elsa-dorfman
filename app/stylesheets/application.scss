@@ -97,6 +97,15 @@ h2 {
  // text-decoration: underline;
 }
 
+ol {
+  list-style-type: decimal; 
+  li {
+	  color: #ccc;
+    margin-bottom: 8px;
+	  span.text {color: black;}
+  }
+}
+
 /* ------ Train line side bar ------ */
 @mixin train-stop($color) {
   background-color: $color;
@@ -309,14 +318,11 @@ p.top_narritive {
 
 // ------ static pages
 #about-camera {
-  ol {
-    list-style-type: decimal; 
-    li {
-  	  color: #ccc;
-      margin-bottom: 8px;
-  	  span.text {color: black;}
-    }
-  }  	
+	
+}
+
+#ginsburge_on_sale{
+  p { margin-bottom: 8px;}
 }
 
 // ------ admin links

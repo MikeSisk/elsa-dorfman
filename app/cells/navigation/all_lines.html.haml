@@ -2,8 +2,8 @@
   .train_line_wrap
     %p.label Ginsburge
     .train_line.ginsburge
-      - Album.all.each do |album|
-        = link_to "", album, :class => "stop", :label => album.name
+      - @ginsburge_stops.each do |nl|
+        = link_to "", nl.dest, :class => "stop", :label => nl.label
   .train_line_wrap
     %p.label No Hair Day
     .train_line.no-hair-day

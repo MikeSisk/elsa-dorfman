@@ -14,4 +14,8 @@ class StaticPagesController < ApplicationController
   def contact
     
   end
+  
+  def ginsburge_on_sale
+    
+  end
 end

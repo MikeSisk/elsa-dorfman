@@ -22,7 +22,8 @@ Dorfman::Application.routes.draw do
   match 'about-the-camera'  => 'static_pages#about_camera', :as => :about_camera
   match 'donate'            => 'static_pages#donate',       :as => :donate
   
-  root :to => "albums#index"
+  match 'ginsburge-on-sale' => 'static_pages#ginsburge_on_sale',  :as => :ginsburge_sale
+  root :to => "static_pages#about_camera"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
