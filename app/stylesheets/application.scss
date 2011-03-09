@@ -1,6 +1,8 @@
 @import "compass/reset";
 @import "compass/css3/border-radius";
 @import "compass/css3/transition";
+@import "compass/css3/transform";
+
 /* ------ Flash Notices ------ */
 
 @mixin flash-base {
@@ -63,13 +65,19 @@ body {
   font-size: 12px;
   line-height: 15px;	
   margin-top: 30px;//remove
+  margin: 0 auto;
 }
 
-#container { 
-  /* width: 75%; */
+#wrap {
+	margin: 20px auto;
+	width: 900px;
+}
+#content { 
+  width: 650px;
   margin: 0 auto;
   padding: 0 0 0 20px;
   float: left;
+  margin-top:70px;
 }
 
 h1 {
@@ -94,19 +102,26 @@ position:fixed;*/
   width: $stop_circum * 10;
   height: 800px;
   float: left;
-  padding-left: 30px;
-
+ // padding-left: 30px;
+	p.label {
+	  margin-top: -15px;
+	  position: absolute;
+	  width: 100px;
+	  @include rotate(-45deg, 0px, 0px);
+	}
   .train_line_wrap {
 	width: $stop_circum * 2;
 	position: relative;
 	float: left;
+	margin-top: 70px;
+
 	
     .train_line {
       width: $stop_circum + 4;
       background-color: pink;
       padding-top: $stop_circum;
       padding-bottom: $stop_circum;
-      position: relative;
+      position: absolute;
       
       @include border-radius(24px / 2);
       
@@ -191,6 +206,7 @@ ul.album_thumbs {
 //  border: red solid 1px;
   padding: 0px 10px 10px 10px;	
   width: 640px;
+  background: url(/images/shared/20x24_sketch_ghosted.png) fixed no-repeat 380px 200px;
 }
 
 p.top_narritive {
