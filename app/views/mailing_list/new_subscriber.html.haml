@@ -1,0 +1,12 @@
+%p Elsa!
+
+%p Please welcome the following person to your mailing-list:
+
+%br
+
+%p= @subscriber.name
+%p= @subscriber.address1
+%p= @subscriber.address2
+%p= [[@subscriber.city, @subscriber.state].join(', '), @subscriber.postal_code].join(' ')
+%p= @subscriber.country
+%p= @subscriber.email
