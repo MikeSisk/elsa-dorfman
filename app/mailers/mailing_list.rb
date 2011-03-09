@@ -8,6 +8,6 @@ class MailingList < ActionMailer::Base
   #
   def new_subscriber(subscriber)
     @subscriber = subscriber
-    mail :to => "matthewcarlone@gmail.com", :subject => 'Get your postcards ready, Elsa, because you have a new subscriber at elsadorfman.com!'
+    mail :to => "elsad@comcast.net", :subject => 'Get your postcards ready, Elsa, because you have a new subscriber at elsadorfman.com!'
   end
 end
