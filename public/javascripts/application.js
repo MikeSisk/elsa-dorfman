@@ -80,7 +80,7 @@ $(document).ready(function() {
 				
 			$('#sidebar .popup_label[id='+index+']').stop().animate({
 				left: 100,
-				opacity: 0.0}, 200, function(){$(this).remove(); });		
+				opacity: 0.0}, 200, function(){ $(this).remove(); });		
 		}
 	);
 

@@ -30,13 +30,9 @@ gem 'aws-s3', :require => 'aws/s3'
 # end
 
 gem "jquery-rails"
-
 gem 'hirb'
-
 gem 'formtastic'
-
 gem 'nifty-generators'
-
 gem 'ruby_parser'
 gem 'hpricot'
 gem 'devise'
