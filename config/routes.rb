@@ -2,7 +2,7 @@ Dorfman::Application.routes.draw do
   
   resources :subscribers
 
-  devise_for :admins
+  devise_for :admins, :path_names => { :sign_in => 'login', :sign_out => 'logout'}
 
   resources :images
   resources :albums do
