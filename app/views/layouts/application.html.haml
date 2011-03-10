@@ -25,7 +25,7 @@
         -#     = link_to "Sign out", destroy_admin_session_path
         - flash.each do |name, msg|
           = content_tag :div, msg, :id => "flash_#{name}"
-        = image_tag '/images/shared/elsa_name_header.png'
+        = link_to image_tag('/images/shared/elsa_name_header.png'), root_url
         = content_tag :h1, yield(:title) if show_title?
         = yield
       #right-sidebar
