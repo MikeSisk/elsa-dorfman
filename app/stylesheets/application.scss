@@ -121,7 +121,8 @@ $sidebar_width: $stop_circum * 10;
   width: $sidebar_width;
   height: 800px;
   float: left;
-  
+  margin-left: 30px;
+
   p.label {
     margin-top: -15px;
     position: absolute;
@@ -176,7 +177,7 @@ $sidebar_width: $stop_circum * 10;
   width: 150px;
   height: 800px;
   float: left;
-  //background-color: red;
+  margin-right: 30px;
   margin-top: 130px;
  
   a img {

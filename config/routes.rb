@@ -1,13 +1,5 @@
 Dorfman::Application.routes.draw do
   
-  get "static_pages/home"
-
-  get "static_pages/about_elsa"
-
-  get "static_pages/about_camera"
-
-  get "static_pages/donate"
-
   resources :subscribers
 
   devise_for :admins, :path_names => { :sign_in => 'login', :sign_out => 'logout'}
