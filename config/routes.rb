@@ -8,7 +8,8 @@ Dorfman::Application.routes.draw do
   resources :albums do
     resources :images
   end
-      
+    
+  match 'map'               => 'static_pages#map',          :as => :map
   match 'home'              => 'static_pages#home',         :as => :home
   match 'about-elsa'        => 'static_pages#about_elsa',   :as => :about_elsa
   match 'about-the-camera'  => 'static_pages#about_camera', :as => :about_camera
