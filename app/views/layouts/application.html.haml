@@ -18,19 +18,17 @@
     #wrap
       #sidebar
         = render_cell :navigation, :all_lines
-      #content
+      #main
         -# #user_nav
         -#   - if admin_signed_in?
         -#     = "Signed in as " + current_admin.email + ". Not you?"
         -#     = link_to "Sign out", destroy_admin_session_path
         - flash.each do |name, msg|
           = content_tag :div, msg, :id => "flash_#{name}"
-        = link_to image_tag('/images/shared/elsa_name_header.png'), root_url
-        %br
-        = link_to "<< Back to the map", map_path
-        %br
-        = content_tag :h1, yield(:title) if show_title?
-        = yield
+        = link_to image_tag('/images/shared/elsa_dorfman_still_clickin.png'), map_path
+        #content
+          = content_tag :h1, yield(:title) if show_title?
+          = yield
       #right-sidebar
         = link_to image_tag("/images/shared/mail-sm.jpg"), new_subscriber_path
         = link_to image_tag("/images/shared/donate_xs.jpg"), 'donate_path'

@@ -73,7 +73,7 @@ body {
 	margin: 20px auto;
 	width: 1100px;
 }
-#content { 
+#main { 
   width: 650px;
   margin: 0 auto;
   padding: 0 20px;
@@ -81,6 +81,15 @@ body {
   margin-top:70px;
   background: url(/images/shared/20x24_sketch_ghosted.png) no-repeat 70px 100px;
   @include min-height(790px);
+}
+
+#content {
+  padding-left: 40px;	
+  padding-right: 40px;
+  border: 1px solid silver;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1) ;
+     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1) ;
+          box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1) ;
 }
 
 h1 {
@@ -356,4 +365,9 @@ p.top_narritive {
 .simple_form div.boolean label {  
   float: none;  
   margin: 0;  
+}
+
+// ------ image map
+#map {
+  padding-left: 30px;
 }
