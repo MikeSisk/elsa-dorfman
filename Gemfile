@@ -48,6 +48,6 @@ gem "capybara"
 group :test, :development do
  # gem "ruby-debug19"
   gem "webrat"
-  gem "cucumber-rails"
-  gem "rspec-rails", ">= 2.0.0.beta.22"
+  #gem "cucumber-rails"
+  #gem "rspec-rails", ">= 2.0.0.beta.22"
 end
