@@ -21,7 +21,7 @@
       %ul
         - @album.images.each do |image|
           %li
-            %a.thumb{:href => image.url}= image_tag(image.url :thumb)
+            %a.thumb{:href => image.url}= image_tag(image.url :small)
 
 %br
 
