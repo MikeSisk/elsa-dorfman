@@ -2,7 +2,9 @@
 
 .album
   %h1= @album.name
-  
+  - if @album.category
+    %h2= ["in " + @album.category.name].join(' ')
+
   = simple_format @album.narrative, :class => 'top_narritive'
   
   %ul.album_pages

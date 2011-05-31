@@ -1,0 +1,5 @@
+.album_category_fields
+  %fieldset.inputs
+    %ol.nested-fields
+      = f.input :category, :as => :select, :collection => Category.all
+      = link_to_remove_fields "Remove Category", f

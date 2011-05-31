@@ -73,8 +73,10 @@ body {
 	margin: 20px auto;
 	width: 1100px;
 }
+
+$main_content_width: 650px;
 #main { 
-  width: 650px;
+  width: $main_content_width;
   margin: 0 auto;
   padding: 0 20px;
   float: left;
@@ -82,14 +84,76 @@ body {
   background: url(/images/shared/20x24_sketch_ghosted.png) no-repeat 70px 100px;
   @include min-height(790px);
 }
-
+ 
+$main_nav_button_width: 108px;//$main_content_width / 6;
+$main_nav_button_height: 40px;
 #content {
-  padding-left: 40px;	
-  padding-right: 40px;
+
   border: 1px solid silver;
   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1) ;
      -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1) ;
           box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1) ;
+
+  #primary-nav {
+    .tab {
+	  width: $main_nav_button_width;
+	  height: $main_nav_button_height;
+	  float: left;
+	  text-align: center;
+	 // padding-top: 10px;
+    }
+    .portraits {
+	  background: url(/images/shared/tabs/portraits_tab.png) no-repeat;
+	}
+    .essays {
+	  background: url(/images/shared/tabs/essays_tab.png) no-repeat;
+	}
+    .no_hair_day {
+	  background: url(/images/shared/tabs/no_hair_day_tab.png) no-repeat;
+	}
+    .ginsberg {
+	  background: url(/images/shared/tabs/ginsberg_tab.png) no-repeat;
+	}
+    .friends {
+	  background: url(/images/shared/tabs/friends_tab.png) no-repeat;
+	}
+    .commutes {
+	  background: url(/images/shared/tabs/commutes_tab.png) no-repeat;
+	}
+	
+	#tab-base {
+	  height: 4px;
+	  background-color: red;
+	  clear: both;
+	}
+  }
+}
+
+#category_nav {
+  background: url(/images/shared/line/portraits.png) repeat-y;
+  @include min-height(1300px);
+  
+  li {
+	height: 50px;
+	width: 150px;
+	padding-left: 25px;
+    @include rotate(-45deg, 0px, 0px);
+
+    a {
+	  color: black;
+	  font-size: 12px;
+	  text-decoration: none;
+	  padding: 4px 6px;
+	}
+	
+	a.selected {
+	  border: solid 1px black;
+	  @include border-radius(20px);
+	  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);
+	     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);
+	          box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);
+	}
+  }
 }
 
 h1 {
@@ -104,7 +168,6 @@ h2 {
   font-weight: bold;
   padding: 10px 0px;
   color: #666;
- // text-decoration: underline;
 }
 
 ol {
@@ -125,7 +188,7 @@ ol {
 $stop_circum: 20px;// should be even number
 $stop_circum_hover: 40px;
 
-$sidebar_width: $stop_circum * 10;
+$sidebar_width: 130px;//$stop_circum * 10;
 
 #sidebar {
   width: $sidebar_width;
@@ -249,7 +312,9 @@ ul.album_thumbs {
 //  border: red solid 1px;
 //  padding: 0px 10px 10px 10px;	
 //  width: 640px;
-  
+  padding-left: 40px;	
+  padding-right: 40px;
+  clear: both;
 }
 
 p.top_narritive {

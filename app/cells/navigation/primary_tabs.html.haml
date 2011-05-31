@@ -1,0 +1,5 @@
+#primary-nav
+  - @links.each_pair do |category, album|
+    %a{:href => category_album_path(category, album)}  
+      %div{:class => "tab #{category.name}"}
+  #tab-base

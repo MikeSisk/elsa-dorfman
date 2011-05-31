@@ -1,9 +1,9 @@
 class NavigationCell < Cell::Rails
 
   class NavLink 
-    attr_accessor :dest, :label
-    def initialize(dest, label)
-      self.dest, self.label = dest, label
+    attr_accessor :dest, :label, :selected
+    def initialize(dest, label, selected = false)
+      self.dest, self.label, self.selected = dest, label, selected
     end  
   end
   
@@ -22,24 +22,33 @@ class NavigationCell < Cell::Rails
     render
   end
 
-  def ginsburge
+  def primary_tabs
+    @links = {}
+    cats = %w[portraits essays no_hair_day ginsberg friends commutes]
+    cats.each do |name|
+      c = Category.where(:name => name).first
+      album = c.first_album
+      @links[c] = album
+    end
+    
+    # @links = {
+    #   :portraits   => Category.where(:name => 'portraits').first.first_album,
+    #   :essays      => Category.where(:name => 'essays').first.first_album,
+    #   :no_hair_day => Category.where(:name => 'no_hair_day').first.first_album,
+    # }
     render
   end
-
-  def no_hair_day
-    render
+  
+  def category
+    logger.debug params
+    @category = Category.where(:id => @opts[:category]).first
+    @links = []
+    if @category
+      @category.albums.each do |album|
+        selected = album.id.to_s == params[:id]
+        @links << NavLink.new(category_album_path(@category, album), album.name, selected)
+      end
+      render
+    end
   end
-
-  def portraits
-    render
-  end
-
-  def essays
-    render
-  end
-
-  def friends
-    render
-  end
-
 end

@@ -1,5 +1,9 @@
 Dorfman::Application.routes.draw do
   
+  resources :categories do
+    resources :albums, :only => [:show]
+  end
+  
   resources :subscribers
 
   devise_for :admins, :path_names => { :sign_in => 'login', :sign_out => 'logout'}
@@ -16,6 +20,7 @@ Dorfman::Application.routes.draw do
   match 'donate'            => 'static_pages#donate',       :as => :donate
   
   match 'ginsburge-on-sale' => 'static_pages#ginsburge_on_sale',  :as => :ginsburge_sale
+  
   root :to => "static_pages#about_camera"
 
   # The priority is based upon order of creation:
