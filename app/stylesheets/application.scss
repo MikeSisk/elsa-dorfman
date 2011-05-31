@@ -132,7 +132,7 @@ $main_nav_button_height: 40px;
 #category_nav {
   background: url(/images/shared/line/portraits.png) repeat-y;
   @include min-height(1300px);
-  
+  padding-top: 25px;
   li {
 	height: 50px;
 	width: 150px;
@@ -302,7 +302,14 @@ ul.album_thumbs {
 	display: inline;
     li {
 	  display: inline;
-      a { padding: 5px 5px; }
+      a {
+	    padding: 5px 5px;
+	    width: 90px;
+	    height: 120px;
+	  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);
+	     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);
+	          box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);
+	  }
     }	
   }
 }
