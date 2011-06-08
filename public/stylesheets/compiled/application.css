@@ -418,7 +418,7 @@ ul.album_thumbs li a {
 /* line 292, ../../../app/stylesheets/application.scss */
 #gallery {
   clear: both;
-  border: red dotted 2px;
+  border: red solid 1px;
   padding: 2px;
   overflow: auto;
   /*  #thumbs {width:1200px; height: 132px; padding: 6px;}*/
@@ -432,7 +432,7 @@ ul.album_thumbs li a {
 }
 /* line 307, ../../../app/stylesheets/application.scss */
 #gallery a img {
-  padding: 3px 5px;
+  margin: 5px 1px;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.1);

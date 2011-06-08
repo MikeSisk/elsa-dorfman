@@ -292,7 +292,7 @@ ul.album_thumbs {
 #gallery {
   clear: both;
 
-  border: red dotted 2px;
+  border: red solid 1px;
   padding: 2px;
   overflow: auto;
 
@@ -305,7 +305,7 @@ ul.album_thumbs {
      -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);
           box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);*/
     img {
-	  padding: 3px 5px;
+	  margin: 5px 1px;
 	  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.1);
 	     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.1);
 	          box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.1);	
