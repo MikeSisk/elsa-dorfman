@@ -18,10 +18,12 @@
   
   #gallery
     #thumbs
-      %ul
-        - @album.images.each do |image|
-          %li
-            %a.thumb{:href => image.url}= image_tag(image.url :small)
+    - @album.images.each do |image|
+      %a.thumb{:href => image.url}= image_tag(image.url :small)
+      -# %ul
+      -#   - @album.images.each do |image|
+      -#     %li
+      -#       %a.thumb{:href => image.url}= image_tag(image.url :small)
 
 %br
 

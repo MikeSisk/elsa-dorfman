@@ -294,23 +294,22 @@ ul.album_thumbs {
 
   border: red dotted 2px;
   padding: 2px;
- // width: 600px;
   overflow: auto;
 
-  #thumbs {width:1200px; height: 132px; padding: 6px;}
-  ul {
-	display: inline;
-    li {
-	  display: inline;
-      a {
-	    padding: 5px 5px;
-	    width: 90px;
-	    height: 120px;
-	  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);
-	     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);
-	          box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);
-	  }
-    }	
+  /*  #thumbs {width:1200px; height: 132px; padding: 6px;}*/
+  a {
+    /*padding: 3px 5px;*/
+    //width: 90px;
+    //height: 120px;
+/*  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);*/
+    img {
+	  padding: 3px 5px;
+	  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.1);
+	     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.1);
+	          box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.1);	
+    }
   }
 }
 

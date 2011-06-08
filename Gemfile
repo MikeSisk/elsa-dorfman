@@ -31,6 +31,8 @@ gem 'aws-s3', :require => 'aws/s3'
 #   gem 'webrat'
 # end
 
+gem 'heroku'
+
 gem "jquery-rails"
 gem 'hirb'
 gem 'formtastic'
