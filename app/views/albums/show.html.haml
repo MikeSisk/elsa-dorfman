@@ -16,6 +16,10 @@
               %li.album_page_element
                 = render_page_element element
   
+  .disclaimer
+    If you see a picture of yourself on this page, and you do not want it to be here,
+    = link_to "contact Elsa immediately.", "#"
+			
   #gallery
     #thumbs
     - @album.images.each do |image|
@@ -24,6 +28,10 @@
       -#   - @album.images.each do |image|
       -#     %li
       -#       %a.thumb{:href => image.url}= image_tag(image.url :small)
+
+  .disclaimer
+    If you see a picture of yourself on this page, and you do not want it to be here,
+    = link_to "contact Elsa immediately.", "#" 
 
 %br
 

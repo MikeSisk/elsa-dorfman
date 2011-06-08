@@ -420,17 +420,19 @@ ul.album_thumbs li a {
   clear: both;
   border: red solid 1px;
   padding: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   overflow: auto;
   /*  #thumbs {width:1200px; height: 132px; padding: 6px;}*/
 }
-/* line 300, ../../../app/stylesheets/application.scss */
+/* line 302, ../../../app/stylesheets/application.scss */
 #gallery a {
   /*padding: 3px 5px;*/
   /*  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);
        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);
             box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);*/
 }
-/* line 307, ../../../app/stylesheets/application.scss */
+/* line 309, ../../../app/stylesheets/application.scss */
 #gallery a img {
   margin: 5px 1px;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.1);
@@ -438,117 +440,123 @@ ul.album_thumbs li a {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* line 318, ../../../app/stylesheets/application.scss */
+.disclaimer {
+  font-weight: bold;
+  text-align: center;
+}
+
 /* ----- Album Pages ----- */
-/* line 317, ../../../app/stylesheets/application.scss */
+/* line 324, ../../../app/stylesheets/application.scss */
 .album {
   padding-left: 40px;
   padding-right: 40px;
   clear: both;
 }
 
-/* line 326, ../../../app/stylesheets/application.scss */
+/* line 333, ../../../app/stylesheets/application.scss */
 p.top_narritive {
   margin-bottom: 10px;
   font-style: italic;
 }
 
-/* line 332, ../../../app/stylesheets/application.scss */
+/* line 339, ../../../app/stylesheets/application.scss */
 .pe_test1 {
   clear: both;
 }
-/* line 337, ../../../app/stylesheets/application.scss */
+/* line 344, ../../../app/stylesheets/application.scss */
 .pe_test1 ul.images {
   float: right;
   margin-left: 10px;
 }
-/* line 340, ../../../app/stylesheets/application.scss */
+/* line 347, ../../../app/stylesheets/application.scss */
 .pe_test1 ul.images li {
   margin-bottom: 10px;
 }
-/* line 341, ../../../app/stylesheets/application.scss */
+/* line 348, ../../../app/stylesheets/application.scss */
 .pe_test1 ul.images li:last-child {
   margin-bottom: 0px;
 }
-/* line 344, ../../../app/stylesheets/application.scss */
+/* line 351, ../../../app/stylesheets/application.scss */
 .pe_test1 p {
   margin-bottom: 10px;
 }
 
-/* line 347, ../../../app/stylesheets/application.scss */
+/* line 354, ../../../app/stylesheets/application.scss */
 .pe_test2 {
   clear: both;
 }
-/* line 352, ../../../app/stylesheets/application.scss */
+/* line 359, ../../../app/stylesheets/application.scss */
 .pe_test2 ul.images {
   float: left;
   margin-right: 10px;
   margin-bottom: 10px;
 }
-/* line 356, ../../../app/stylesheets/application.scss */
+/* line 363, ../../../app/stylesheets/application.scss */
 .pe_test2 ul.images li {
   margin-bottom: 10px;
 }
-/* line 357, ../../../app/stylesheets/application.scss */
+/* line 364, ../../../app/stylesheets/application.scss */
 .pe_test2 ul.images li:last-child {
   margin-bottom: -10px;
 }
-/* line 360, ../../../app/stylesheets/application.scss */
+/* line 367, ../../../app/stylesheets/application.scss */
 .pe_test2 p {
   margin-bottom: 10px;
 }
 
-/* line 363, ../../../app/stylesheets/application.scss */
+/* line 370, ../../../app/stylesheets/application.scss */
 .pe_test3 {
   overflow: hidden;
 }
-/* line 368, ../../../app/stylesheets/application.scss */
+/* line 375, ../../../app/stylesheets/application.scss */
 .pe_test3 img.image1 {
   float: left;
   margin-right: 10px;
 }
-/* line 373, ../../../app/stylesheets/application.scss */
+/* line 380, ../../../app/stylesheets/application.scss */
 .pe_test3 img.image2 {
   float: right;
   margin-left: 10px;
 }
-/* line 378, ../../../app/stylesheets/application.scss */
+/* line 385, ../../../app/stylesheets/application.scss */
 .pe_test3 p {
   margin-bottom: 10px;
 }
 
-/* line 381, ../../../app/stylesheets/application.scss */
+/* line 388, ../../../app/stylesheets/application.scss */
 .pe_test4 {
   clear: both;
 }
-/* line 386, ../../../app/stylesheets/application.scss */
+/* line 393, ../../../app/stylesheets/application.scss */
 .pe_test4 ul.images {
   float: right;
   margin-left: 10px;
 }
-/* line 389, ../../../app/stylesheets/application.scss */
+/* line 396, ../../../app/stylesheets/application.scss */
 .pe_test4 ul.images li {
   margin-bottom: 10px;
 }
-/* line 390, ../../../app/stylesheets/application.scss */
+/* line 397, ../../../app/stylesheets/application.scss */
 .pe_test4 ul.images li:last-child {
   margin-bottom: 0px;
 }
-/* line 393, ../../../app/stylesheets/application.scss */
+/* line 400, ../../../app/stylesheets/application.scss */
 .pe_test4 p {
   margin-bottom: 10px;
 }
 
-/* line 397, ../../../app/stylesheets/application.scss */
+/* line 404, ../../../app/stylesheets/application.scss */
 .subscriber {
   margin-bottom: 20px;
 }
 
-/* line 407, ../../../app/stylesheets/application.scss */
+/* line 414, ../../../app/stylesheets/application.scss */
 #ginsburge_on_sale p {
   margin-bottom: 8px;
 }
 
-/* line 411, ../../../app/stylesheets/application.scss */
+/* line 418, ../../../app/stylesheets/application.scss */
 .admin_links.new {
   margin-top: 20px;
   background-color: red;
@@ -561,12 +569,12 @@ p.top_narritive {
   -khtml-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 413, ../../../app/stylesheets/application.scss */
+/* line 420, ../../../app/stylesheets/application.scss */
 .admin_links.new a {
   color: white;
 }
 
-/* line 421, ../../../app/stylesheets/application.scss */
+/* line 428, ../../../app/stylesheets/application.scss */
 .simple_form label {
   float: left;
   width: 100px;
@@ -574,23 +582,23 @@ p.top_narritive {
   margin: 2px 10px;
 }
 
-/* line 428, ../../../app/stylesheets/application.scss */
+/* line 435, ../../../app/stylesheets/application.scss */
 .simple_form div.input {
   margin-bottom: 10px;
 }
 
-/* line 432, ../../../app/stylesheets/application.scss */
+/* line 439, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean, .simple_form input[type='submit'] {
   margin-left: 120px;
 }
 
-/* line 436, ../../../app/stylesheets/application.scss */
+/* line 443, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean label {
   float: none;
   margin: 0;
 }
 
-/* line 442, ../../../app/stylesheets/application.scss */
+/* line 449, ../../../app/stylesheets/application.scss */
 #map {
   padding-left: 30px;
 }
