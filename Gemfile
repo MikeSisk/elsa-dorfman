@@ -32,7 +32,6 @@ gem 'aws-s3', :require => 'aws/s3'
 # end
 
 gem 'heroku'
-gem 'taps'
 
 gem "jquery-rails"
 gem 'hirb'
