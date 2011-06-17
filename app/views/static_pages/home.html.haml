@@ -1,1 +1,66 @@
-%p You've found Elsa Dorfman, Portrait Photographer. My web site is my obsession.
+= render_cell :navigation, :subway_map
+
+#home.page  
+  .section
+    %h2= image_tag "/images/headers/whats_new.png"
+    %ul
+      %li Maecenas faucibus mollis interdum.
+      %li Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor.
+      %li Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo.
+      
+  .section
+    %h2= image_tag "/images/headers/dealing.png"
+    %ul
+      %li
+        E-mail: 
+        = mail_to "elsad@comcast.net"
+      %li
+        Telephone: 
+        %span.telephone (617) 876-6416
+      %li
+        Framing studio: 
+        = link_to "607 Franklin St. Cambridge, MA.02139", "http://maps.google.com/maps?q=607+Franklin+Street,+Cambridge,+MA&ie=UTF8&hq=&hnear=607+Franklin+St,+Cambridge,+Middlesex,+Massachusetts+02139&z=16"
+      %li
+        Portrait studio: 
+        = link_to "955 Mass. Ave., #LL, Cambridge, MA 02138", "http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=955+Mass+Ave,+Cambridge,+MA+02139&sll=42.3692,-71.1098&sspn=0.008814,0.022724&ie=UTF8&hq=&hnear=955+Massachusetts+Ave,+Cambridge,+Middlesex,+Massachusetts+02139&ll=42.369198,-71.109803&spn=0.008814,0.022724&z=16"
+      %li
+        In New York, via 20x24 LLC Studio: 
+        = link_to "75 Murray Street, #3, New York, NY 10007", "http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=75+Murray+Street,+NY,+NY&sll=-31.955585,115.867567&sspn=0.04049,0.090895&ie=UTF8&hq=&hnear=75+Murray+St,+New+York,+10007&z=16"
+        | Phone: 
+        %span.telephone (212) 925-1403
+        
+      
+  .section
+    %h2= image_tag "/images/headers/about_elsa.png"
+    %ul
+      %li= link_to "How I work", "#"
+      %li= link_to "What I Charge", "#"
+      %li= link_to "Elsa's Studio", "#"
+      %li= link_to "Polaroid 20x24", "#"
+      %li= link_to "Studio on Film", "#"
+      
+  .section
+    %h2= image_tag "/images/headers/reader_favorites.png"
+    %ul
+      %li= link_to "Arbus", "#"
+      %li= link_to "Cindy Sherman", "#"
+      %li
+        = link_to "Ginsberg", "#"
+        and 
+        = link_to "Dylan", "#"
+      %li= link_to "My Mother", "#"
+      %li= link_to "No Hair Day", "#"
+      %li= link_to "Pals", "#"
+      %li= link_to "Portraits > Once", "#"
+
+  .section
+    %h2= image_tag "/images/headers/elsas_books.png"
+    %ul
+      %li= link_to "No Hair Day", "#"
+      %li= link_to "En Famillie", "#"
+      %li= link_to "Elsa's Housebook", "#"
+      
+  .section.footer
+    %span.copyright Copyright 1970-2010 © Elsa Dorfman.
+    
+  

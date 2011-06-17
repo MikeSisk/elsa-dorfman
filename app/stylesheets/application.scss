@@ -445,7 +445,33 @@ p.top_narritive {
   margin: 0;  
 }
 
-// ------ image map
-#map {
-  padding-left: 30px;
+// ------
+.page {
+  .section {
+    margin: 15px 40px;
+    
+    ul {
+      list-style-type: disc; 
+      margin-left: 25px;
+      margin-right: 25px;
+/*      background-color: #fff*/
+    }    
+  }
+  
+  .footer {
+    text-align: center;
+  }
+}
+
+span.telephone {
+  font-weight: bold;  
+}
+
+span.copyright {
+  font-weight: bold; 
+}
+
+// ------ map
+#subway_map img {
+    margin-left: 60px;
 }

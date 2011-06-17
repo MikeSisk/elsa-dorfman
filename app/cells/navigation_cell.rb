@@ -51,4 +51,8 @@ class NavigationCell < Cell::Rails
       render
     end
   end
+  
+  def subway_map
+    render
+  end
 end

@@ -598,7 +598,33 @@ p.top_narritive {
   margin: 0;
 }
 
-/* line 449, ../../../app/stylesheets/application.scss */
-#map {
-  padding-left: 30px;
+/* line 450, ../../../app/stylesheets/application.scss */
+.page .section {
+  margin: 15px 40px;
+}
+/* line 453, ../../../app/stylesheets/application.scss */
+.page .section ul {
+  list-style-type: disc;
+  margin-left: 25px;
+  margin-right: 25px;
+  /*      background-color: #fff*/
+}
+/* line 461, ../../../app/stylesheets/application.scss */
+.page .footer {
+  text-align: center;
+}
+
+/* line 466, ../../../app/stylesheets/application.scss */
+span.telephone {
+  font-weight: bold;
+}
+
+/* line 470, ../../../app/stylesheets/application.scss */
+span.copyright {
+  font-weight: bold;
+}
+
+/* line 475, ../../../app/stylesheets/application.scss */
+#subway_map img {
+  margin-left: 60px;
 }
