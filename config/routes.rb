@@ -21,7 +21,7 @@ Dorfman::Application.routes.draw do
   
   match 'ginsburge-on-sale' => 'static_pages#ginsburge_on_sale',  :as => :ginsburge_sale
   
-  root :to => "static_pages#about_camera"
+  root :to => "static_pages#home"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

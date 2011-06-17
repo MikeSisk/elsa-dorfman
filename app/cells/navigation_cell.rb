@@ -25,8 +25,9 @@ class NavigationCell < Cell::Rails
   def primary_tabs
     @links = {}
     cats = %w[portraits essays no_hair_day ginsberg friends commutes]
-    cats.each do |name|
-      c = Category.where(:name => name).first
+    # cats.each do |name|
+    Category.order('created_at asc').each do |c|
+      # c = Category.where(:name => name).first
       album = c.first_album
       @links[c] = album
     end

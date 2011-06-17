@@ -23,6 +23,7 @@
           = content_tag :div, msg, :id => "flash_#{name}"
         = link_to image_tag('/images/shared/elsa_dorfman_still_clickin.png'), map_path
         #content
+          = render_cell :navigation, :primary_tabs
           = content_tag :h1, yield(:title) if show_title?
           = yield
       #right-sidebar
