@@ -103,29 +103,36 @@ $main_nav_button_height: 40px;
 	 // padding-top: 10px;
     }
     .portraits {
-	  background: url(/images/shared/tabs/portraits_tab.png) no-repeat;
-	}
+	    background: url(/images/shared/tabs/portraits_tab.png) no-repeat;
+	  }
     .essays {
-	  background: url(/images/shared/tabs/essays_tab.png) no-repeat;
-	}
+	    background: url(/images/shared/tabs/essays_tab.png) no-repeat;
+	  }
     .no_hair_day {
-	  background: url(/images/shared/tabs/no_hair_day_tab.png) no-repeat;
-	}
+	    background: url(/images/shared/tabs/no_hair_day_tab.png) no-repeat;
+	  }
     .ginsberg {
-	  background: url(/images/shared/tabs/ginsberg_tab.png) no-repeat;
-	}
+	    background: url(/images/shared/tabs/ginsberg_tab.png) no-repeat;
+	  }
     .friends {
-	  background: url(/images/shared/tabs/friends_tab.png) no-repeat;
-	}
+	    background: url(/images/shared/tabs/friends_tab.png) no-repeat;
+	  }
     .commutes {
-	  background: url(/images/shared/tabs/commutes_tab.png) no-repeat;
-	}
+	    background: url(/images/shared/tabs/commutes_tab.png) no-repeat;
+	  }
 	
-	#tab-base {
-	  height: 4px;
-	  background-color: red;
-	  clear: both;
-	}
+	  #tab-base {
+	    height: 4px;
+	    background-color: black;
+	    clear: both;
+	  }
+	  
+	  #tab-base.portraits   { background-color: red; }
+	  #tab-base.essays      { background-color: green; }
+	  #tab-base.no_hair_day { background-color: blue; }
+	  #tab-base.ginsberg    { background-color: orange; }
+	  #tab-base.friends     { background-color: grey; }
+	  #tab-base.commutes    { background-color: purple; }
   }
 }
 

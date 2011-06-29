@@ -24,19 +24,13 @@ class NavigationCell < Cell::Rails
 
   def primary_tabs
     @links = {}
-    #cats = %w[portraits essays no_hair_day ginsberg friends commutes]
-    # cats.each do |name|
     Category.all.each do |c|
       # c = Category.where(:name => name).first
       album = c.first_album
       @links[c] = album
     end
     
-    # @links = {
-    #   :portraits   => Category.where(:name => 'portraits').first.first_album,
-    #   :essays      => Category.where(:name => 'essays').first.first_album,
-    #   :no_hair_day => Category.where(:name => 'no_hair_day').first.first_album,
-    # }
+    @selected_category = Category.find(params[:category_id])
     render
   end
   
