@@ -1,0 +1,170 @@
+.jcarousel-skin-3s .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.jcarousel-skin-3s .jcarousel-container-horizontal {
+    width: 525px;
+    padding: 0px 0px;
+}
+
+.jcarousel-skin-3s .jcarousel-container-vertical {
+    width: 75px;
+    height: 245px;
+    padding: 40px 20px;
+}
+
+.jcarousel-skin-3s .jcarousel-clip-horizontal {
+	width:575px;
+  height: 130px;
+/*  padding: 6px;*/
+}
+
+.jcarousel-skin-3s .jcarousel-clip-vertical {
+    width:  75px;
+    height: 245px;
+}
+
+.jcarousel-skin-3s .jcarousel-item {
+	width: 89px;
+	height:124px;
+	padding: 3px;
+	overflow: hidden;
+/*	border-right: 2px solid black;*/
+}
+
+.jcarousel-skin-3s .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 1px;
+}
+
+.jcarousel-skin-3s .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 0px;
+    margin-right: 0;
+}
+
+.jcarousel-skin-3s .jcarousel-item-vertical {
+    margin-bottom: 10px;
+}
+
+.jcarousel-skin-3s .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-3s .jcarousel-next-horizontal {
+    position: absolute;
+    top: 25px;
+    right: -40px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: transparent url(../images/next-horizontal.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-3s .jcarousel-direction-rtl .jcarousel-next-horizontal {
+    left: 5px;
+    right: auto;
+    background-image: url(../images/prev-horizontal.png);
+}
+
+.jcarousel-skin-3s .jcarousel-next-horizontal:hover {
+    background-position: -32px 0;
+}
+
+.jcarousel-skin-3s .jcarousel-next-horizontal:active {
+    background-position: -64px 0;
+}
+
+.jcarousel-skin-3s .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-3s .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-3s .jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+    background-position: -96px 0;
+}
+
+.jcarousel-skin-3s .jcarousel-prev-horizontal {
+    position: absolute;
+    top: 25px;
+    left: -40px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: transparent url(../images/prev-horizontal.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-3s .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+    left: auto;
+    right: 5px;
+    background-image: url(../images/next-horizontal.png);
+}
+
+.jcarousel-skin-3s .jcarousel-prev-horizontal:hover {
+    background-position: -32px 0;
+}
+
+.jcarousel-skin-3s .jcarousel-prev-horizontal:active {
+    background-position: -64px 0;
+}
+
+.jcarousel-skin-3s .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-3s .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-3s .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    background-position: -96px 0;
+}
+
+/**
+ *  Vertical Buttons
+ */
+.jcarousel-skin-3s .jcarousel-next-vertical {
+    position: absolute;
+    bottom: 5px;
+    left: 43px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: transparent url(../images/next-vertical.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-3s .jcarousel-next-vertical:hover {
+    background-position: 0 -32px;
+}
+
+.jcarousel-skin-3s .jcarousel-next-vertical:active {
+    background-position: 0 -64px;
+}
+
+.jcarousel-skin-3s .jcarousel-next-disabled-vertical,
+.jcarousel-skin-3s .jcarousel-next-disabled-vertical:hover,
+.jcarousel-skin-3s .jcarousel-next-disabled-vertical:active {
+    cursor: default;
+    background-position: 0 -96px;
+}
+
+.jcarousel-skin-3s .jcarousel-prev-vertical {
+    position: absolute;
+    top: 5px;
+    left: 43px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: transparent url(../images/prev-vertical.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-3s .jcarousel-prev-vertical:hover {
+    background-position: 0 -32px;
+}
+
+.jcarousel-skin-3s .jcarousel-prev-vertical:active {
+    background-position: 0 -64px;
+}
+
+.jcarousel-skin-3s .jcarousel-prev-disabled-vertical,
+.jcarousel-skin-3s .jcarousel-prev-disabled-vertical:hover,
+.jcarousel-skin-3s .jcarousel-prev-disabled-vertical:active {
+    cursor: default;
+    background-position: 0 -96px;
+}

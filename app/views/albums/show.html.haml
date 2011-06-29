@@ -15,20 +15,22 @@
             - page.album_page_elements.each do |element|
               %li.album_page_element
                 = render_page_element element
+			  
+  -# #gallery
+  -#   #thumbs
+  -#   - @album.images.each do |image|
+  -#     %a.thumb{:href => image.url}= image_tag(image.url :small)
   
-  .disclaimer
-    If you see a picture of yourself on this page, and you do not want it to be here,
-    = link_to "contact Elsa immediately.", "#"
-			
   #gallery
-    #thumbs
-    - @album.images.each do |image|
-      %a.thumb{:href => image.url}= image_tag(image.url :small)
-      -# %ul
-      -#   - @album.images.each do |image|
-      -#     %li
-      -#       %a.thumb{:href => image.url}= image_tag(image.url :small)
-
+    .jcarousel-skin-3s
+      .jcarousel-container
+        .jcarousel-clip
+          %ul.jcarousel-list
+            - @album.images.each do |image|
+              %li{:class => "jcarousel-item-#{@album.images.find_index(image)}"}= link_to(image_tag(image.url(:small)), image.url)
+        .jcarousel-prev.jcarousel-prev-disabled{:disabled => "disabled"}
+        .jcarousel-next
+        
   .disclaimer
     If you see a picture of yourself on this page, and you do not want it to be here,
     = link_to "contact Elsa immediately.", "#" 

@@ -14,10 +14,14 @@ function add_fields(link, association, content) {
 // $('div.content').css('display', 'block');
 
 $(document).ready(function() {	
-	
+  
 	// lightbox image viewing
 	$('#gallery a').lightBox();
 	
+  jQuery('.album #gallery').jcarousel({
+      // Configuration goes here
+  });
+
 	
 	// train line refactor
 	var STOP_HOVER_SIZE = 40;

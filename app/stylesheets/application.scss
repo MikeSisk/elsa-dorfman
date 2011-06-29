@@ -122,8 +122,9 @@ $main_nav_button_height: 40px;
 	  }
 	
 	  #tab-base {
-	    height: 4px;
+	    height: 7px;
 	    background-color: black;
+	    background: none;
 	    clear: both;
 	  }
 	  
@@ -306,25 +307,19 @@ ul.album_thumbs {
 #gallery {
   clear: both;
 
-  border: red solid 1px;
-  padding: 2px;
+/*  border: red solid 1px;*/
+//  padding: 2px;
   margin-top: 10px;
   margin-bottom: 10px;
-  overflow: auto;
-
+//  overflow: auto;
+  
   /*  #thumbs {width:1200px; height: 132px; padding: 6px;}*/
   a {
-    /*padding: 3px 5px;*/
-    //width: 90px;
-    //height: 120px;
-/*  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);
-     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);*/
     img {
-	  margin: 5px 1px;
-	  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.1);
-	     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.1);
-	          box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.1);	
+	  //margin: 5px 1px;
+	  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+	     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+	          box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);	
     }
   }
 }
