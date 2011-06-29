@@ -24,9 +24,9 @@ class NavigationCell < Cell::Rails
 
   def primary_tabs
     @links = {}
-    cats = %w[portraits essays no_hair_day ginsberg friends commutes]
+    #cats = %w[portraits essays no_hair_day ginsberg friends commutes]
     # cats.each do |name|
-    Category.order('created_at asc').each do |c|
+    Category.all.each do |c|
       # c = Category.where(:name => name).first
       album = c.first_album
       @links[c] = album
@@ -43,6 +43,7 @@ class NavigationCell < Cell::Rails
   def category
     logger.debug params
     @category = Category.where(:id => @opts[:category]).first
+    return unless @category 
     @category_name = @category.name
     @links = []
     if @category
