@@ -43,6 +43,7 @@ class NavigationCell < Cell::Rails
   def category
     logger.debug params
     @category = Category.where(:id => @opts[:category]).first
+    @category_name = @category.name
     @links = []
     if @category
       @category.albums.each do |album|

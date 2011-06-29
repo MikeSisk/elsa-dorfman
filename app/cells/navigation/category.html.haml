@@ -1,5 +1,5 @@
 %nav
-  #category_nav
+  %div{:id => "category_nav", :class => "#{@category_name}"}
     %ul
       - @links.each do |link|
         %li= link_to link.label, link.dest, :class => (link.selected ? 'selected' : '')

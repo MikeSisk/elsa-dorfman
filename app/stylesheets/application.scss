@@ -130,7 +130,7 @@ $main_nav_button_height: 40px;
 }
 
 #category_nav {
-  background: url(/images/shared/line/portraits.png) repeat-y;
+  //background: url(/images/shared/line/portraits.png) repeat-y;
   @include min-height(1300px);
   padding-top: 25px;
   li {
@@ -155,6 +155,13 @@ $main_nav_button_height: 40px;
 	}
   }
 }
+
+#category_nav.portraits   { background: url(/images/shared/line/portraits.png) repeat-y; }
+#category_nav.essays      { background: url(/images/shared/line/essays.png) repeat-y; }
+#category_nav.no_hair_day { background: url(/images/shared/line/no_hair_day.png) repeat-y; }
+#category_nav.ginsberg    { background: url(/images/shared/line/ginsberg.png) repeat-y; }
+#category_nav.friends     { background: url(/images/shared/line/friends.png) repeat-y; }
+#category_nav.commutes    { background: url(/images/shared/line/commutes.png) repeat-y; }
 
 h1 {
   font-size: 24px;
