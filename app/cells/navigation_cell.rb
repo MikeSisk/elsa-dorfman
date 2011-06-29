@@ -53,6 +53,9 @@ class NavigationCell < Cell::Rails
   def subway_map
     @people_and_dogs = Album.where(:name => "People & Dogs").first
     @self_portraits  = Album.where(:name => "Self-Portraits").first
+    
+    @ginsberg_on_sale = Album.by_name("Ginsberg on Sale")
+    @remembering_allen = Album.by_name("Remembering Allen")
     render
   end
 end

@@ -9,4 +9,8 @@ class Album < ActiveRecord::Base
   
   belongs_to :category
  # validates_associated :category
+ 
+ def self.by_name(name)
+   Album.where(:name => name).first
+ end
 end
