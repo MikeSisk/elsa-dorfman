@@ -49,8 +49,8 @@
     %area{:alt => "", :coords => "221,182,274,193", :href => "#dogs", :shape => "rect"}/
     %area{:alt => "", :coords => "174,127,219,139", :href => "#dynasties", :shape => "rect"}/
     %area{:alt => "", :coords => "146,144,232,156", :href => "#families-with-babies", :shape => "rect"}/
-    %area{:alt => "", :coords => "179,162,252,174", :href => album_path(Album.where(:name => "People & Dogs").first), :shape => "rect"}/
-    %area{:alt => "", :coords => "238,202,294,213", :href => album_path(Album.where(:name => "Self-Portraits").first), :shape => "rect"}/
+    %area{:alt => "", :coords => "179,162,252,174", :href => category_album_path(@people_and_dogs.category, @people_and_dogs), :shape => "rect"}/
+    %area{:alt => "", :coords => "238,202,294,213", :href => category_album_path(@self_portraits.category, @self_portraits), :shape => "rect"}/
     %area{:alt => "", :coords => "316,214,344,225", :href => "#sisters", :shape => "rect"}/
     %area{:alt => "", :coords => "360,252,462,265", :href => "#mothers-and-daughters", :shape => "rect"}/
     %area{:alt => "", :coords => "365,283,429,294", :href => "#fathers-and-sons", :shape => "rect"}/

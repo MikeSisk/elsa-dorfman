@@ -1,5 +1,4 @@
 class NavigationCell < Cell::Rails
-
   class NavLink 
     attr_accessor :dest, :label, :selected
     def initialize(dest, label, selected = false)
@@ -52,6 +51,8 @@ class NavigationCell < Cell::Rails
   end
   
   def subway_map
+    @people_and_dogs = Album.where(:name => "People & Dogs").first
+    @self_portraits  = Album.where(:name => "Self-Portraits").first
     render
   end
 end
