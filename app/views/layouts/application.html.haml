@@ -3,8 +3,8 @@
   %head
     %title= content_for?(:title) ? yield(:title) : "Elsa Dorfman"
     %script{:src => "http://fast.fonts.com/jsapi/98a8a44f-3b2a-403c-9acf-6269306f1244.js", :type => "text/javascript"}
-    = stylesheet_link_tag "compiled/application"
     = stylesheet_link_tag "compiled/scaffold"
+    = stylesheet_link_tag "compiled/application"
     = stylesheet_link_tag "jquery.lightbox-0.5"
     = stylesheet_link_tag "skin"
     = formtastic_stylesheet_link_tag
