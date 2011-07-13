@@ -18,9 +18,13 @@ $(document).ready(function() {
 	// lightbox image viewing
 	$('#gallery a').lightBox();
 	
-  jQuery('.album #gallery').jcarousel({
-      // Configuration goes here
-  });
+	$galleries = jQuery('.album #gallery');
+	if($galleries.length > 0) {
+    jQuery('.album #gallery').jcarousel({
+        // Configuration goes here
+    });	  
+	}
+
 
 	
 	// train line refactor
