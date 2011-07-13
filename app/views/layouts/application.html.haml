@@ -3,7 +3,6 @@
   %head
     %title= content_for?(:title) ? yield(:title) : "Elsa Dorfman"
     %script{:src => "http://fast.fonts.com/jsapi/98a8a44f-3b2a-403c-9acf-6269306f1244.js", :type => "text/javascript"}
-    -# = stylesheet_link_tag "compiled/scaffold"
     = stylesheet_link_tag "compiled/application"
     = stylesheet_link_tag "jquery.lightbox-0.5"
     = stylesheet_link_tag "skin"
@@ -11,7 +10,6 @@
     = javascript_include_tag "jquery.js"
     = javascript_include_tag "jquery-ui.min.js"
     = javascript_include_tag "jquery.easing.1.3.js"
-    -# = javascript_include_tag "jquery.galleriffic.js"
     = javascript_include_tag "jquery.jcarousel.js"
     = javascript_include_tag "jquery.lightbox-0.5.js"
     = javascript_include_tag "rails.js"
