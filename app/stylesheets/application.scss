@@ -176,8 +176,9 @@ $main_nav_button_height: 40px;
 h1 {
   font-size: 24px;
   font-weight: bold;
-  padding: 20px 0px 20px 0px;
-  line-height: 1.1em;
+  padding: 0px 0px 0.6em 0px;
+  line-height: 1em;
+ // line-height: 1.1em;
   font-family:'Neuland W01 Black';
 }
 
@@ -338,6 +339,7 @@ ul.album_thumbs {
 //  border: red solid 1px;
 //  padding: 0px 10px 10px 10px;	
 //  width: 640px;
+  padding-top: 20px;
   padding-left: 40px;	
   padding-right: 40px;
   clear: both;
@@ -461,7 +463,8 @@ p.top_narritive {
 // ------
 .page {
   .section {
-    margin: 15px 40px;
+    // top left bottom right
+    margin: 0px 40px 1em 40px;
     
     ul {
       list-style-type: disc; 
