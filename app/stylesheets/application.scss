@@ -463,8 +463,14 @@ p.top_narritive {
 // ------
 .page {
   .section {
+    clear: both;
     // top left bottom right
-    margin: 0px 40px 1em 40px;
+    margin: 0px 40px 2em 40px;
+    
+    img {
+      float: right;  
+      //height: 180px;
+    }
     
     ul {
       list-style-type: disc; 

@@ -649,33 +649,38 @@ p.top_narritive {
 
 /* line 465, ../../../app/stylesheets/application.scss */
 .page .section {
-  margin: 0px 40px 1em 40px;
+  clear: both;
+  margin: 0px 40px 2em 40px;
 }
-/* line 469, ../../../app/stylesheets/application.scss */
+/* line 470, ../../../app/stylesheets/application.scss */
+.page .section img {
+  float: right;
+}
+/* line 475, ../../../app/stylesheets/application.scss */
 .page .section ul {
   list-style-type: disc;
   margin-left: 25px;
   margin-right: 25px;
   /*      background-color: #fff*/
 }
-/* line 477, ../../../app/stylesheets/application.scss */
+/* line 483, ../../../app/stylesheets/application.scss */
 .page .footer {
   text-align: center;
 }
 
-/* line 482, ../../../app/stylesheets/application.scss */
+/* line 488, ../../../app/stylesheets/application.scss */
 span.telephone {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 487, ../../../app/stylesheets/application.scss */
+/* line 493, ../../../app/stylesheets/application.scss */
 span.copyright {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 493, ../../../app/stylesheets/application.scss */
+/* line 499, ../../../app/stylesheets/application.scss */
 #subway_map img {
   margin-left: 60px;
 }
