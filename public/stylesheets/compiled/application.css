@@ -665,14 +665,16 @@ p.top_narritive {
 /* line 479, ../../../app/stylesheets/application.scss */
 span.telephone {
   font-weight: bold;
+  font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 483, ../../../app/stylesheets/application.scss */
+/* line 484, ../../../app/stylesheets/application.scss */
 span.copyright {
   font-weight: bold;
+  font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 488, ../../../app/stylesheets/application.scss */
+/* line 490, ../../../app/stylesheets/application.scss */
 #subway_map img {
   margin-left: 60px;
 }
