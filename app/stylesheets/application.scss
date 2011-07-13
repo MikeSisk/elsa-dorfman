@@ -142,17 +142,19 @@ $main_nav_button_height: 40px;
   @include min-height(1300px);
   padding-top: 25px;
   li {
-	height: 50px;
-	width: 150px;
-	padding-left: 25px;
+	  height: 50px;
+	  width: 150px;
+	  padding-left: 25px;
     @include rotate(-45deg, 0px, 0px);
-
+    -moz-transform: rotate(-45deg);
+    
     a {
-	  color: black;
-	  font-size: 12px;
-	  text-decoration: none;
-	  padding: 4px 6px;
-	}
+      font-family: Helvetica, sans-serif;
+	    color: black;
+	    font-size: 12px;
+	    text-decoration: none;
+	    padding: 4px 6px;
+	  }
 	
 	a.selected {
 	  border: solid 1px black;
