@@ -2,8 +2,6 @@
 
 .album
   %h1= @album.name
-  - if @album.category
-    %h2= ["in " + @album.category.name].join(' ')
 
   = simple_format @album.narrative, :class => 'top_narritive'
   
@@ -42,4 +40,4 @@
   \|
   = link_to 'Destroy', @album, :confirm => 'Are you sure?', :method => :delete
   \|
-= link_to 'Back', albums_path
+  = link_to 'All Albums', albums_path
