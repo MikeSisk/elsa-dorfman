@@ -138,22 +138,32 @@ $main_nav_button_height: 40px;
 }
 
 #category_nav {
-  //background: url(/images/shared/line/portraits.png) repeat-y;
-  @include min-height(1300px);
-  padding-top: 25px;
+  padding-top: 15px;
+  
+  ul {
+    padding-top: 43px;
+    background: url(/images/shared/line/top_bulb_red.png) no-repeat;
+  }
+  
   li {
-	  height: 50px;
-	  width: 150px;
+	  height: 47px;
+	  width: 130px;
 	  padding-left: 25px;
-    @include rotate(-45deg, 0px, 0px);
-    -moz-transform: rotate(-45deg);
+	  margin-left: 10px;
+
+  //  background: url(/images/shared/line/essays.png) repeat-y;
     
     a {
       font-family: Helvetica, sans-serif;
 	    color: black;
 	    font-size: 12px;
 	    text-decoration: none;
-	    padding: 4px 6px;
+	    padding-left: 4px;
+      -webkit-transform-origin: left center;
+      -webkit-transform: translatex(3px) translatey(30px) rotate(-45deg);
+      -moz-transform-origin: left center;
+      -moz-transform: translatex(3px) translatey(30px) rotate(-45deg);
+      display: block;
 	  }
 	
 	a.selected {
@@ -166,12 +176,26 @@ $main_nav_button_height: 40px;
   }
 }
 
-#category_nav.portraits   { background: url(/images/shared/line/portraits.png) repeat-y; }
+#category_nav.portraits ul   { 
+  background: url(/images/shared/line/top_bulb_red.png) no-repeat;
+  li   { background: url(/images/shared/line/portraits.png) no-repeat; }
+}
+
+#category_nav.essays ul      { background: url(/images/shared/line/top_bulb_green.png) no-repeat; }
+
+/*#category_nav.portraits li   { background: url(/images/shared/line/portraits.png) repeat-y; }*/
+#category_nav.essays li      { background: url(/images/shared/line/essays.png) repeat-y; }
+#category_nav.no_hair_day li { background: url(/images/shared/line/no_hair_day.png) repeat-y; }
+#category_nav.ginsberg li    { background: url(/images/shared/line/ginsberg.png) repeat-y; }
+#category_nav.friends li     { background: url(/images/shared/line/friends.png) repeat-y; }
+#category_nav.commutes li    { background: url(/images/shared/line/commutes.png) repeat-y; }
+
+/*#category_nav.portraits   { background: url(/images/shared/line/portraits.png) repeat-y; }
 #category_nav.essays      { background: url(/images/shared/line/essays.png) repeat-y; }
 #category_nav.no_hair_day { background: url(/images/shared/line/no_hair_day.png) repeat-y; }
 #category_nav.ginsberg    { background: url(/images/shared/line/ginsberg.png) repeat-y; }
 #category_nav.friends     { background: url(/images/shared/line/friends.png) repeat-y; }
-#category_nav.commutes    { background: url(/images/shared/line/commutes.png) repeat-y; }
+#category_nav.commutes    { background: url(/images/shared/line/commutes.png) repeat-y; }*/
 
 h1 {
   font-size: 24px;
