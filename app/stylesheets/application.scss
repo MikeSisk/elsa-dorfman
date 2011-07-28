@@ -139,7 +139,7 @@ $main_nav_button_height: 40px;
 
 #category_nav {
   padding-top: 15px;
-  height: 100%;
+
   #line {
     position: absolute;
     height: 2000px;
@@ -158,8 +158,6 @@ $main_nav_button_height: 40px;
 	  width: 130px;
 	  padding-left: 25px;
 	  margin-left: 10px;
-
-  //  background: url(/images/shared/line/essays.png) repeat-y;
     
     a {
       font-family: Helvetica, sans-serif;
@@ -187,37 +185,55 @@ $main_nav_button_height: 40px;
 #category_nav.portraits {
   #line { background: url(/images/shared/line/bg_red.png) repeat-y; }
   ul    { background: url(/images/shared/line/top_bulb_red.png) no-repeat; }
-  li    { background: url(/images/shared/line/portraits.png) no-repeat; }
+  li    { 
+    background: url(/images/shared/line/portraits.png) no-repeat; 
+    &:hover { background: url(/images/shared/line/portraits.png) 0 -47px no-repeat; }
+  }
 }
 
 #category_nav.essays {
   #line { background: url(/images/shared/line/bg_green.png) repeat-y; }
   ul    { background: url(/images/shared/line/top_bulb_green.png) no-repeat; }
-  li    { background: url(/images/shared/line/essays.png) repeat-y; }
+  li    { 
+    background: url(/images/shared/line/essays.png) repeat-y;
+    &:hover { background: url(/images/shared/line/essays.png) 0 -47px no-repeat; }
+  }
 }
 
 #category_nav.no_hair_day {
   #line { background: url(/images/shared/line/bg_blue.png) repeat-y; }
   ul    { background: url(/images/shared/line/top_bulb_blue.png) no-repeat; }
-  li    { background: url(/images/shared/line/no_hair_day.png) repeat-y; }
+  li    { 
+    background: url(/images/shared/line/no_hair_day.png) repeat-y;
+    &:hover { background: url(/images/shared/line/no_hair_day.png) 0 -47px no-repeat; }
+  }
 }
 
 #category_nav.ginsberg {
   #line { background: url(/images/shared/line/bg_orange.png) repeat-y; }
   ul    { background: url(/images/shared/line/top_bulb_orange.png) no-repeat; }
-  li    { background: url(/images/shared/line/ginsberg.png) repeat-y; }
+  li    {
+    background: url(/images/shared/line/ginsberg.png) repeat-y;
+    &:hover { background: url(/images/shared/line/ginsberg.png) 0 -47px no-repeat; }
+  }
 }
 
 #category_nav.friends {
   #line { background: url(/images/shared/line/bg_silver.png) repeat-y; }
   ul    { background: url(/images/shared/line/top_bulb_silver.png) no-repeat; }
-  li    { background: url(/images/shared/line/friends.png) repeat-y; }
+  li    { 
+    background: url(/images/shared/line/friends.png) repeat-y;
+    &:hover { background: url(/images/shared/line/friends.png) 0 -47px no-repeat; }
+  }
 }
 
 #category_nav.commutes {
   #line { background: url(/images/shared/line/bg_purple.png) repeat-y; }
   ul    { background: url(/images/shared/line/top_bulb_purple.png) no-repeat; }
-  li    { background: url(/images/shared/line/commutes.png) repeat-y; }
+  li    {
+    background: url(/images/shared/line/commutes.png) repeat-y;
+    &:hover { background: url(/images/shared/line/commutes.png) 0 -47px no-repeat; }
+  }
 }
 
 /*#category_nav.no_hair_day li { background: url(/images/shared/line/no_hair_day.png) repeat-y; }
