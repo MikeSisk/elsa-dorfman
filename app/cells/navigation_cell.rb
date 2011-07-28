@@ -29,6 +29,7 @@ class NavigationCell < Cell::Rails
       @links[c] = album
     end
     
+    @categories = Category.ordered.all
     if params[:category_id]
       @selected_category = Category.find(params[:category_id])
       render
