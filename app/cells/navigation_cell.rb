@@ -23,7 +23,7 @@ class NavigationCell < Cell::Rails
 
   def primary_tabs
     @links = {}
-    Category.all.each do |c|
+    Category.ordered.all.each do |c|
       # c = Category.where(:name => name).first
       album = c.first_album
       @links[c] = album
