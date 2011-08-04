@@ -128,12 +128,18 @@ $main_nav_button_height: 40px;
 	    clear: both;
 	  }
 	  
-	  #tab-base.portraits   { background-color: #CC0000; }
-	  #tab-base.essays      { background-color: darkgreen; }
-	  #tab-base.no_hair_day { background-color: #336699; }
-	  #tab-base.ginsberg    { background-color: darkorange; }
-	  #tab-base.friends     { background-color: lightgrey; }
-	  #tab-base.commutes    { background-color: purple; }
+/*    #tab-base.portraits   { background-color: #CC0000; }*/
+	  #tab-base.portraits   { background-color: #E71B2E; }
+/*    #tab-base.essays      { background-color: darkgreen; }*/
+	  #tab-base.essays      { background-color: #006939; }
+/*    #tab-base.no_hair_day { background-color: #336699; }*/
+	  #tab-base.no_hair_day { background-color: #2C7DAF; }
+/*    #tab-base.ginsberg    { background-color: darkorange; }*/
+	  #tab-base.ginsberg    { background-color: #DC9046; }
+/*    #tab-base.friends     { background-color: lightgrey; }*/
+	  #tab-base.friends     { background-color: #BCBCBC; }
+/*    #tab-base.commutes    { background-color: purple; }*/
+	  #tab-base.commutes    { background-color: #8F418C; }
   }
 }
 

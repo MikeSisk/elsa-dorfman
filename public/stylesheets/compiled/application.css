@@ -158,6 +158,15 @@ body {
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);
 }
+/* line 97, ../../../app/stylesheets/application.scss */
+#content #primary-nav {
+  /*    #tab-base.portraits   { background-color: #CC0000; }*/
+  /*    #tab-base.essays      { background-color: darkgreen; }*/
+  /*    #tab-base.no_hair_day { background-color: #336699; }*/
+  /*    #tab-base.ginsberg    { background-color: darkorange; }*/
+  /*    #tab-base.friends     { background-color: lightgrey; }*/
+  /*    #tab-base.commutes    { background-color: purple; }*/
+}
 /* line 98, ../../../app/stylesheets/application.scss */
 #content #primary-nav .tab {
   width: 108px;
@@ -196,36 +205,36 @@ body {
   background: none;
   clear: both;
 }
-/* line 131, ../../../app/stylesheets/application.scss */
-#content #primary-nav #tab-base.portraits {
-  background-color: #CC0000;
-}
 /* line 132, ../../../app/stylesheets/application.scss */
-#content #primary-nav #tab-base.essays {
-  background-color: darkgreen;
-}
-/* line 133, ../../../app/stylesheets/application.scss */
-#content #primary-nav #tab-base.no_hair_day {
-  background-color: #336699;
+#content #primary-nav #tab-base.portraits {
+  background-color: #E71B2E;
 }
 /* line 134, ../../../app/stylesheets/application.scss */
-#content #primary-nav #tab-base.ginsberg {
-  background-color: darkorange;
-}
-/* line 135, ../../../app/stylesheets/application.scss */
-#content #primary-nav #tab-base.friends {
-  background-color: lightgrey;
+#content #primary-nav #tab-base.essays {
+  background-color: #006939;
 }
 /* line 136, ../../../app/stylesheets/application.scss */
+#content #primary-nav #tab-base.no_hair_day {
+  background-color: #2C7DAF;
+}
+/* line 138, ../../../app/stylesheets/application.scss */
+#content #primary-nav #tab-base.ginsberg {
+  background-color: #DC9046;
+}
+/* line 140, ../../../app/stylesheets/application.scss */
+#content #primary-nav #tab-base.friends {
+  background-color: #BCBCBC;
+}
+/* line 142, ../../../app/stylesheets/application.scss */
 #content #primary-nav #tab-base.commutes {
-  background-color: purple;
+  background-color: #8F418C;
 }
 
-/* line 140, ../../../app/stylesheets/application.scss */
+/* line 146, ../../../app/stylesheets/application.scss */
 #category_nav {
   padding-top: 15px;
 }
-/* line 143, ../../../app/stylesheets/application.scss */
+/* line 149, ../../../app/stylesheets/application.scss */
 #category_nav #line {
   position: absolute;
   height: 2000px;
@@ -234,18 +243,18 @@ body {
   margin-left: 10px;
   z-index: -1;
 }
-/* line 152, ../../../app/stylesheets/application.scss */
+/* line 158, ../../../app/stylesheets/application.scss */
 #category_nav ul {
   padding-top: 43px;
 }
-/* line 156, ../../../app/stylesheets/application.scss */
+/* line 162, ../../../app/stylesheets/application.scss */
 #category_nav li {
   height: 47px;
   width: 130px;
   padding-left: 25px;
   margin-left: 10px;
 }
-/* line 162, ../../../app/stylesheets/application.scss */
+/* line 168, ../../../app/stylesheets/application.scss */
 #category_nav li a {
   font-family: Helvetica, sans-serif;
   color: black;
@@ -258,7 +267,7 @@ body {
   -moz-transform: translatex(3px) translatey(30px) rotate(-45deg);
   display: block;
 }
-/* line 175, ../../../app/stylesheets/application.scss */
+/* line 181, ../../../app/stylesheets/application.scss */
 #category_nav li a.selected {
   border: solid 1px black;
   -moz-border-radius: 20px;
@@ -272,104 +281,104 @@ body {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* line 186, ../../../app/stylesheets/application.scss */
+/* line 192, ../../../app/stylesheets/application.scss */
 #category_nav.portraits #line {
   background: url(/images/shared/line/bg_red.png) repeat-y;
 }
-/* line 187, ../../../app/stylesheets/application.scss */
+/* line 193, ../../../app/stylesheets/application.scss */
 #category_nav.portraits ul {
   background: url(/images/shared/line/top_bulb_red.png) no-repeat;
 }
-/* line 188, ../../../app/stylesheets/application.scss */
+/* line 194, ../../../app/stylesheets/application.scss */
 #category_nav.portraits li {
   background: url(/images/shared/line/portraits.png) no-repeat;
 }
-/* line 190, ../../../app/stylesheets/application.scss */
+/* line 196, ../../../app/stylesheets/application.scss */
 #category_nav.portraits li:hover {
   background: url(/images/shared/line/portraits.png) 0 -47px no-repeat;
 }
 
-/* line 195, ../../../app/stylesheets/application.scss */
+/* line 201, ../../../app/stylesheets/application.scss */
 #category_nav.essays #line {
   background: url(/images/shared/line/bg_green.png) repeat-y;
 }
-/* line 196, ../../../app/stylesheets/application.scss */
+/* line 202, ../../../app/stylesheets/application.scss */
 #category_nav.essays ul {
   background: url(/images/shared/line/top_bulb_green.png) no-repeat;
 }
-/* line 197, ../../../app/stylesheets/application.scss */
+/* line 203, ../../../app/stylesheets/application.scss */
 #category_nav.essays li {
   background: url(/images/shared/line/essays.png) repeat-y;
 }
-/* line 199, ../../../app/stylesheets/application.scss */
+/* line 205, ../../../app/stylesheets/application.scss */
 #category_nav.essays li:hover {
   background: url(/images/shared/line/essays.png) 0 -47px no-repeat;
 }
 
-/* line 204, ../../../app/stylesheets/application.scss */
+/* line 210, ../../../app/stylesheets/application.scss */
 #category_nav.no_hair_day #line {
   background: url(/images/shared/line/bg_blue.png) repeat-y;
 }
-/* line 205, ../../../app/stylesheets/application.scss */
+/* line 211, ../../../app/stylesheets/application.scss */
 #category_nav.no_hair_day ul {
   background: url(/images/shared/line/top_bulb_blue.png) no-repeat;
 }
-/* line 206, ../../../app/stylesheets/application.scss */
+/* line 212, ../../../app/stylesheets/application.scss */
 #category_nav.no_hair_day li {
   background: url(/images/shared/line/no_hair_day.png) repeat-y;
 }
-/* line 208, ../../../app/stylesheets/application.scss */
+/* line 214, ../../../app/stylesheets/application.scss */
 #category_nav.no_hair_day li:hover {
   background: url(/images/shared/line/no_hair_day.png) 0 -47px no-repeat;
 }
 
-/* line 213, ../../../app/stylesheets/application.scss */
+/* line 219, ../../../app/stylesheets/application.scss */
 #category_nav.ginsberg #line {
   background: url(/images/shared/line/bg_orange.png) repeat-y;
 }
-/* line 214, ../../../app/stylesheets/application.scss */
+/* line 220, ../../../app/stylesheets/application.scss */
 #category_nav.ginsberg ul {
   background: url(/images/shared/line/top_bulb_orange.png) no-repeat;
 }
-/* line 215, ../../../app/stylesheets/application.scss */
+/* line 221, ../../../app/stylesheets/application.scss */
 #category_nav.ginsberg li {
   background: url(/images/shared/line/ginsberg.png) repeat-y;
 }
-/* line 217, ../../../app/stylesheets/application.scss */
+/* line 223, ../../../app/stylesheets/application.scss */
 #category_nav.ginsberg li:hover {
   background: url(/images/shared/line/ginsberg.png) 0 -47px no-repeat;
 }
 
-/* line 222, ../../../app/stylesheets/application.scss */
+/* line 228, ../../../app/stylesheets/application.scss */
 #category_nav.friends #line {
   background: url(/images/shared/line/bg_silver.png) repeat-y;
 }
-/* line 223, ../../../app/stylesheets/application.scss */
+/* line 229, ../../../app/stylesheets/application.scss */
 #category_nav.friends ul {
   background: url(/images/shared/line/top_bulb_silver.png) no-repeat;
 }
-/* line 224, ../../../app/stylesheets/application.scss */
+/* line 230, ../../../app/stylesheets/application.scss */
 #category_nav.friends li {
   background: url(/images/shared/line/friends.png) repeat-y;
 }
-/* line 226, ../../../app/stylesheets/application.scss */
+/* line 232, ../../../app/stylesheets/application.scss */
 #category_nav.friends li:hover {
   background: url(/images/shared/line/friends.png) 0 -47px no-repeat;
 }
 
-/* line 231, ../../../app/stylesheets/application.scss */
+/* line 237, ../../../app/stylesheets/application.scss */
 #category_nav.commutes #line {
   background: url(/images/shared/line/bg_purple.png) repeat-y;
 }
-/* line 232, ../../../app/stylesheets/application.scss */
+/* line 238, ../../../app/stylesheets/application.scss */
 #category_nav.commutes ul {
   background: url(/images/shared/line/top_bulb_purple.png) no-repeat;
 }
-/* line 233, ../../../app/stylesheets/application.scss */
+/* line 239, ../../../app/stylesheets/application.scss */
 #category_nav.commutes li {
   background: url(/images/shared/line/commutes.png) repeat-y;
 }
-/* line 235, ../../../app/stylesheets/application.scss */
+/* line 241, ../../../app/stylesheets/application.scss */
 #category_nav.commutes li:hover {
   background: url(/images/shared/line/commutes.png) 0 -47px no-repeat;
 }
@@ -384,7 +393,7 @@ body {
 #category_nav.ginsberg    { background: url(/images/shared/line/ginsberg.png) repeat-y; }
 #category_nav.friends     { background: url(/images/shared/line/friends.png) repeat-y; }
 #category_nav.commutes    { background: url(/images/shared/line/commutes.png) repeat-y; }*/
-/* line 251, ../../../app/stylesheets/application.scss */
+/* line 257, ../../../app/stylesheets/application.scss */
 h1 {
   font-size: 24px;
   font-weight: bold;
@@ -393,7 +402,7 @@ h1 {
   font-family: 'Neuland W01 Black';
 }
 
-/* line 260, ../../../app/stylesheets/application.scss */
+/* line 266, ../../../app/stylesheets/application.scss */
 h2 {
   font-size: 20px;
   font-weight: bold;
@@ -402,29 +411,29 @@ h2 {
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 268, ../../../app/stylesheets/application.scss */
+/* line 274, ../../../app/stylesheets/application.scss */
 ol {
   list-style-type: decimal;
 }
-/* line 270, ../../../app/stylesheets/application.scss */
+/* line 276, ../../../app/stylesheets/application.scss */
 ol li {
   color: #ccc;
   margin-bottom: 8px;
 }
-/* line 273, ../../../app/stylesheets/application.scss */
+/* line 279, ../../../app/stylesheets/application.scss */
 ol li span.text {
   color: black;
 }
 
 /* ------ Train line side bar ------ */
-/* line 288, ../../../app/stylesheets/application.scss */
+/* line 294, ../../../app/stylesheets/application.scss */
 #sidebar {
   width: 130px;
   height: 800px;
   float: left;
   margin-left: 30px;
 }
-/* line 294, ../../../app/stylesheets/application.scss */
+/* line 300, ../../../app/stylesheets/application.scss */
 #sidebar p.label {
   margin-top: -15px;
   position: absolute;
@@ -432,14 +441,14 @@ ol li span.text {
   -webkit-transform: perspective(0px) rotate(-45deg);
   transform: perspective(0px) rotate(-45deg);
 }
-/* line 301, ../../../app/stylesheets/application.scss */
+/* line 307, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap {
   width: 40px;
   position: relative;
   float: left;
   margin-top: 70px;
 }
-/* line 308, ../../../app/stylesheets/application.scss */
+/* line 314, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line {
   width: 24px;
   background-color: pink;
@@ -453,7 +462,7 @@ ol li span.text {
   -khtml-border-radius: 12px;
   border-radius: 12px;
 }
-/* line 317, ../../../app/stylesheets/application.scss */
+/* line 323, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line .stop {
   height: 20px;
   width: 20px;
@@ -470,47 +479,47 @@ ol li span.text {
   -khtml-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 331, ../../../app/stylesheets/application.scss */
+/* line 337, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.ginsburge {
   background-color: orange;
 }
-/* line 280, ../../../app/stylesheets/application.scss */
+/* line 286, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.ginsburge .stop {
   border-color: orange;
 }
-/* line 332, ../../../app/stylesheets/application.scss */
+/* line 338, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.no-hair-day {
   background-color: blue;
 }
-/* line 280, ../../../app/stylesheets/application.scss */
+/* line 286, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.no-hair-day .stop {
   border-color: blue;
 }
-/* line 333, ../../../app/stylesheets/application.scss */
+/* line 339, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.portraits {
   background-color: red;
 }
-/* line 280, ../../../app/stylesheets/application.scss */
+/* line 286, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.portraits .stop {
   border-color: red;
 }
-/* line 334, ../../../app/stylesheets/application.scss */
+/* line 340, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.essays {
   background-color: green;
 }
-/* line 280, ../../../app/stylesheets/application.scss */
+/* line 286, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.essays .stop {
   border-color: green;
 }
-/* line 335, ../../../app/stylesheets/application.scss */
+/* line 341, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.friends {
   background-color: silver;
 }
-/* line 280, ../../../app/stylesheets/application.scss */
+/* line 286, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.friends .stop {
   border-color: silver;
 }
-/* line 337, ../../../app/stylesheets/application.scss */
+/* line 343, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .popup_label {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -520,7 +529,7 @@ ol li span.text {
   border-radius: 5px;
 }
 
-/* line 344, ../../../app/stylesheets/application.scss */
+/* line 350, ../../../app/stylesheets/application.scss */
 #right-sidebar {
   width: 150px;
   height: 800px;
@@ -528,30 +537,30 @@ ol li span.text {
   margin-right: 30px;
   margin-top: 130px;
 }
-/* line 351, ../../../app/stylesheets/application.scss */
+/* line 357, ../../../app/stylesheets/application.scss */
 #right-sidebar a img {
   margin-bottom: 50px;
 }
 
 /* ------ Album Index ------ */
-/* line 358, ../../../app/stylesheets/application.scss */
+/* line 364, ../../../app/stylesheets/application.scss */
 #album-index .indexed-album {
   margin-bottom: 20px;
 }
 
 /* ------ Albums ------ */
-/* line 365, ../../../app/stylesheets/application.scss */
+/* line 371, ../../../app/stylesheets/application.scss */
 ul.album_thumbs {
   clear: both;
   display: block;
   margin: auto;
   overflow: hidden;
 }
-/* line 371, ../../../app/stylesheets/application.scss */
+/* line 377, ../../../app/stylesheets/application.scss */
 ul.album_thumbs li {
   display: inline;
 }
-/* line 374, ../../../app/stylesheets/application.scss */
+/* line 380, ../../../app/stylesheets/application.scss */
 ul.album_thumbs li a {
   display: block;
   float: left;
@@ -559,21 +568,21 @@ ul.album_thumbs li a {
   padding: 5px 5px;
 }
 
-/* line 383, ../../../app/stylesheets/application.scss */
+/* line 389, ../../../app/stylesheets/application.scss */
 .album_page_element_fields {
   padding: 10px;
   margin: 10px;
   border: black solid 1px;
 }
 
-/* line 389, ../../../app/stylesheets/application.scss */
+/* line 395, ../../../app/stylesheets/application.scss */
 .image_fields {
   padding: 10px;
   margin: 10px;
   border: black dashed 1px;
 }
 
-/* line 395, ../../../app/stylesheets/application.scss */
+/* line 401, ../../../app/stylesheets/application.scss */
 #gallery {
   clear: both;
   /*  border: red solid 1px;*/
@@ -581,14 +590,14 @@ ul.album_thumbs li a {
   margin-bottom: 10px;
   /*  #thumbs {width:1200px; height: 132px; padding: 6px;}*/
 }
-/* line 406, ../../../app/stylesheets/application.scss */
+/* line 412, ../../../app/stylesheets/application.scss */
 #gallery a img {
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* line 415, ../../../app/stylesheets/application.scss */
+/* line 421, ../../../app/stylesheets/application.scss */
 .disclaimer {
   font-weight: bold;
   text-align: center;
@@ -596,7 +605,7 @@ ul.album_thumbs li a {
 }
 
 /* ----- Album Pages ----- */
-/* line 422, ../../../app/stylesheets/application.scss */
+/* line 428, ../../../app/stylesheets/application.scss */
 .album {
   padding-top: 20px;
   padding-left: 40px;
@@ -604,109 +613,109 @@ ul.album_thumbs li a {
   clear: both;
 }
 
-/* line 432, ../../../app/stylesheets/application.scss */
+/* line 438, ../../../app/stylesheets/application.scss */
 p.top_narritive {
   margin-bottom: 10px;
   font-style: italic;
 }
 
-/* line 438, ../../../app/stylesheets/application.scss */
+/* line 444, ../../../app/stylesheets/application.scss */
 .pe_test1 {
   clear: both;
 }
-/* line 443, ../../../app/stylesheets/application.scss */
+/* line 449, ../../../app/stylesheets/application.scss */
 .pe_test1 ul.images {
   float: right;
   margin-left: 10px;
 }
-/* line 446, ../../../app/stylesheets/application.scss */
+/* line 452, ../../../app/stylesheets/application.scss */
 .pe_test1 ul.images li {
   margin-bottom: 10px;
 }
-/* line 447, ../../../app/stylesheets/application.scss */
+/* line 453, ../../../app/stylesheets/application.scss */
 .pe_test1 ul.images li:last-child {
   margin-bottom: 0px;
 }
-/* line 450, ../../../app/stylesheets/application.scss */
+/* line 456, ../../../app/stylesheets/application.scss */
 .pe_test1 p {
   margin-bottom: 10px;
 }
 
-/* line 453, ../../../app/stylesheets/application.scss */
+/* line 459, ../../../app/stylesheets/application.scss */
 .pe_test2 {
   clear: both;
 }
-/* line 458, ../../../app/stylesheets/application.scss */
+/* line 464, ../../../app/stylesheets/application.scss */
 .pe_test2 ul.images {
   float: left;
   margin-right: 10px;
   margin-bottom: 10px;
 }
-/* line 462, ../../../app/stylesheets/application.scss */
+/* line 468, ../../../app/stylesheets/application.scss */
 .pe_test2 ul.images li {
   margin-bottom: 10px;
 }
-/* line 463, ../../../app/stylesheets/application.scss */
+/* line 469, ../../../app/stylesheets/application.scss */
 .pe_test2 ul.images li:last-child {
   margin-bottom: -10px;
 }
-/* line 466, ../../../app/stylesheets/application.scss */
+/* line 472, ../../../app/stylesheets/application.scss */
 .pe_test2 p {
   margin-bottom: 10px;
 }
 
-/* line 469, ../../../app/stylesheets/application.scss */
+/* line 475, ../../../app/stylesheets/application.scss */
 .pe_test3 {
   overflow: hidden;
 }
-/* line 474, ../../../app/stylesheets/application.scss */
+/* line 480, ../../../app/stylesheets/application.scss */
 .pe_test3 img.image1 {
   float: left;
   margin-right: 10px;
 }
-/* line 479, ../../../app/stylesheets/application.scss */
+/* line 485, ../../../app/stylesheets/application.scss */
 .pe_test3 img.image2 {
   float: right;
   margin-left: 10px;
 }
-/* line 484, ../../../app/stylesheets/application.scss */
+/* line 490, ../../../app/stylesheets/application.scss */
 .pe_test3 p {
   margin-bottom: 10px;
 }
 
-/* line 487, ../../../app/stylesheets/application.scss */
+/* line 493, ../../../app/stylesheets/application.scss */
 .pe_test4 {
   clear: both;
 }
-/* line 492, ../../../app/stylesheets/application.scss */
+/* line 498, ../../../app/stylesheets/application.scss */
 .pe_test4 ul.images {
   float: right;
   margin-left: 10px;
 }
-/* line 495, ../../../app/stylesheets/application.scss */
+/* line 501, ../../../app/stylesheets/application.scss */
 .pe_test4 ul.images li {
   margin-bottom: 10px;
 }
-/* line 496, ../../../app/stylesheets/application.scss */
+/* line 502, ../../../app/stylesheets/application.scss */
 .pe_test4 ul.images li:last-child {
   margin-bottom: 0px;
 }
-/* line 499, ../../../app/stylesheets/application.scss */
+/* line 505, ../../../app/stylesheets/application.scss */
 .pe_test4 p {
   margin-bottom: 10px;
 }
 
-/* line 503, ../../../app/stylesheets/application.scss */
+/* line 509, ../../../app/stylesheets/application.scss */
 .subscriber {
   margin-bottom: 20px;
 }
 
-/* line 513, ../../../app/stylesheets/application.scss */
+/* line 519, ../../../app/stylesheets/application.scss */
 #ginsburge_on_sale p {
   margin-bottom: 8px;
 }
 
-/* line 517, ../../../app/stylesheets/application.scss */
+/* line 523, ../../../app/stylesheets/application.scss */
 .admin_links.new {
   margin-top: 20px;
   background-color: red;
@@ -719,12 +728,12 @@ p.top_narritive {
   -khtml-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 519, ../../../app/stylesheets/application.scss */
+/* line 525, ../../../app/stylesheets/application.scss */
 .admin_links.new a {
   color: white;
 }
 
-/* line 527, ../../../app/stylesheets/application.scss */
+/* line 533, ../../../app/stylesheets/application.scss */
 .simple_form label {
   float: left;
   width: 100px;
@@ -732,56 +741,56 @@ p.top_narritive {
   margin: 2px 10px;
 }
 
-/* line 534, ../../../app/stylesheets/application.scss */
+/* line 540, ../../../app/stylesheets/application.scss */
 .simple_form div.input {
   margin-bottom: 10px;
 }
 
-/* line 538, ../../../app/stylesheets/application.scss */
+/* line 544, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean, .simple_form input[type='submit'] {
   margin-left: 120px;
 }
 
-/* line 542, ../../../app/stylesheets/application.scss */
+/* line 548, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean label {
   float: none;
   margin: 0;
 }
 
-/* line 549, ../../../app/stylesheets/application.scss */
+/* line 555, ../../../app/stylesheets/application.scss */
 .page .section {
   clear: both;
   margin: 0px 40px 2em 40px;
 }
-/* line 554, ../../../app/stylesheets/application.scss */
+/* line 560, ../../../app/stylesheets/application.scss */
 .page .section img {
   float: right;
 }
-/* line 559, ../../../app/stylesheets/application.scss */
+/* line 565, ../../../app/stylesheets/application.scss */
 .page .section ul {
   list-style-type: disc;
   margin-left: 25px;
   margin-right: 25px;
   /*      background-color: #fff*/
 }
-/* line 567, ../../../app/stylesheets/application.scss */
+/* line 573, ../../../app/stylesheets/application.scss */
 .page .footer {
   text-align: center;
 }
 
-/* line 572, ../../../app/stylesheets/application.scss */
+/* line 578, ../../../app/stylesheets/application.scss */
 span.telephone {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 577, ../../../app/stylesheets/application.scss */
+/* line 583, ../../../app/stylesheets/application.scss */
 span.copyright {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 583, ../../../app/stylesheets/application.scss */
+/* line 589, ../../../app/stylesheets/application.scss */
 #subway_map img {
   margin-left: 60px;
 }
