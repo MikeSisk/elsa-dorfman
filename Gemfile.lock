@@ -1,7 +1,6 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    RedCloth (4.2.7)
     abstract (1.0.0)
     actionmailer (3.0.0)
       actionpack (= 3.0.0)
@@ -173,7 +172,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  RedCloth
   aws-s3
   capistrano
   capybara
