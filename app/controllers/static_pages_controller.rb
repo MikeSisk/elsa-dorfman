@@ -23,4 +23,8 @@ class StaticPagesController < ApplicationController
   def ginsburge_on_sale
     
   end
+  
+  def control_panel
+    
+  end
 end

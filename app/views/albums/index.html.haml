@@ -1,21 +1,17 @@
 - title "Listing " + pluralize(@albums.size, "Album")
 
-- if admin_signed_in?
-  = link_to 'New Album', new_album_path
-  %br
-
-- @albums.each do |album|
-  %ul
-    %li
-      %b Name: 
-      = album.name
-    %li
-      %b Narrative: 
-      = truncate album.narrative, :length => 128, :separator => ' ', :omission => '... (continued)'
-    %li
-      %b Image Count: 
-      = album.images.size.to_s
-    %li= link_to "View Album", album
-    - if admin_signed_in?
-      %li
-        = link_to "Edit Album", edit_album_path(album)
+#album-index
+  - if admin_signed_in?
+    = link_to 'New Album', new_album_path
+    %br
+  
+  - @albums.group_by(&:category_id).each do |c, albums|
+    %h2= Category.where(:id => c).first.name
+    - albums.each do |album|
+      .indexed-album
+        %ul
+          %li= link_to(album.name, album)
+          %li= pluralize(album.images.size, 'image')
+          - if admin_signed_in?
+            %li
+              = link_to "Edit", edit_album_path(album)

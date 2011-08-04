@@ -3,7 +3,7 @@ class AlbumsController < ApplicationController
   before_filter :authenticate_admin!, :except => [:index, :show]
   
   def index
-    @albums = Album.all
+    @albums = Album.order('albums.category_id ASC').all
     respond_with @albums
   end
 
