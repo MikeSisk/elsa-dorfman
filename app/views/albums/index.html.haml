@@ -6,7 +6,8 @@
     %br
   
   - @albums.group_by(&:category_id).each do |c, albums|
-    %h2= Category.where(:id => c).first.name
+    - category = Category.where(:id => c).first
+    %h2= category.name if category
     - albums.each do |album|
       .indexed-album
         %ul
