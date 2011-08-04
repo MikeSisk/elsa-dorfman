@@ -18,17 +18,17 @@
   -#   #thumbs
   -#   - @album.images.each do |image|
   -#     %a.thumb{:href => image.url}= image_tag(image.url :small)
-  
-  #gallery
-    .jcarousel-skin-3s
-      .jcarousel-container
-        .jcarousel-clip
-          %ul.jcarousel-list
-            - @album.images.each do |image|
-              %li{:class => "jcarousel-item-#{@album.images.find_index(image)}"}= link_to(image_tag(image.url(:small)), image.url)
-        .jcarousel-prev.jcarousel-prev-disabled{:disabled => "disabled"}
-        .jcarousel-next
-        
+  - unless @album.images.empty?
+    #gallery
+      .jcarousel-skin-3s
+        .jcarousel-container
+          .jcarousel-clip
+            %ul.jcarousel-list
+              - @album.images.each do |image|
+                %li{:class => "jcarousel-item-#{@album.images.find_index(image)}"}= link_to(image_tag(image.url(:small)), image.url)
+          .jcarousel-prev.jcarousel-prev-disabled{:disabled => "disabled"}
+          .jcarousel-next
+          
   .disclaimer
     If you see a picture of yourself on this page, and you do not want it to be here,
     = mail_to "elsad@comcast.net", "contact Elsa immediately."
