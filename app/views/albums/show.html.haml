@@ -25,7 +25,7 @@
           .jcarousel-clip
             %ul.jcarousel-list
               - @album.images.each do |image|
-                %li{:class => "jcarousel-item-#{@album.images.find_index(image)}"}= link_to(image_tag(image.url(:small)), image.url)
+                %li{:class => "jcarousel-item-#{@album.images.find_index(image)}"}= link_to(image_tag(image.url(:medium)), image.url)
           .jcarousel-prev.jcarousel-prev-disabled{:disabled => "disabled"}
           .jcarousel-next
           

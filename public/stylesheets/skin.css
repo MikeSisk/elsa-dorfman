@@ -15,7 +15,8 @@
 
 .jcarousel-skin-3s .jcarousel-clip-horizontal {
 	width:575px;
-  height: 130px;
+/*  height: 130px;*/
+  height: 270px;
 /*  padding: 6px;*/
 }
 
@@ -25,9 +26,11 @@
 }
 
 .jcarousel-skin-3s .jcarousel-item {
-	width: 89px;
-	height:124px;
-	padding: 3px;
+/*  width: 89px;
+  height:124px;*/
+  width:181px;
+  height:270px;
+	padding: 5px;
 	overflow: hidden;
 /*	border-right: 2px solid black;*/
 }
