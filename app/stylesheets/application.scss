@@ -357,6 +357,13 @@ $sidebar_width: 130px;//$stop_circum * 10;
   a img {
     margin-bottom: 50px;
   }
+  
+  .book a img {
+    margin-bottom: 30px;
+/*    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);*/
+  }
 }
 
 #footer {
