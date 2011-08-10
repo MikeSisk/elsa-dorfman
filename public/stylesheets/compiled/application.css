@@ -542,25 +542,35 @@ ol li span.text {
   margin-bottom: 50px;
 }
 
+/* line 362, ../../../app/stylesheets/application.scss */
+#footer {
+  clear: both;
+  width: 650px;
+  margin-left: 180px;
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
 /* ------ Album Index ------ */
-/* line 364, ../../../app/stylesheets/application.scss */
+/* line 373, ../../../app/stylesheets/application.scss */
 #album-index .indexed-album {
   margin-bottom: 20px;
 }
 
 /* ------ Albums ------ */
-/* line 371, ../../../app/stylesheets/application.scss */
+/* line 380, ../../../app/stylesheets/application.scss */
 ul.album_thumbs {
   clear: both;
   display: block;
   margin: auto;
   overflow: hidden;
 }
-/* line 377, ../../../app/stylesheets/application.scss */
+/* line 386, ../../../app/stylesheets/application.scss */
 ul.album_thumbs li {
   display: inline;
 }
-/* line 380, ../../../app/stylesheets/application.scss */
+/* line 389, ../../../app/stylesheets/application.scss */
 ul.album_thumbs li a {
   display: block;
   float: left;
@@ -568,21 +578,21 @@ ul.album_thumbs li a {
   padding: 5px 5px;
 }
 
-/* line 389, ../../../app/stylesheets/application.scss */
+/* line 398, ../../../app/stylesheets/application.scss */
 .album_page_element_fields {
   padding: 10px;
   margin: 10px;
   border: black solid 1px;
 }
 
-/* line 395, ../../../app/stylesheets/application.scss */
+/* line 404, ../../../app/stylesheets/application.scss */
 .image_fields {
   padding: 10px;
   margin: 10px;
   border: black dashed 1px;
 }
 
-/* line 401, ../../../app/stylesheets/application.scss */
+/* line 410, ../../../app/stylesheets/application.scss */
 #gallery {
   clear: both;
   /*  border: red solid 1px;*/
@@ -590,14 +600,14 @@ ul.album_thumbs li a {
   margin-bottom: 10px;
   /*  #thumbs {width:1200px; height: 132px; padding: 6px;}*/
 }
-/* line 412, ../../../app/stylesheets/application.scss */
+/* line 421, ../../../app/stylesheets/application.scss */
 #gallery a img {
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* line 421, ../../../app/stylesheets/application.scss */
+/* line 430, ../../../app/stylesheets/application.scss */
 .disclaimer {
   font-weight: bold;
   text-align: center;
@@ -605,7 +615,7 @@ ul.album_thumbs li a {
 }
 
 /* ----- Album Pages ----- */
-/* line 428, ../../../app/stylesheets/application.scss */
+/* line 437, ../../../app/stylesheets/application.scss */
 .album {
   padding-top: 20px;
   padding-left: 40px;
@@ -613,109 +623,109 @@ ul.album_thumbs li a {
   clear: both;
 }
 
-/* line 438, ../../../app/stylesheets/application.scss */
+/* line 447, ../../../app/stylesheets/application.scss */
 p.top_narritive {
   margin-bottom: 10px;
   font-style: italic;
 }
 
-/* line 444, ../../../app/stylesheets/application.scss */
+/* line 453, ../../../app/stylesheets/application.scss */
 .pe_test1 {
   clear: both;
 }
-/* line 449, ../../../app/stylesheets/application.scss */
+/* line 458, ../../../app/stylesheets/application.scss */
 .pe_test1 ul.images {
   float: right;
   margin-left: 10px;
 }
-/* line 452, ../../../app/stylesheets/application.scss */
+/* line 461, ../../../app/stylesheets/application.scss */
 .pe_test1 ul.images li {
   margin-bottom: 10px;
 }
-/* line 453, ../../../app/stylesheets/application.scss */
+/* line 462, ../../../app/stylesheets/application.scss */
 .pe_test1 ul.images li:last-child {
   margin-bottom: 0px;
 }
-/* line 456, ../../../app/stylesheets/application.scss */
+/* line 465, ../../../app/stylesheets/application.scss */
 .pe_test1 p {
   margin-bottom: 10px;
 }
 
-/* line 459, ../../../app/stylesheets/application.scss */
+/* line 468, ../../../app/stylesheets/application.scss */
 .pe_test2 {
   clear: both;
 }
-/* line 464, ../../../app/stylesheets/application.scss */
+/* line 473, ../../../app/stylesheets/application.scss */
 .pe_test2 ul.images {
   float: left;
   margin-right: 10px;
   margin-bottom: 10px;
 }
-/* line 468, ../../../app/stylesheets/application.scss */
+/* line 477, ../../../app/stylesheets/application.scss */
 .pe_test2 ul.images li {
   margin-bottom: 10px;
 }
-/* line 469, ../../../app/stylesheets/application.scss */
+/* line 478, ../../../app/stylesheets/application.scss */
 .pe_test2 ul.images li:last-child {
   margin-bottom: -10px;
 }
-/* line 472, ../../../app/stylesheets/application.scss */
+/* line 481, ../../../app/stylesheets/application.scss */
 .pe_test2 p {
   margin-bottom: 10px;
 }
 
-/* line 475, ../../../app/stylesheets/application.scss */
+/* line 484, ../../../app/stylesheets/application.scss */
 .pe_test3 {
   overflow: hidden;
 }
-/* line 480, ../../../app/stylesheets/application.scss */
+/* line 489, ../../../app/stylesheets/application.scss */
 .pe_test3 img.image1 {
   float: left;
   margin-right: 10px;
 }
-/* line 485, ../../../app/stylesheets/application.scss */
+/* line 494, ../../../app/stylesheets/application.scss */
 .pe_test3 img.image2 {
   float: right;
   margin-left: 10px;
 }
-/* line 490, ../../../app/stylesheets/application.scss */
+/* line 499, ../../../app/stylesheets/application.scss */
 .pe_test3 p {
   margin-bottom: 10px;
 }
 
-/* line 493, ../../../app/stylesheets/application.scss */
+/* line 502, ../../../app/stylesheets/application.scss */
 .pe_test4 {
   clear: both;
 }
-/* line 498, ../../../app/stylesheets/application.scss */
+/* line 507, ../../../app/stylesheets/application.scss */
 .pe_test4 ul.images {
   float: right;
   margin-left: 10px;
 }
-/* line 501, ../../../app/stylesheets/application.scss */
+/* line 510, ../../../app/stylesheets/application.scss */
 .pe_test4 ul.images li {
   margin-bottom: 10px;
 }
-/* line 502, ../../../app/stylesheets/application.scss */
+/* line 511, ../../../app/stylesheets/application.scss */
 .pe_test4 ul.images li:last-child {
   margin-bottom: 0px;
 }
-/* line 505, ../../../app/stylesheets/application.scss */
+/* line 514, ../../../app/stylesheets/application.scss */
 .pe_test4 p {
   margin-bottom: 10px;
 }
 
-/* line 509, ../../../app/stylesheets/application.scss */
+/* line 518, ../../../app/stylesheets/application.scss */
 .subscriber {
   margin-bottom: 20px;
 }
 
-/* line 519, ../../../app/stylesheets/application.scss */
+/* line 528, ../../../app/stylesheets/application.scss */
 #ginsburge_on_sale p {
   margin-bottom: 8px;
 }
 
-/* line 523, ../../../app/stylesheets/application.scss */
+/* line 532, ../../../app/stylesheets/application.scss */
 .admin_links.new {
   margin-top: 20px;
   background-color: red;
@@ -728,12 +738,12 @@ p.top_narritive {
   -khtml-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 525, ../../../app/stylesheets/application.scss */
+/* line 534, ../../../app/stylesheets/application.scss */
 .admin_links.new a {
   color: white;
 }
 
-/* line 533, ../../../app/stylesheets/application.scss */
+/* line 542, ../../../app/stylesheets/application.scss */
 .simple_form label {
   float: left;
   width: 100px;
@@ -741,56 +751,56 @@ p.top_narritive {
   margin: 2px 10px;
 }
 
-/* line 540, ../../../app/stylesheets/application.scss */
+/* line 549, ../../../app/stylesheets/application.scss */
 .simple_form div.input {
   margin-bottom: 10px;
 }
 
-/* line 544, ../../../app/stylesheets/application.scss */
+/* line 553, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean, .simple_form input[type='submit'] {
   margin-left: 120px;
 }
 
-/* line 548, ../../../app/stylesheets/application.scss */
+/* line 557, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean label {
   float: none;
   margin: 0;
 }
 
-/* line 555, ../../../app/stylesheets/application.scss */
+/* line 564, ../../../app/stylesheets/application.scss */
 .page .section {
   clear: both;
   margin: 0px 40px 2em 40px;
 }
-/* line 560, ../../../app/stylesheets/application.scss */
+/* line 569, ../../../app/stylesheets/application.scss */
 .page .section img {
   float: right;
 }
-/* line 565, ../../../app/stylesheets/application.scss */
+/* line 574, ../../../app/stylesheets/application.scss */
 .page .section ul {
   list-style-type: disc;
   margin-left: 25px;
   margin-right: 25px;
   /*      background-color: #fff*/
 }
-/* line 573, ../../../app/stylesheets/application.scss */
+/* line 582, ../../../app/stylesheets/application.scss */
 .page .footer {
   text-align: center;
 }
 
-/* line 578, ../../../app/stylesheets/application.scss */
+/* line 587, ../../../app/stylesheets/application.scss */
 span.telephone {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 583, ../../../app/stylesheets/application.scss */
+/* line 592, ../../../app/stylesheets/application.scss */
 span.copyright {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 589, ../../../app/stylesheets/application.scss */
+/* line 598, ../../../app/stylesheets/application.scss */
 #subway_map img {
   margin-left: 60px;
 }

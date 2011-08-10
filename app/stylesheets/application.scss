@@ -359,6 +359,15 @@ $sidebar_width: 130px;//$stop_circum * 10;
   }
 }
 
+#footer {
+  clear: both;
+  width: $main_content_width;
+  margin-left: 180px;;
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
 /* ------ Album Index ------ */
 #album-index {
   .indexed-album {
