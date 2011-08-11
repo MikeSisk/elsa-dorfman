@@ -10,7 +10,15 @@ class Album < ActiveRecord::Base
   belongs_to :category
  # validates_associated :category
  
- def self.by_name(name)
-   Album.where(:name => name).first
- end
+  def self.by_name(name)
+    Album.where(:name => name).first
+  end
+  
+  def menu_name
+    if short_name
+      short_name.empty? ? name : short_name
+    else
+      name
+    end
+  end
 end
