@@ -27,7 +27,12 @@ class AlbumsController < ApplicationController
     if @album.save
       flash[:notice] = 'Album was successfully created.' 
     end
-    respond_with @album
+    #respond_with @album
+    if @album.category
+      redirect_to category_album_path(@album.category, @album)
+    else
+      redirect_to @album
+    end
   end
 
   def update
@@ -35,7 +40,12 @@ class AlbumsController < ApplicationController
     if @album.update_attributes(params[:album])
       flash[:notice] = 'Album was successfully updated.'
     end
-    respond_with @album
+    # respond_with @album
+    if @album.category
+      redirect_to category_album_path(@album.category, @album)
+    else
+      redirect_to @album
+    end
   end
 
   def destroy
