@@ -20,7 +20,7 @@
       .images
         - section.images.each do |image|
           .image
-            = link_to(image_tag(image.url(:medium)), image.url)
+            = link_to(image_tag(image.url(:inline)), image.url)
       = simple_format section.narrative
 	  
   - unless @album.images.empty?
