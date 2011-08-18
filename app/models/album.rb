@@ -7,6 +7,9 @@ class Album < ActiveRecord::Base
   has_many :album_pages
   accepts_nested_attributes_for :album_pages, :allow_destroy => true
   
+  has_many :album_sections#, :order => "position"
+  accepts_nested_attributes_for :album_sections, :allow_destroy => true
+  
   belongs_to :category
  # validates_associated :category
  

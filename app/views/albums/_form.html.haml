@@ -8,23 +8,24 @@
   = form.inputs do
     = form.input :name
     = form.input :short_name, :label => "Name as it will appear in menu"
-    = form.input :narrative
-    = form.input :category, :as => :select, :collection => Category.all
-    -# #category
-    -#   = form.semantic_fields_for :categorizations do |builder|
-    -#     = render :partial => "categorization_fields", :locals => { :f => builder }
-    -#   .links
-    -#     = link_to_add_fields "Add Category", form, :categorizations      
+    = form.input :category, :as => :select, :collection => Category.all   
+    #album_sections
+      = form.semantic_fields_for :album_sections do |builder|
+        = render :partial => "album_section_fields", :locals => { :f => builder }
+      .links
+        = link_to_add_fields "Add Section", form, :album_sections 
     #images
+      %h2 Gallery Images
       = form.semantic_fields_for :images do |builder|
         = render :partial => "image_fields", :locals => { :f => builder }
       .links
         = link_to_add_fields "Add Image", form, :images
-    #album_pages
-      = form.semantic_fields_for :album_pages do |builder|
-        = render :partial => "album_page_fields", :locals => { :f => builder }
-      .links
-        = link_to_add_fields "Add Page", form, :album_pages
+        
+    -# #album_pages
+    -#   = form.semantic_fields_for :album_pages do |builder|
+    -#     = render :partial => "album_page_fields", :locals => { :f => builder }
+    -#   .links
+    -#     = link_to_add_fields "Add Page", form, :album_pages
   = form.buttons
 
 

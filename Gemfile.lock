@@ -28,6 +28,7 @@ GEM
       activemodel (= 3.0.0)
       activesupport (= 3.0.0)
     activesupport (3.0.0)
+    acts_as_list (0.1.4)
     addressable (2.2.6)
     arel (1.0.1)
       activesupport (~> 3.0.0)
@@ -172,6 +173,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts_as_list
   aws-s3
   capistrano
   capybara

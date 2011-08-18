@@ -3,21 +3,26 @@
 .album
   %h1= @album.name
 
-  = simple_format @album.narrative, :class => 'top_narritive'
-  
-  %ul.album_pages
-    - @album.album_pages.each do |page|
-      %li.album_page
-        - unless page.album_page_elements.empty?
-          %ul.album_page_elements
-            - page.album_page_elements.each do |element|
-              %li.album_page_element
-                = render_page_element element
-			  
-  -# #gallery
-  -#   #thumbs
-  -#   - @album.images.each do |image|
-  -#     %a.thumb{:href => image.url}= image_tag(image.url :small)
+  -# REPLACED BELOW
+  -# = simple_format @album.narrative, :class => 'top_narritive'
+  -# 
+  -# %ul.album_pages
+  -#   - @album.album_pages.each do |page|
+  -#     %li.album_page
+  -#       - unless page.album_page_elements.empty?
+  -#         %ul.album_page_elements
+  -#           - page.album_page_elements.each do |element|
+  -#             %li.album_page_element
+  -#               = render_page_element element
+
+  - @album.album_sections.each do |section|
+    .section
+      .images
+        - section.images.each do |image|
+          .image
+            = link_to(image_tag(image.url(:medium)), image.url)
+      = simple_format section.narrative
+	  
   - unless @album.images.empty?
     #gallery
       .jcarousel-skin-3s

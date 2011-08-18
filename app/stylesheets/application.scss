@@ -369,7 +369,7 @@ $sidebar_width: 130px;//$stop_circum * 10;
 #footer {
   clear: both;
   width: $main_content_width;
-  margin-left: 180px;;
+  margin-left: 180px;
   padding: 16px;
   text-align: center;
   margin-bottom: 1em;
@@ -449,8 +449,32 @@ ul.album_thumbs {
   padding-left: 40px;	
   padding-right: 40px;
   clear: both;
+  
+  .section {    
+    .images {
+      
+    	//margin-right: 10px;
+    	.image {
+    	  float: left;
+    	  width:181px;
+        height:270px;
+        margin-right:10px;
+      	overflow: hidden;
+    	}
+    }
+    
+    p {
+      margin-bottom: 16px;
+    }
+  }
 }
 
+.album_section_fields {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed grey;
+}
+/*
 p.top_narritive {
   margin-bottom: 10px;
  // width: 600px;
@@ -463,10 +487,10 @@ p.top_narritive {
   clear: both;
 
   ul.images {
-	float: right;
-	margin-left: 10px;
-	li { margin-bottom: 10px; }
-	li:last-child { margin-bottom: 0px; }
+  float: right;
+  margin-left: 10px;
+  li { margin-bottom: 10px; }
+  li:last-child { margin-bottom: 0px; }
   }
 
   p { margin-bottom: 10px; }
@@ -478,11 +502,11 @@ p.top_narritive {
   clear: both;
 
   ul.images {
-	float: left;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	li { margin-bottom: 10px; }
-	li:last-child { margin-bottom: -10px; }
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  li { margin-bottom: 10px; }
+  li:last-child { margin-bottom: -10px; }
   }
 
   p { margin-bottom: 10px; }
@@ -494,13 +518,13 @@ p.top_narritive {
   overflow: hidden; // so that this box wraps the floating elements.
 
   img.image1 {
-	float: left;
-	margin-right: 10px;
+  float: left;
+  margin-right: 10px;
   }
 
   img.image2 {
-	float: right;
-	margin-left: 10px;
+  float: right;
+  margin-left: 10px;
   }
   
   p { margin-bottom: 10px; }
@@ -512,15 +536,15 @@ p.top_narritive {
   clear: both;
 
   ul.images {
-	float: right;
-	margin-left: 10px;
-	li { margin-bottom: 10px; }
-	li:last-child { margin-bottom: 0px; }
+  float: right;
+  margin-left: 10px;
+  li { margin-bottom: 10px; }
+  li:last-child { margin-bottom: 0px; }
   }
 
   p { margin-bottom: 10px; }
 }
-
+*/
 // ----- subscribers
 .subscriber {
   margin-bottom: 20px;
