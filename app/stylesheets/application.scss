@@ -451,13 +451,14 @@ ul.album_thumbs {
   clear: both;
   
   .section {    
+    clear: both;
     .images {
       
     	//margin-right: 10px;
     	.image {
     	  float: left;
     	  width:181px;
-        height:270px;
+     //   height:270px;
         margin-right:8px;
       	overflow: hidden;
     	}
