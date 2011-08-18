@@ -59,7 +59,9 @@ class NavigationCell < Cell::Rails
     
     
     @ginsberg_on_sale = Album.by_name("Ginsberg on Sale")
-    @remembering_allen = Album.by_name("Remembering Allen")
+    @remembering_allen = Album.by_short_name("Remembering Allen")
+    
+    @albums = Album.where("coordinates != ?", "").all
     render
   end
 end

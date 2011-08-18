@@ -20,12 +20,9 @@
         = render :partial => "image_fields", :locals => { :f => builder }
       .links
         = link_to_add_fields "Add Image", form, :images
-        
-    -# #album_pages
-    -#   = form.semantic_fields_for :album_pages do |builder|
-    -#     = render :partial => "album_page_fields", :locals => { :f => builder }
-    -#   .links
-    -#     = link_to_add_fields "Add Page", form, :album_pages
+    #coordinates
+      %h2 Map Coordinates
+      = form.input :coordinates
   = form.buttons
 
 

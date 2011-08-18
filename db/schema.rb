@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110817205819) do
+ActiveRecord::Schema.define(:version => 20110818185948) do
 
   create_table "admins", :force => true do |t|
     t.string    "email",                               :default => "", :null => false
@@ -49,21 +49,22 @@ ActiveRecord::Schema.define(:version => 20110817205819) do
   end
 
   create_table "album_sections", :force => true do |t|
-    t.integer  "position",   :default => 99999
-    t.string   "heading"
-    t.integer  "album_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.text     "narrative"
+    t.integer   "position",   :default => 99999
+    t.string    "heading"
+    t.integer   "album_id"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+    t.text      "narrative"
   end
 
   create_table "albums", :force => true do |t|
-    t.string   "name"
-    t.text     "narrative"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "category_id"
-    t.string   "short_name"
+    t.string    "name"
+    t.text      "narrative"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+    t.integer   "category_id"
+    t.string    "short_name"
+    t.string    "coordinates"
   end
 
   create_table "categories", :force => true do |t|

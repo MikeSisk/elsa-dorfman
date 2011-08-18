@@ -1,6 +1,9 @@
 #subway_map
   = image_tag("/images/navigation/site-map-ir.gif", :usemap => "#site_map_ir_Map", :id => "map")
   %map{:name => "site_map_ir_Map"}
+    - @albums.each do |a|
+      %area{:alt => "", :coords => "#{a.coordinates}", :href => category_album_path(a.category, a), :shape => "rect"}/
+      
     %area{:alt => "", :coords => "75,226, 125,226, 140,239, 71,239", :href => "#enfamille-dorfman1", :shape => "poly"}/
     %area{:alt => "", :coords => "363,269,431,277", :href => "#mather_house", :shape => "rect"}/
     %area{:alt => "", :coords => "355,344,423,352", :href => "#marimekko", :shape => "rect"}/
@@ -26,7 +29,7 @@
     %area{:alt => "", :coords => "338,129,406,139", :href => "#allendylan", :shape => "rect"}/
     %area{:alt => "", :coords => "338,107,426,118", :href => "#at-home", :shape => "rect"}/
     %area{:alt => "", :coords => "337,86,438,96", :href => "#housebook-flagg_streeta", :shape => "rect"}/
-    %area{:alt => "", :coords => "337,66,423,77", :href => category_album_path(@remembering_allen.category, @remembering_allen), :shape => "rect"}/
+    -# %area{:alt => "", :coords => "337,66,423,77", :href => category_album_path(@remembering_allen.category, @remembering_allen), :shape => "rect"}/
     %area{:alt => "", :coords => "338,48,410,59", :href => category_album_path(@ginsberg_on_sale.category, @ginsberg_on_sale), :shape => "rect"}/
     %area{:alt => "", :coords => "307,31,355,42", :href => "#Ginsberg", :shape => "rect"}/
     %area{:alt => "", :coords => "257,269,290,278", :href => "#housebook/flagg-street-II", :shape => "rect"}/

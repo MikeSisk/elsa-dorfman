@@ -17,6 +17,10 @@ class Album < ActiveRecord::Base
     Album.where(:name => name).first
   end
   
+  def self.by_short_name(name)
+    Album.where(:short_name => name).first
+  end
+  
   def menu_name
     if short_name
       short_name.empty? ? name : short_name
