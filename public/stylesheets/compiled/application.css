@@ -616,52 +616,53 @@ ul.album_thumbs li a {
 
 /* line 437, ../../../app/stylesheets/application.scss */
 .disclaimer {
+  clear: both;
   font-weight: bold;
   text-align: center;
   margin-bottom: 1em;
 }
 
 /* ----- Album Pages ----- */
-/* line 444, ../../../app/stylesheets/application.scss */
+/* line 445, ../../../app/stylesheets/application.scss */
 .album {
   padding-top: 20px;
   padding-left: 40px;
   padding-right: 40px;
   clear: both;
 }
-/* line 453, ../../../app/stylesheets/application.scss */
+/* line 454, ../../../app/stylesheets/application.scss */
 .album .section {
   clear: both;
 }
-/* line 458, ../../../app/stylesheets/application.scss */
+/* line 459, ../../../app/stylesheets/application.scss */
 .album .section .images .image {
   float: left;
   margin-right: 8px;
   overflow: hidden;
 }
-/* line 467, ../../../app/stylesheets/application.scss */
+/* line 468, ../../../app/stylesheets/application.scss */
 .album .section p {
   margin-bottom: 16px;
 }
 
-/* line 473, ../../../app/stylesheets/application.scss */
+/* line 474, ../../../app/stylesheets/application.scss */
 .album_section_fields {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px dashed grey;
 }
 
-/* line 550, ../../../app/stylesheets/application.scss */
+/* line 551, ../../../app/stylesheets/application.scss */
 .subscriber {
   margin-bottom: 20px;
 }
 
-/* line 560, ../../../app/stylesheets/application.scss */
+/* line 561, ../../../app/stylesheets/application.scss */
 #ginsburge_on_sale p {
   margin-bottom: 8px;
 }
 
-/* line 564, ../../../app/stylesheets/application.scss */
+/* line 565, ../../../app/stylesheets/application.scss */
 .admin_links.new {
   margin-top: 20px;
   background-color: red;
@@ -674,12 +675,12 @@ ul.album_thumbs li a {
   -khtml-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 566, ../../../app/stylesheets/application.scss */
+/* line 567, ../../../app/stylesheets/application.scss */
 .admin_links.new a {
   color: white;
 }
 
-/* line 574, ../../../app/stylesheets/application.scss */
+/* line 575, ../../../app/stylesheets/application.scss */
 .simple_form label {
   float: left;
   width: 100px;
@@ -687,56 +688,56 @@ ul.album_thumbs li a {
   margin: 2px 10px;
 }
 
-/* line 581, ../../../app/stylesheets/application.scss */
+/* line 582, ../../../app/stylesheets/application.scss */
 .simple_form div.input {
   margin-bottom: 10px;
 }
 
-/* line 585, ../../../app/stylesheets/application.scss */
+/* line 586, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean, .simple_form input[type='submit'] {
   margin-left: 120px;
 }
 
-/* line 589, ../../../app/stylesheets/application.scss */
+/* line 590, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean label {
   float: none;
   margin: 0;
 }
 
-/* line 596, ../../../app/stylesheets/application.scss */
+/* line 597, ../../../app/stylesheets/application.scss */
 .page .section {
   clear: both;
   margin: 0px 40px 2em 40px;
 }
-/* line 601, ../../../app/stylesheets/application.scss */
+/* line 602, ../../../app/stylesheets/application.scss */
 .page .section img {
   float: right;
 }
-/* line 606, ../../../app/stylesheets/application.scss */
+/* line 607, ../../../app/stylesheets/application.scss */
 .page .section ul {
   list-style-type: disc;
   margin-left: 25px;
   margin-right: 25px;
   /*      background-color: #fff*/
 }
-/* line 614, ../../../app/stylesheets/application.scss */
+/* line 615, ../../../app/stylesheets/application.scss */
 .page .footer {
   text-align: center;
 }
 
-/* line 619, ../../../app/stylesheets/application.scss */
+/* line 620, ../../../app/stylesheets/application.scss */
 span.telephone {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 624, ../../../app/stylesheets/application.scss */
+/* line 625, ../../../app/stylesheets/application.scss */
 span.copyright {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 630, ../../../app/stylesheets/application.scss */
+/* line 631, ../../../app/stylesheets/application.scss */
 #subway_map img {
   margin-left: 60px;
 }
