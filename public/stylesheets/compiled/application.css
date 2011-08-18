@@ -636,7 +636,6 @@ ul.album_thumbs li a {
 /* line 458, ../../../app/stylesheets/application.scss */
 .album .section .images .image {
   float: left;
-  width: 181px;
   margin-right: 8px;
   overflow: hidden;
 }
