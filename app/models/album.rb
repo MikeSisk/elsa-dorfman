@@ -28,4 +28,14 @@ class Album < ActiveRecord::Base
       name
     end
   end
+  
+  def map_shape
+    unless self.coordinates.blank?
+      if self.coordinates.split(',').size == 4
+        'rect'
+      else
+        'poly'
+      end
+    end
+  end
 end

@@ -8,11 +8,31 @@
   - @albums.group_by(&:category_id).each do |c, albums|
     - category = Category.where(:id => c).first
     %h2= category.name if category
-    - albums.each do |album|
-      .indexed-album
-        %ul
-          %li= link_to(album.name, album)
-          %li= pluralize(album.images.size, 'image')
-          - if admin_signed_in?
-            %li
+    %table
+      %tr
+        %th.name Name
+        %th.count Position
+        %th.coords Map Coords
+        %th.shape Map Shape
+        %th
+        %th
+        
+      - albums.each do |album|
+        %tr
+          %td.name= link_to(album.name, album)
+          %td.count= pluralize(album.images.size, 'image')
+          %td.coords= album.coordinates
+          %td.coords= album.map_shape
+          %td
+            - if admin_signed_in?
               = link_to "Edit", edit_album_path(album)
+          %td= link_to 'Destroy', album, :confirm => 'Are you sure?', :method => :delete
+              
+    -# - albums.each do |album|
+    -#   .indexed-album
+    -#     %ul
+    -#       %li= link_to(album.name, album)
+    -#       %li= pluralize(album.images.size, 'image')
+    -#       - if admin_signed_in?
+    -#         %li
+    -#           = link_to "Edit", edit_album_path(album)

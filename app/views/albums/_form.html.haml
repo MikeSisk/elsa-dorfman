@@ -9,6 +9,7 @@
     = form.input :name
     = form.input :short_name, :label => "Name as it will appear in menu"
     = form.input :category, :as => :select, :collection => Category.all   
+    = form.input :coordinates, :label => 'Map Coordinates'
     #album_sections
       = form.semantic_fields_for :album_sections do |builder|
         = render :partial => "album_section_fields", :locals => { :f => builder }
@@ -20,9 +21,6 @@
         = render :partial => "image_fields", :locals => { :f => builder }
       .links
         = link_to_add_fields "Add Image", form, :images
-    #coordinates
-      %h2 Map Coordinates
-      = form.input :coordinates
   = form.buttons
 
 

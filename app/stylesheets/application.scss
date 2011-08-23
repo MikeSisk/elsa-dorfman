@@ -377,12 +377,34 @@ $sidebar_width: 130px;//$stop_circum * 10;
 
 /* ------ Album Index ------ */
 #album-index {
-  .indexed-album {
+/*  .indexed-album {
     margin-bottom: 20px;
+  }*/
+  
+  th {
+    font-family: 'ITC Kabel W01 Bold';  
+  }
+  
+  td {
+    padding-right: 10px;
+  }
+  
+  td.name {
+    width: 300px;  
+  }
+  
+  td.count, td.coords {
+    width: 200px;
   }
 }
 
 /* ------ Albums ------ */
+
+blockquote {
+  font-size: 0.95em;
+  margin-left: 20px;  
+  margin-right: 20px;  
+}
 
 ul.album_thumbs { 
   clear: both;
