@@ -1,2 +1,30 @@
-%h1 StaticPages#donate
-%p Find me in app/views/static_pages/donate.html.haml
+- title "Elsa's Cyberspace Tin Cup", false
+
+.album
+  %h1 Elsa's Cyberspace Tin Cup
+  .section
+    %p Yes, here I am rattling my tin cup for donations to help cover the costs of running this site. Of course, the doting and generous godmother of the site is photo.net.
+  
+    %p Show yr approval of elsadorfman.com by making a donation to my site. It is easy to send $$$ by paypal or major credit cards. Just click one of the links below.
+  
+    %p Every single penny goes toward the management of the site. I will spare you my mantra of expenses. If you include yr name and addresss I will send you postcards four times a year.
+  
+    %h2 Make a payment via PayPal
+    %form{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post"}
+      %input{:name => "cmd", :type => "hidden", :value => "_xclick"}/
+      %input{:name => "business", :type => "hidden", :value => "elsad@comcast.net"}/
+      %input{:name => "no_note", :type => "hidden", :value => "1"}/
+      %input{:name => "currency_code", :type => "hidden", :value => "USD"}/
+      %input{:name => "tax", :type => "hidden", :value => "0"}/
+      %input{:alt => "Make payments with PayPal - it's fast, free and secure!", :border => "0", :name => "submit", :src => "https://www.paypal.com/images/x-click-but21.gif", :type => "image"}/
+  
+    -# %h2 Make a payment via Amazon
+    -# %img{:alt => "Amazon Honor System", :border => "0", :src => "http://s1.amazon.com/exec/varzea/tipbox/A39VAR6PQ3DTWF/T2UOMXVZHPZIGW", :usemap => "#T2UOMXVZHPZIGW"}/
+    -# %map#T2UOMXVZHPZIGW{:name => "T2UOMXVZHPZIGW"}
+    -#   %area{:alt => "Click Here to Pay", :coords => "20,60,130,115", :href => "http://s1.amazon.com/exec/varzea/pay/T2UOMXVZHPZIGW", :target => "_top"}/
+    -#   %area{:alt => "Learn More", :coords => "5,135,145,145", :href => "http://s1.amazon.com/exec/varzea/subst/fx/help/how-we-know.html", :target => "_top"}/
+    
+    
+    %p I promise I won't spend any $$$ on make-up, high heels, or satchels. Or chai at Starbucks.
+  
+    %p Of course you can blab abt my site to yr friends and relations and that will be almost the same as sending $$$$$.
