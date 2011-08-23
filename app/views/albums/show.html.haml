@@ -18,6 +18,8 @@
   - @sections.each do |section|
       
     .section
+      - unless section.heading.blank?
+        %h2= section.heading
       .images
         - section.images.each do |image|
           .image
