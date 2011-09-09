@@ -21,10 +21,12 @@
       #sidebar
         = render_cell :navigation, :category, :category => params[:category_id]
       #main
-        -# #user_nav
-        -#   - if admin_signed_in?
-        -#     = "Signed in as " + current_admin.email + ". Not you?"
-        -#     = link_to "Sign out", destroy_admin_session_path
+        #user_nav
+          - if admin_signed_in?
+            = "Signed in as " + current_admin.email + ". Not you?"
+            = link_to "Sign out", destroy_admin_session_path
+            |
+            = link_to "CONTROL PANEL", control_path
         - flash.each do |name, msg|
           = content_tag :div, msg, :id => "flash_#{name}"
         = link_to image_tag('/images/shared/elsa_dorfman_still_clickin.png'), root_path
