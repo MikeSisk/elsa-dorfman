@@ -16,6 +16,10 @@ class StaticPagesController < ApplicationController
   def donate
   end
 
+  def sitemap
+    @albums = Album.order('albums.category_id ASC').all
+  end
+  
   def contact
     
   end

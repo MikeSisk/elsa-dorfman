@@ -1,0 +1,10 @@
+- title "sitemap"
+
+#album-index  
+  - @albums.group_by(&:category_id).each do |c, albums|
+    - category = Category.where(:id => c).first
+    %h1= category.name if category
+    %ul
+      - albums.each do |album|
+        %li
+          %td.name= link_to(album.name, category_album_path(album.category, album))

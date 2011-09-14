@@ -1,5 +1,7 @@
 Dorfman::Application.routes.draw do
-  
+
+  resources :pages
+
   resources :categories do
     resources :albums, :only => [:show]
   end
@@ -19,6 +21,7 @@ Dorfman::Application.routes.draw do
   match 'about-elsa'        => 'static_pages#about_elsa',   :as => :about_elsa
   match 'about-the-camera'  => 'static_pages#about_camera', :as => :about_camera
   match 'donate'            => 'static_pages#donate',       :as => :donate
+  match 'sitemap'           => 'static_pages#sitemap',      :as => :sitemap
   
   match 'ginsburge-on-sale' => 'static_pages#ginsburge_on_sale',  :as => :ginsburge_sale
   

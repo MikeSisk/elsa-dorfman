@@ -29,7 +29,8 @@
             = link_to "CONTROL PANEL", control_path
         - flash.each do |name, msg|
           = content_tag :div, msg, :id => "flash_#{name}"
-        = link_to image_tag('/images/shared/elsa_dorfman_still_clickin.png'), root_path
+        -# = link_to image_tag('/images/shared/elsa_dorfman_still_clickin.png'), root_path
+        = link_to image_tag('/images/shared/camera-still-banner-name.gif'), root_path
         #content
           = render_cell :navigation, :primary_tabs
           = content_tag :h1, yield(:title) if show_title?
