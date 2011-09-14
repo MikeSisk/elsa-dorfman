@@ -6,4 +6,5 @@
     %ul
       %li= link_to 'List albums', albums_path
       %li= link_to 'Create new album', new_album_path
-      %li= link_to 'View Pages', pages_path
+      - if @home_page
+        %li= link_to 'Edit Home Page', edit_page_path(@home_page)

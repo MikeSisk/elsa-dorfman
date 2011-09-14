@@ -30,6 +30,6 @@ class StaticPagesController < ApplicationController
   end
   
   def control_panel
-    
+    @home_page = Page.find_by_title('home')
   end
 end
