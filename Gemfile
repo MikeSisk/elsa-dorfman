@@ -50,6 +50,7 @@ gem "compass", ">= 0.10.6"
 gem 'haml-rails'
 gem 'mocha'
 gem "capybara"
+gem "bluecloth"
 group :test, :development do
  # gem "ruby-debug19"
   gem "webrat"

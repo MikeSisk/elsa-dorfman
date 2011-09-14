@@ -749,20 +749,38 @@ ul.album_thumbs li a {
 .page .footer {
   text-align: center;
 }
+/* line 641, ../../../app/stylesheets/application.scss */
+.page h1 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0px 0px 0.6em 0px;
+  margin-top: 0.6em;
+  line-height: 1em;
+  font-family: 'Neuland W01 Black';
+}
+/* line 651, ../../../app/stylesheets/application.scss */
+.page h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0.4em;
+  padding: 0px 0px 0.4em 0px;
+  color: #666;
+  font-family: 'ITC Kabel W01 Bold';
+}
 
-/* line 642, ../../../app/stylesheets/application.scss */
+/* line 661, ../../../app/stylesheets/application.scss */
 span.telephone {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 647, ../../../app/stylesheets/application.scss */
+/* line 666, ../../../app/stylesheets/application.scss */
 span.copyright {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 653, ../../../app/stylesheets/application.scss */
+/* line 672, ../../../app/stylesheets/application.scss */
 #subway_map img {
   margin-left: 60px;
 }

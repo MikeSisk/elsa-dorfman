@@ -3,15 +3,9 @@
 #home.page
   - if @page
     .section
-      %p= @page.content 
-  .section
-    %h1 what's new
-    %ul
-      %li
-        Read the
-        = link_to "article", "http://www.newyorker.com/talk/2011/07/11/110711ta_talk_paumgarten"
-        in the July 11th 2011 issue of the The New Yorker. Talk of the Town writer Nick Paumgarten chronicles the survival of the 20x24. I'm in it. 
-      %li Elsa's updated website will be launching early August! 
+      %p
+        :markdown
+          #{raw(@page.content)}
   .section
     
     %h1 Dealing with Elsa
