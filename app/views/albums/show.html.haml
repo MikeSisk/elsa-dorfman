@@ -3,18 +3,6 @@
 .album
   %h1= @album.name
 
-  -# REPLACED BELOW
-  -# = simple_format @album.narrative, :class => 'top_narritive'
-  -# 
-  -# %ul.album_pages
-  -#   - @album.album_pages.each do |page|
-  -#     %li.album_page
-  -#       - unless page.album_page_elements.empty?
-  -#         %ul.album_page_elements
-  -#           - page.album_page_elements.each do |element|
-  -#             %li.album_page_element
-  -#               = render_page_element element
-
   - @sections.each do |section|
       
     .section
@@ -24,7 +12,9 @@
         - section.images.each do |image|
           .image
             = link_to(image_tag(image.url(:inline)), image.url)
-      = simple_format section.narrative
+      -# = simple_format section.narrative
+      :markdown
+        #{raw(section.narrative)}
 	  
   - unless @album.images.empty?
     #gallery
