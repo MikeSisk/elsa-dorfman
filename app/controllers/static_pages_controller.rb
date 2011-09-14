@@ -2,6 +2,7 @@ class StaticPagesController < ApplicationController
   layout 'static'
   
   def home
+    @page = Page.find_by_title('home')
   end
 
   def map
