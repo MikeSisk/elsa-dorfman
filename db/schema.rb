@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110914163239) do
+ActiveRecord::Schema.define(:version => 20110927165959) do
 
   create_table "admins", :force => true do |t|
     t.string    "email",                               :default => "", :null => false
@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(:version => 20110914163239) do
     t.integer   "category_id"
     t.string    "short_name"
     t.string    "coordinates"
+    t.boolean   "hidden"
   end
 
   create_table "categories", :force => true do |t|
@@ -85,10 +86,10 @@ ActiveRecord::Schema.define(:version => 20110914163239) do
   end
 
   create_table "pages", :force => true do |t|
-    t.string   "title"
-    t.text     "content"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string    "title"
+    t.text      "content"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
   create_table "subscribers", :force => true do |t|
