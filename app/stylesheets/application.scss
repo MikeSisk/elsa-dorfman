@@ -485,6 +485,12 @@ ul.album_thumbs {
         margin-right:8px;
       	overflow: hidden;
     	}
+    	
+      ul {
+        list-style-type: disc; 
+        margin-left: 25px;
+        margin-right: 25px;
+      }
     }
     
     p {
@@ -502,77 +508,7 @@ ul.album_thumbs {
   padding-bottom: 10px;
   border-bottom: 1px dashed grey;
 }
-/*
-p.top_narritive {
-  margin-bottom: 10px;
- // width: 600px;
-  font-style:italic;
-}
 
-.pe_test1 {
-//  border: red dashed 1px;
-//  width: 600px;
-  clear: both;
-
-  ul.images {
-  float: right;
-  margin-left: 10px;
-  li { margin-bottom: 10px; }
-  li:last-child { margin-bottom: 0px; }
-  }
-
-  p { margin-bottom: 10px; }
-}
-
-.pe_test2 {
-//  border: blue dashed 1px;
-//  width: 600px;
-  clear: both;
-
-  ul.images {
-  float: left;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  li { margin-bottom: 10px; }
-  li:last-child { margin-bottom: -10px; }
-  }
-
-  p { margin-bottom: 10px; }
-}
-
-.pe_test3 {
-//  border: green dashed 1px;
-//  width: 600px;
-  overflow: hidden; // so that this box wraps the floating elements.
-
-  img.image1 {
-  float: left;
-  margin-right: 10px;
-  }
-
-  img.image2 {
-  float: right;
-  margin-left: 10px;
-  }
-  
-  p { margin-bottom: 10px; }
-}
-
-.pe_test4 {
-//  border: red dashed 1px;
-//  width: 600px;
-  clear: both;
-
-  ul.images {
-  float: right;
-  margin-left: 10px;
-  li { margin-bottom: 10px; }
-  li:last-child { margin-bottom: 0px; }
-  }
-
-  p { margin-bottom: 10px; }
-}
-*/
 // ----- subscribers
 .subscriber {
   margin-bottom: 20px;

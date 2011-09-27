@@ -665,33 +665,39 @@ ul.album_thumbs li a {
   margin-right: 8px;
   overflow: hidden;
 }
-/* line 490, ../../../app/stylesheets/application.scss */
+/* line 489, ../../../app/stylesheets/application.scss */
+.album .section .images ul {
+  list-style-type: disc;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+/* line 496, ../../../app/stylesheets/application.scss */
 .album .section p {
   margin-bottom: 16px;
 }
-/* line 494, ../../../app/stylesheets/application.scss */
+/* line 500, ../../../app/stylesheets/application.scss */
 .album .section blockquote {
   margin-bottom: 16px;
 }
 
-/* line 500, ../../../app/stylesheets/application.scss */
+/* line 506, ../../../app/stylesheets/application.scss */
 .album_section_fields {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px dashed grey;
 }
 
-/* line 577, ../../../app/stylesheets/application.scss */
+/* line 513, ../../../app/stylesheets/application.scss */
 .subscriber {
   margin-bottom: 20px;
 }
 
-/* line 587, ../../../app/stylesheets/application.scss */
+/* line 523, ../../../app/stylesheets/application.scss */
 #ginsburge_on_sale p {
   margin-bottom: 8px;
 }
 
-/* line 591, ../../../app/stylesheets/application.scss */
+/* line 527, ../../../app/stylesheets/application.scss */
 .admin_links.new {
   margin-top: 20px;
   background-color: red;
@@ -704,12 +710,12 @@ ul.album_thumbs li a {
   -khtml-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 593, ../../../app/stylesheets/application.scss */
+/* line 529, ../../../app/stylesheets/application.scss */
 .admin_links.new a {
   color: white;
 }
 
-/* line 601, ../../../app/stylesheets/application.scss */
+/* line 537, ../../../app/stylesheets/application.scss */
 .simple_form label {
   float: left;
   width: 100px;
@@ -717,43 +723,43 @@ ul.album_thumbs li a {
   margin: 2px 10px;
 }
 
-/* line 608, ../../../app/stylesheets/application.scss */
+/* line 544, ../../../app/stylesheets/application.scss */
 .simple_form div.input {
   margin-bottom: 10px;
 }
 
-/* line 612, ../../../app/stylesheets/application.scss */
+/* line 548, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean, .simple_form input[type='submit'] {
   margin-left: 120px;
 }
 
-/* line 616, ../../../app/stylesheets/application.scss */
+/* line 552, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean label {
   float: none;
   margin: 0;
 }
 
-/* line 623, ../../../app/stylesheets/application.scss */
+/* line 559, ../../../app/stylesheets/application.scss */
 .page .section {
   clear: both;
   margin: 0px 40px 2em 40px;
 }
-/* line 628, ../../../app/stylesheets/application.scss */
+/* line 564, ../../../app/stylesheets/application.scss */
 .page .section img {
   float: right;
 }
-/* line 633, ../../../app/stylesheets/application.scss */
+/* line 569, ../../../app/stylesheets/application.scss */
 .page .section ul {
   list-style-type: disc;
   margin-left: 25px;
   margin-right: 25px;
   /*      background-color: #fff*/
 }
-/* line 641, ../../../app/stylesheets/application.scss */
+/* line 577, ../../../app/stylesheets/application.scss */
 .page .footer {
   text-align: center;
 }
-/* line 645, ../../../app/stylesheets/application.scss */
+/* line 581, ../../../app/stylesheets/application.scss */
 .page h1 {
   font-size: 24px;
   font-weight: bold;
@@ -762,7 +768,7 @@ ul.album_thumbs li a {
   line-height: 1em;
   font-family: 'Neuland W01 Black';
 }
-/* line 655, ../../../app/stylesheets/application.scss */
+/* line 591, ../../../app/stylesheets/application.scss */
 .page h2 {
   font-size: 20px;
   font-weight: bold;
@@ -772,19 +778,19 @@ ul.album_thumbs li a {
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 665, ../../../app/stylesheets/application.scss */
+/* line 601, ../../../app/stylesheets/application.scss */
 span.telephone {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 670, ../../../app/stylesheets/application.scss */
+/* line 606, ../../../app/stylesheets/application.scss */
 span.copyright {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 676, ../../../app/stylesheets/application.scss */
+/* line 612, ../../../app/stylesheets/application.scss */
 #subway_map img {
   margin-left: 60px;
 }
