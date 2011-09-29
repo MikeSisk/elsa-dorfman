@@ -45,7 +45,7 @@ class NavigationCell < Cell::Rails
     if @category
       @category.albums.each do |album|
         selected = album.id.to_s == params[:id]
-        @links << NavLink.new(category_album_path(@category, album), album.menu_name, selected)
+        @links << NavLink.new(category_album_path(@category, album), album.menu_name, selected) unless album.hidden
       end
       render
     end
