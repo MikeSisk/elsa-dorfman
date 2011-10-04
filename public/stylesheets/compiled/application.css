@@ -728,38 +728,38 @@ ul.album_thumbs li a {
   margin-bottom: 10px;
 }
 
-/* line 548, ../../../app/stylesheets/application.scss */
+/* line 549, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean, .simple_form input[type='submit'] {
   margin-left: 120px;
 }
 
-/* line 552, ../../../app/stylesheets/application.scss */
+/* line 553, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean label {
   float: none;
   margin: 0;
 }
 
-/* line 559, ../../../app/stylesheets/application.scss */
+/* line 560, ../../../app/stylesheets/application.scss */
 .page .section {
   clear: both;
   margin: 0px 40px 2em 40px;
 }
-/* line 564, ../../../app/stylesheets/application.scss */
+/* line 565, ../../../app/stylesheets/application.scss */
 .page .section img {
   float: right;
 }
-/* line 569, ../../../app/stylesheets/application.scss */
+/* line 570, ../../../app/stylesheets/application.scss */
 .page .section ul {
   list-style-type: disc;
   margin-left: 25px;
   margin-right: 25px;
   /*      background-color: #fff*/
 }
-/* line 577, ../../../app/stylesheets/application.scss */
+/* line 578, ../../../app/stylesheets/application.scss */
 .page .footer {
   text-align: center;
 }
-/* line 581, ../../../app/stylesheets/application.scss */
+/* line 582, ../../../app/stylesheets/application.scss */
 .page h1 {
   font-size: 24px;
   font-weight: bold;
@@ -768,7 +768,7 @@ ul.album_thumbs li a {
   line-height: 1em;
   font-family: 'Neuland W01 Black';
 }
-/* line 591, ../../../app/stylesheets/application.scss */
+/* line 592, ../../../app/stylesheets/application.scss */
 .page h2 {
   font-size: 20px;
   font-weight: bold;
@@ -778,19 +778,19 @@ ul.album_thumbs li a {
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 601, ../../../app/stylesheets/application.scss */
+/* line 602, ../../../app/stylesheets/application.scss */
 span.telephone {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 606, ../../../app/stylesheets/application.scss */
+/* line 607, ../../../app/stylesheets/application.scss */
 span.copyright {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 612, ../../../app/stylesheets/application.scss */
+/* line 613, ../../../app/stylesheets/application.scss */
 #subway_map img {
   margin-left: 60px;
 }

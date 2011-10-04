@@ -19,3 +19,7 @@ form.formtastic fieldset ol li fieldset legend { margin-left: -6px;}
 /* LABELS
 --------------------------------------------------------------------------------------------------*/
 form.formtastic fieldset > ol > li label { display:block; width:20%; float:left; padding-top:.2em; margin-right:1.9em; text-align:right;}
+
+.album_section_fields .inputs {
+  background-color: #dfd;
+}

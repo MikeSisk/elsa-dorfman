@@ -7,5 +7,5 @@
         = f.semantic_fields_for :images do |builder|
           = render :partial => "image_fields", :locals => { :f => builder }
         .links
-          = link_to_add_fields "Add Image", f, :images
+          = link_to_add_fields "Add Inline Image", f, :images
       = link_to_remove_fields "Delete This Section", f
