@@ -500,6 +500,10 @@ ul.album_thumbs {
     blockquote {
       margin-bottom: 16px;
     }
+    
+    strong {
+      font-family: 'ITC Kabel W01 Bold';
+    }
   }
 }
 
@@ -597,7 +601,12 @@ ul.album_thumbs {
     color: #666;
     font-family: 'ITC Kabel W01 Bold';
   }
+  
+  strong {
+    font-family: 'ITC Kabel W01 Bold';
+  }
 }
+
 
 span.telephone {
   font-weight: bold;
