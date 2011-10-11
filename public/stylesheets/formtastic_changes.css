@@ -23,3 +23,31 @@ form.formtastic fieldset > ol > li label { display:block; width:20%; float:left;
 .album_section_fields .inputs {
   background-color: #dfd;
 }
+
+form input.commit{
+  width: 400px;
+  font-size: 40px;
+  background-color: #0f0;
+}
+
+form input.remove{
+  width: 400px;
+  font-size: 25px;
+  background-color: #f00;
+  margin-left: 50px;
+}
+
+form input.add{
+  width: 400px;
+  font-size: 25px;
+  background-color: #f0f;
+  margin-left: 50px;
+}
+
+form #images {
+  margin-bottom: 20px;
+}
+/*form.formtastic fieldset > ol > li > fieldset.inputs ol.nested_fields input {
+  font-size: 40px; 
+  color: green;
+}*/

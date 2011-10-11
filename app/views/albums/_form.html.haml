@@ -15,14 +15,15 @@
       = form.semantic_fields_for :album_sections do |builder|
         = render :partial => "album_section_fields", :locals => { :f => builder }
       .links
-        = link_to_add_fields "Add Section", form, :album_sections 
+        = link_to_add_fields "Add a New Section to this Album", form, :album_sections 
     #images
-      %h2 Gallery Images
+      %h2 Gallery Images (aka "the trolley")
       = form.semantic_fields_for :images do |builder|
         = render :partial => "image_fields", :locals => { :f => builder }
       .links
-        = link_to_add_fields "Add Album Image", form, :images
-  = form.buttons
+        = link_to_add_fields "Add an Image to the Trolley", form, :images
+  = form.buttons do
+    = form.commit_button :label => "Save Album", :button_html => { :class => 'commit' }
 
 
   -# = f.semantic_fields_for :images do |image|

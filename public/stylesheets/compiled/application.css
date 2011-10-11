@@ -619,8 +619,8 @@ ul.album_thumbs li a {
 
 /* line 433, ../../../app/stylesheets/application.scss */
 .image_fields {
-  padding: 10px;
-  margin: 10px;
+  padding: 10px 0px;
+  margin: 10px 0px;
   border: black dashed 1px;
 }
 
@@ -688,7 +688,7 @@ ul.album_thumbs li a {
 .album_section_fields {
   margin-bottom: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px dashed grey;
+  border-bottom: 1px solid #ccc;
 }
 
 /* line 517, ../../../app/stylesheets/application.scss */
@@ -801,4 +801,11 @@ span.copyright {
 /* line 622, ../../../app/stylesheets/application.scss */
 #subway_map img {
   margin-left: 60px;
+}
+
+/* line 627, ../../../app/stylesheets/application.scss */
+a.cancel {
+  font-size: 40px;
+  background-color: red;
+  color: black;
 }

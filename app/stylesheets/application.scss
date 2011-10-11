@@ -431,8 +431,8 @@ ul.album_thumbs {
 }
 
 .image_fields {
-  padding: 10px;
-  margin:  10px;
+  padding: 10px 0px;
+  margin:  10px 0px;
   border: black dashed 1px;
 }
 
@@ -510,7 +510,7 @@ ul.album_thumbs {
 .album_section_fields {
   margin-bottom: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px dashed grey;
+  border-bottom: 1px solid #ccc;
 }
 
 // ----- subscribers
@@ -621,4 +621,11 @@ span.copyright {
 // ------ map
 #subway_map img {
     margin-left: 60px;
+}
+
+// misc
+a.cancel {
+  font-size: 40px;
+  background-color: red;
+  color: black;
 }
