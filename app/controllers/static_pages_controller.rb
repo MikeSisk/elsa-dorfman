@@ -18,7 +18,12 @@ class StaticPagesController < ApplicationController
   end
 
   def sitemap
-    @albums = Album.order('albums.category_id ASC').all
+    # @albums = Album.order('albums.category_id ASC').all
+    
+    @albums_hash = Hash.new([])
+    Category.order('categories.id ASC').each do |cat|
+      @albums_hash[cat] = cat.albums.order('albums.name').all
+    end
   end
   
   def contact

@@ -606,7 +606,9 @@ ul.album_thumbs {
     font-family: 'ITC Kabel W01 Bold';
   }
 }
-
+strong {
+  font-family: 'ITC Kabel W01 Bold';
+}
 
 span.telephone {
   font-weight: bold;
@@ -623,9 +625,14 @@ span.copyright {
     margin-left: 60px;
 }
 
+// ------ sitemap
+#sitemap {
+  ul { margin-bottom: 30px; }
+}
 // misc
 a.cancel {
   font-size: 40px;
   background-color: red;
   color: black;
+/*  font-weight: bold;*/
 }
