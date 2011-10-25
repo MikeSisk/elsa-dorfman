@@ -22,7 +22,7 @@ class StaticPagesController < ApplicationController
     
     @albums_hash = Hash.new([])
     Category.order('categories.id ASC').each do |cat|
-      @albums_hash[cat] = cat.albums.order('albums.name').all
+      @albums_hash[cat.name] = cat.albums.order('albums.name').all
     end
   end
   
