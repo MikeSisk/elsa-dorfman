@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../.rvm/gems/ruby-1.9.2-p180@rails31/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../../.rvm/gems/ruby-1.9.2-p180@rails31/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, ../../../../../../.rvm/gems/ruby-1.9.2-p180@rails31/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../../../.rvm/gems/ruby-1.9.2-p180@rails31/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../../../.rvm/gems/ruby-1.9.2-p180@rails31/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../../../.rvm/gems/ruby-1.9.2-p180@rails31/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../../../.rvm/gems/ruby-1.9.2-p180@rails31/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../../../.rvm/gems/ruby-1.9.2-p180@rails31/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, ../../../../../../.rvm/gems/ruby-1.9.2-p180@rails31/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 114, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -141,7 +141,7 @@ body {
 
 /* line 78, ../../../app/stylesheets/application.scss */
 #main {
-  width: 650px;
+  width: 651px;
   margin: 0 auto;
   padding: 0 20px;
   float: left;
@@ -200,14 +200,14 @@ body {
 }
 /* line 124, ../../../app/stylesheets/application.scss */
 #content #primary-nav #tab-base {
-  height: 7px;
+  height: 10px;
   background-color: black;
   background: none;
   clear: both;
 }
 /* line 132, ../../../app/stylesheets/application.scss */
 #content #primary-nav #tab-base.portraits {
-  background-color: #E71B2E;
+  background-color: red;
 }
 /* line 134, ../../../app/stylesheets/application.scss */
 #content #primary-nav #tab-base.essays {
@@ -543,16 +543,19 @@ ol li span.text {
 }
 /* line 361, ../../../app/stylesheets/application.scss */
 #right-sidebar .book a img {
+  border: 1px black;
+  border-radius: 5px;
+  padding: 10px 10px 20px 10px;
   margin-bottom: 30px;
-  /*    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
-         -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
-              box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);*/
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* line 369, ../../../app/stylesheets/application.scss */
+/* line 372, ../../../app/stylesheets/application.scss */
 #footer {
   clear: both;
-  width: 650px;
+  width: 651px;
   margin-left: 180px;
   padding: 16px;
   text-align: center;
@@ -560,49 +563,49 @@ ol li span.text {
 }
 
 /* ------ Album Index ------ */
-/* line 379, ../../../app/stylesheets/application.scss */
+/* line 382, ../../../app/stylesheets/application.scss */
 #album-index {
   /*  .indexed-album {
       margin-bottom: 20px;
     }*/
 }
-/* line 384, ../../../app/stylesheets/application.scss */
+/* line 387, ../../../app/stylesheets/application.scss */
 #album-index th {
   font-family: 'ITC Kabel W01 Bold';
 }
-/* line 388, ../../../app/stylesheets/application.scss */
+/* line 391, ../../../app/stylesheets/application.scss */
 #album-index td {
   padding-right: 10px;
 }
-/* line 392, ../../../app/stylesheets/application.scss */
+/* line 395, ../../../app/stylesheets/application.scss */
 #album-index td.name {
   width: 300px;
 }
-/* line 396, ../../../app/stylesheets/application.scss */
+/* line 399, ../../../app/stylesheets/application.scss */
 #album-index td.count, #album-index td.coords {
   width: 200px;
 }
 
 /* ------ Albums ------ */
-/* line 403, ../../../app/stylesheets/application.scss */
+/* line 406, ../../../app/stylesheets/application.scss */
 blockquote {
   font-size: 0.95em;
   margin-left: 20px;
   margin-right: 20px;
 }
 
-/* line 409, ../../../app/stylesheets/application.scss */
+/* line 412, ../../../app/stylesheets/application.scss */
 ul.album_thumbs {
   clear: both;
   display: block;
   margin: auto;
   overflow: hidden;
 }
-/* line 415, ../../../app/stylesheets/application.scss */
+/* line 418, ../../../app/stylesheets/application.scss */
 ul.album_thumbs li {
   display: inline;
 }
-/* line 418, ../../../app/stylesheets/application.scss */
+/* line 421, ../../../app/stylesheets/application.scss */
 ul.album_thumbs li a {
   display: block;
   float: left;
@@ -610,21 +613,21 @@ ul.album_thumbs li a {
   padding: 5px 5px;
 }
 
-/* line 427, ../../../app/stylesheets/application.scss */
+/* line 430, ../../../app/stylesheets/application.scss */
 .album_page_element_fields {
   padding: 10px;
   margin: 10px;
   border: black solid 1px;
 }
 
-/* line 433, ../../../app/stylesheets/application.scss */
+/* line 436, ../../../app/stylesheets/application.scss */
 .image_fields {
   padding: 10px 0px;
   margin: 10px 0px;
   border: black dashed 1px;
 }
 
-/* line 439, ../../../app/stylesheets/application.scss */
+/* line 442, ../../../app/stylesheets/application.scss */
 #gallery {
   clear: both;
   /*  border: red solid 1px;*/
@@ -632,14 +635,14 @@ ul.album_thumbs li a {
   margin-bottom: 10px;
   /*  #thumbs {width:1200px; height: 132px; padding: 6px;}*/
 }
-/* line 450, ../../../app/stylesheets/application.scss */
+/* line 453, ../../../app/stylesheets/application.scss */
 #gallery a img {
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* line 459, ../../../app/stylesheets/application.scss */
+/* line 462, ../../../app/stylesheets/application.scss */
 .disclaimer {
   clear: both;
   font-weight: bold;
@@ -648,67 +651,67 @@ ul.album_thumbs li a {
 }
 
 /* ----- Album Pages ----- */
-/* line 467, ../../../app/stylesheets/application.scss */
+/* line 470, ../../../app/stylesheets/application.scss */
 .album {
   padding-top: 20px;
   padding-left: 40px;
   padding-right: 40px;
   clear: both;
 }
-/* line 477, ../../../app/stylesheets/application.scss */
+/* line 480, ../../../app/stylesheets/application.scss */
 .album .section {
   clear: both;
   margin-bottom: 16px;
 }
-/* line 484, ../../../app/stylesheets/application.scss */
+/* line 487, ../../../app/stylesheets/application.scss */
 .album .section .images .image {
   float: left;
   margin-right: 8px;
   overflow: hidden;
 }
-/* line 492, ../../../app/stylesheets/application.scss */
+/* line 495, ../../../app/stylesheets/application.scss */
 .album .section .images ul {
   list-style-type: disc;
   margin-left: 25px;
   margin-right: 25px;
 }
-/* line 499, ../../../app/stylesheets/application.scss */
+/* line 502, ../../../app/stylesheets/application.scss */
 .album .section p {
   margin-bottom: 16px;
 }
-/* line 503, ../../../app/stylesheets/application.scss */
+/* line 506, ../../../app/stylesheets/application.scss */
 .album .section blockquote {
   margin-bottom: 16px;
 }
-/* line 507, ../../../app/stylesheets/application.scss */
+/* line 510, ../../../app/stylesheets/application.scss */
 .album .section strong {
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 513, ../../../app/stylesheets/application.scss */
+/* line 516, ../../../app/stylesheets/application.scss */
 code {
   font-family: monospace;
   font-size: 0.85em;
 }
 
-/* line 518, ../../../app/stylesheets/application.scss */
+/* line 521, ../../../app/stylesheets/application.scss */
 .album_section_fields {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
 
-/* line 525, ../../../app/stylesheets/application.scss */
+/* line 528, ../../../app/stylesheets/application.scss */
 .subscriber {
   margin-bottom: 20px;
 }
 
-/* line 535, ../../../app/stylesheets/application.scss */
+/* line 538, ../../../app/stylesheets/application.scss */
 #ginsburge_on_sale p {
   margin-bottom: 8px;
 }
 
-/* line 539, ../../../app/stylesheets/application.scss */
+/* line 542, ../../../app/stylesheets/application.scss */
 .admin_links.new {
   margin-top: 20px;
   background-color: red;
@@ -721,12 +724,12 @@ code {
   -khtml-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 541, ../../../app/stylesheets/application.scss */
+/* line 544, ../../../app/stylesheets/application.scss */
 .admin_links.new a {
   color: white;
 }
 
-/* line 549, ../../../app/stylesheets/application.scss */
+/* line 552, ../../../app/stylesheets/application.scss */
 .simple_form label {
   float: left;
   width: 100px;
@@ -734,43 +737,43 @@ code {
   margin: 2px 10px;
 }
 
-/* line 556, ../../../app/stylesheets/application.scss */
+/* line 559, ../../../app/stylesheets/application.scss */
 .simple_form div.input {
   margin-bottom: 10px;
 }
 
-/* line 561, ../../../app/stylesheets/application.scss */
+/* line 564, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean, .simple_form input[type='submit'] {
   margin-left: 120px;
 }
 
-/* line 565, ../../../app/stylesheets/application.scss */
+/* line 568, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean label {
   float: none;
   margin: 0;
 }
 
-/* line 572, ../../../app/stylesheets/application.scss */
+/* line 575, ../../../app/stylesheets/application.scss */
 .page .section {
   clear: both;
   margin: 0px 40px 2em 40px;
 }
-/* line 577, ../../../app/stylesheets/application.scss */
+/* line 580, ../../../app/stylesheets/application.scss */
 .page .section img {
   float: right;
 }
-/* line 582, ../../../app/stylesheets/application.scss */
+/* line 585, ../../../app/stylesheets/application.scss */
 .page .section ul {
   list-style-type: disc;
   margin-left: 25px;
   margin-right: 25px;
   /*      background-color: #fff*/
 }
-/* line 590, ../../../app/stylesheets/application.scss */
+/* line 593, ../../../app/stylesheets/application.scss */
 .page .footer {
   text-align: center;
 }
-/* line 594, ../../../app/stylesheets/application.scss */
+/* line 597, ../../../app/stylesheets/application.scss */
 .page h1 {
   font-size: 24px;
   font-weight: bold;
@@ -779,7 +782,7 @@ code {
   line-height: 1em;
   font-family: 'Neuland W01 Black';
 }
-/* line 604, ../../../app/stylesheets/application.scss */
+/* line 607, ../../../app/stylesheets/application.scss */
 .page h2 {
   font-size: 20px;
   font-weight: bold;
@@ -788,39 +791,39 @@ code {
   color: #666;
   font-family: 'ITC Kabel W01 Bold';
 }
-/* line 613, ../../../app/stylesheets/application.scss */
+/* line 616, ../../../app/stylesheets/application.scss */
 .page strong {
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 617, ../../../app/stylesheets/application.scss */
+/* line 620, ../../../app/stylesheets/application.scss */
 strong {
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 621, ../../../app/stylesheets/application.scss */
+/* line 624, ../../../app/stylesheets/application.scss */
 span.telephone {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 626, ../../../app/stylesheets/application.scss */
+/* line 629, ../../../app/stylesheets/application.scss */
 span.copyright {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 632, ../../../app/stylesheets/application.scss */
+/* line 635, ../../../app/stylesheets/application.scss */
 #subway_map img {
   margin-left: 60px;
 }
 
-/* line 638, ../../../app/stylesheets/application.scss */
+/* line 641, ../../../app/stylesheets/application.scss */
 #sitemap ul {
   margin-bottom: 30px;
 }
 
-/* line 641, ../../../app/stylesheets/application.scss */
+/* line 644, ../../../app/stylesheets/application.scss */
 a.cancel {
   font-size: 40px;
   background-color: red;
