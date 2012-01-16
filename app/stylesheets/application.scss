@@ -88,13 +88,28 @@ $main_content_width: 650px;
  
 $main_nav_button_width: 108px; //$main_content_width / 6;
 $main_nav_button_height: 40px;
+#legacywrapper{
+	position: relative;
+	display: inline-block;
+	width: 650px;
+	#mail-list-link{
+		float: left;
+		margin-right: 15px;
+	}
+
+	#donate-link{
+		float: right;
+	
+	}
+}
 #content {
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid silver;
   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1) ;
      -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1) ;
           box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1) ;
   @include min-height(850px);
+
   #primary-nav {
     .tab {
 	  width: $main_nav_button_width;
@@ -353,7 +368,7 @@ $sidebar_width: 130px;//$stop_circum * 10;
   height: 800px;
   float: left;
   margin-right: 30px;
-  margin-top: 130px;
+  margin-top: 125px;
  
   a img {
     margin-bottom: 50px;
