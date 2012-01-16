@@ -74,26 +74,27 @@ body {
 	width: 1100px;
 }
 
-$main_content_width: 651px;
+$main_content_width: 650px;
 #main { 
   width: $main_content_width;
+  
   margin: 0 auto;
   padding: 0 20px;
   float: left;
-  //margin-top:70px;
-  background: url(/images/shared/20x24_sketch_ghosted.png) no-repeat 70px 180px;
-  @include min-height(790px);
+  
+  background: url(/images/shared/20x24_sketch_ghosted.png) no-repeat 70px 150px;
+  @include min-height(850px);
 }
  
-$main_nav_button_width: 108px;//$main_content_width / 6;
+$main_nav_button_width: 108px; //$main_content_width / 6;
 $main_nav_button_height: 40px;
 #content {
-
+  border-radius: 10px;
   border: 1px solid silver;
   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1) ;
      -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1) ;
           box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1) ;
-
+  @include min-height(850px);
   #primary-nav {
     .tab {
 	  width: $main_nav_button_width;
@@ -361,7 +362,7 @@ $sidebar_width: 130px;//$stop_circum * 10;
   .book a img {
     border: 1px black;
     border-radius: 5px;
-	padding: 10px 10px 20px 10px;
+	padding: 10px 10px 15px 10px;
     margin-bottom: 30px;
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
@@ -439,25 +440,38 @@ ul.album_thumbs {
   border: black dashed 1px;
 }
 
+.jcarousel-container{
+	padding-right: 6px;
+	padding-bottom: 10px;
+}
 #gallery {
   clear: both;
-
+  float: left;
+  margin-left: -10px;
+  padding-right: 6px;
+  
 /*  border: red solid 1px;*/
 //  padding: 2px;
   margin-top: 10px;
   margin-bottom: 10px;
 //  overflow: auto;
-  
   /*  #thumbs {width:1200px; height: 132px; padding: 6px;}*/
+
   a {
+	 
     img {
-	  //margin: 5px 1px;
-	  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
-	     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
-	          box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);	
+	    float: left;
+	    margin: 5px 5px 6px 5px;
+	    width: 100%;
+	    border: 1px black;
+	    border-radius: 5px;
+	    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+	       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+	            box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);	
     }
   }
 }
+
 
 .disclaimer {
   clear: both;
@@ -488,14 +502,22 @@ ul.album_thumbs {
     	  float: left;
     	//  width:181px;
      //   height:270px;
-        margin-right:8px;
-      	overflow: hidden;
+          margin-right:8px;
+          margin-bottom: 8px;
+      	 overflow: hidden;
+          border: 1px black;
+		    border-radius: 5px;
+			 padding: 5px 5px 7px 5px;
+		    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+		       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+		            box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
     	}
     	
       ul {
         list-style-type: disc; 
         margin-left: 25px;
         margin-right: 25px;
+     
       }
     }
     
