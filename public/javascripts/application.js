@@ -1,4 +1,3 @@
-$('line_list').sortable()
 function remove_fields(link) {
   $(link).prev("input[type=hidden]").val("1");
   $(link).parent(".nested-fields").hide();
@@ -15,9 +14,17 @@ function add_fields(link, association, content) {
 // $('div.content').css('display', 'block');
 
 $(document).ready(function() {	
-  
+   $('ul.category_nav_items').sortable(
+	{
+		axis: 'y',
+		update: function() {
+			jQuery.post($(this).data('update-url'), $(this).sortable('serialize'));
+		}
+	}
+	);
+
 	// lightbox image viewing
-	$('#gallery a').lightBox();
+	$('#gallery a, .image').lightBox();
 	
 	$galleries = jQuery('.album #gallery');
 	if($galleries.length > 0) {

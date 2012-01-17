@@ -1,5 +1,6 @@
 Dorfman::Application.routes.draw do
-
+  post 'sort' => "application#sort"
+  
   resources :pages
 
   resources :categories do
