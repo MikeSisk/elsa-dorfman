@@ -1,19 +1,20 @@
-%h1 Listing subscribers
-
-%ul.subscribers
-  - @subscribers.each do |s|
-    %li.subscriber
-      %p.name= s.name
-      %p= s.address1
-      %p= s.address2
-      %p
-        = [[s.city, s.state].join(', '), s.postal_code].join(' ')
-      %p= s.country
-      %p= s.email
-      %p
-        = link_to 'Edit', edit_subscriber_path(s)
-        |
-        = link_to 'Remove', s, :confirm => 'Are you sure?', :method => :delete
-
-.admin_links.new
-  = link_to 'Add New Subscriber', new_subscriber_path
+#subscribers_div   
+  %h1 Listing subscribers
+  
+  %ul.subscribers
+    - @subscribers.each do |s|
+      %li.subscriber
+        %p.name= s.name
+        %p= s.address1
+        %p= s.address2
+        %p
+          = [[s.city, s.state].join(', '), s.postal_code].join(' ')
+        %p= s.country
+        %p= s.email
+        %p
+          = link_to 'Edit', edit_subscriber_path(s)
+          |
+          = link_to 'Remove', s, :confirm => 'Are you sure?', :method => :delete
+  
+  .admin_links.new
+    = link_to 'Add New Subscriber', new_subscriber_path

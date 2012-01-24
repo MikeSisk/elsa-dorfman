@@ -447,13 +447,27 @@ ol li span.text {
 
 /* ------ Train line side bar ------ */
 /* line 311, ../../../app/stylesheets/application.scss */
+#sidebarsitemapcategory {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0px 0px 0.6em 0px;
+  line-height: 1em;
+  font-family: 'Neuland W01 Black';
+}
+
+/* line 320, ../../../app/stylesheets/application.scss */
+.name {
+  padding: 0 0 5px 0;
+}
+
+/* line 324, ../../../app/stylesheets/application.scss */
 #sidebar {
   width: 130px;
   height: 800px;
   float: left;
   margin-left: 30px;
 }
-/* line 317, ../../../app/stylesheets/application.scss */
+/* line 330, ../../../app/stylesheets/application.scss */
 #sidebar p.label {
   margin-top: -15px;
   position: absolute;
@@ -461,14 +475,14 @@ ol li span.text {
   -webkit-transform: perspective(0px) rotate(-45deg);
   transform: perspective(0px) rotate(-45deg);
 }
-/* line 324, ../../../app/stylesheets/application.scss */
+/* line 337, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap {
   width: 40px;
   position: relative;
   float: left;
   margin-top: 70px;
 }
-/* line 331, ../../../app/stylesheets/application.scss */
+/* line 344, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line {
   width: 24px;
   background-color: pink;
@@ -482,7 +496,7 @@ ol li span.text {
   -khtml-border-radius: 12px;
   border-radius: 12px;
 }
-/* line 340, ../../../app/stylesheets/application.scss */
+/* line 353, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line .stop {
   height: 20px;
   width: 20px;
@@ -499,7 +513,7 @@ ol li span.text {
   -khtml-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 354, ../../../app/stylesheets/application.scss */
+/* line 367, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.ginsburge {
   background-color: orange;
 }
@@ -507,7 +521,7 @@ ol li span.text {
 #sidebar .train_line_wrap .train_line.ginsburge .stop {
   border-color: orange;
 }
-/* line 355, ../../../app/stylesheets/application.scss */
+/* line 368, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.no-hair-day {
   background-color: blue;
 }
@@ -515,7 +529,7 @@ ol li span.text {
 #sidebar .train_line_wrap .train_line.no-hair-day .stop {
   border-color: blue;
 }
-/* line 356, ../../../app/stylesheets/application.scss */
+/* line 369, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.portraits {
   background-color: red;
 }
@@ -523,7 +537,7 @@ ol li span.text {
 #sidebar .train_line_wrap .train_line.portraits .stop {
   border-color: red;
 }
-/* line 357, ../../../app/stylesheets/application.scss */
+/* line 370, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.essays {
   background-color: green;
 }
@@ -531,7 +545,7 @@ ol li span.text {
 #sidebar .train_line_wrap .train_line.essays .stop {
   border-color: green;
 }
-/* line 358, ../../../app/stylesheets/application.scss */
+/* line 371, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .train_line.friends {
   background-color: silver;
 }
@@ -539,7 +553,7 @@ ol li span.text {
 #sidebar .train_line_wrap .train_line.friends .stop {
   border-color: silver;
 }
-/* line 360, ../../../app/stylesheets/application.scss */
+/* line 373, ../../../app/stylesheets/application.scss */
 #sidebar .train_line_wrap .popup_label {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -549,19 +563,19 @@ ol li span.text {
   border-radius: 5px;
 }
 
-/* line 367, ../../../app/stylesheets/application.scss */
+/* line 380, ../../../app/stylesheets/application.scss */
 #right-sidebar {
   width: 150px;
   height: 800px;
   float: left;
   margin-right: 30px;
-  margin-top: 125px;
+  margin-top: 0px;
 }
-/* line 374, ../../../app/stylesheets/application.scss */
+/* line 387, ../../../app/stylesheets/application.scss */
 #right-sidebar a img {
   margin-bottom: 50px;
 }
-/* line 378, ../../../app/stylesheets/application.scss */
+/* line 391, ../../../app/stylesheets/application.scss */
 #right-sidebar .book a img {
   border: 1px black;
   border-radius: 5px;
@@ -572,7 +586,7 @@ ol li span.text {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* line 389, ../../../app/stylesheets/application.scss */
+/* line 402, ../../../app/stylesheets/application.scss */
 #footer {
   clear: both;
   width: 650px;
@@ -583,49 +597,49 @@ ol li span.text {
 }
 
 /* ------ Album Index ------ */
-/* line 399, ../../../app/stylesheets/application.scss */
+/* line 412, ../../../app/stylesheets/application.scss */
 #album-index {
   /*  .indexed-album {
       margin-bottom: 20px;
     }*/
 }
-/* line 404, ../../../app/stylesheets/application.scss */
+/* line 417, ../../../app/stylesheets/application.scss */
 #album-index th {
   font-family: 'ITC Kabel W01 Bold';
 }
-/* line 408, ../../../app/stylesheets/application.scss */
+/* line 421, ../../../app/stylesheets/application.scss */
 #album-index td {
   padding-right: 10px;
 }
-/* line 412, ../../../app/stylesheets/application.scss */
+/* line 425, ../../../app/stylesheets/application.scss */
 #album-index td.name {
   width: 300px;
 }
-/* line 416, ../../../app/stylesheets/application.scss */
+/* line 429, ../../../app/stylesheets/application.scss */
 #album-index td.count, #album-index td.coords {
   width: 200px;
 }
 
 /* ------ Albums ------ */
-/* line 423, ../../../app/stylesheets/application.scss */
+/* line 436, ../../../app/stylesheets/application.scss */
 blockquote {
   font-size: 0.95em;
   margin-left: 20px;
   margin-right: 20px;
 }
 
-/* line 429, ../../../app/stylesheets/application.scss */
+/* line 442, ../../../app/stylesheets/application.scss */
 ul.album_thumbs {
   clear: both;
   display: block;
   margin: auto;
   overflow: hidden;
 }
-/* line 435, ../../../app/stylesheets/application.scss */
+/* line 448, ../../../app/stylesheets/application.scss */
 ul.album_thumbs li {
   display: inline;
 }
-/* line 438, ../../../app/stylesheets/application.scss */
+/* line 451, ../../../app/stylesheets/application.scss */
 ul.album_thumbs li a {
   display: block;
   float: left;
@@ -633,27 +647,27 @@ ul.album_thumbs li a {
   padding: 5px 5px;
 }
 
-/* line 447, ../../../app/stylesheets/application.scss */
+/* line 460, ../../../app/stylesheets/application.scss */
 .album_page_element_fields {
   padding: 10px;
   margin: 10px;
   border: black solid 1px;
 }
 
-/* line 453, ../../../app/stylesheets/application.scss */
+/* line 466, ../../../app/stylesheets/application.scss */
 .image_fields {
   padding: 10px 0px;
   margin: 10px 0px;
   border: black dashed 1px;
 }
 
-/* line 459, ../../../app/stylesheets/application.scss */
+/* line 472, ../../../app/stylesheets/application.scss */
 .jcarousel-container {
   padding-right: 6px;
   padding-bottom: 10px;
 }
 
-/* line 463, ../../../app/stylesheets/application.scss */
+/* line 476, ../../../app/stylesheets/application.scss */
 #gallery {
   clear: both;
   float: left;
@@ -664,7 +678,7 @@ ul.album_thumbs li a {
   margin-bottom: 10px;
   /*  #thumbs {width:1200px; height: 132px; padding: 6px;}*/
 }
-/* line 478, ../../../app/stylesheets/application.scss */
+/* line 491, ../../../app/stylesheets/application.scss */
 #gallery a img {
   float: left;
   margin: 5px 5px 6px 5px;
@@ -676,7 +690,7 @@ ul.album_thumbs li a {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* line 492, ../../../app/stylesheets/application.scss */
+/* line 505, ../../../app/stylesheets/application.scss */
 .disclaimer {
   clear: both;
   font-weight: bold;
@@ -685,19 +699,19 @@ ul.album_thumbs li a {
 }
 
 /* ----- Album Pages ----- */
-/* line 500, ../../../app/stylesheets/application.scss */
+/* line 513, ../../../app/stylesheets/application.scss */
 .album {
   padding-top: 20px;
   padding-left: 40px;
   padding-right: 40px;
   clear: both;
 }
-/* line 510, ../../../app/stylesheets/application.scss */
+/* line 523, ../../../app/stylesheets/application.scss */
 .album .section {
   clear: both;
   margin-bottom: 16px;
 }
-/* line 517, ../../../app/stylesheets/application.scss */
+/* line 530, ../../../app/stylesheets/application.scss */
 .album .section .images .image {
   float: left;
   margin-right: 8px;
@@ -710,49 +724,49 @@ ul.album_thumbs li a {
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
 }
-/* line 532, ../../../app/stylesheets/application.scss */
+/* line 545, ../../../app/stylesheets/application.scss */
 .album .section .images ul {
   list-style-type: disc;
   margin-left: 25px;
   margin-right: 25px;
 }
-/* line 540, ../../../app/stylesheets/application.scss */
+/* line 553, ../../../app/stylesheets/application.scss */
 .album .section p {
   margin-bottom: 16px;
 }
-/* line 544, ../../../app/stylesheets/application.scss */
+/* line 557, ../../../app/stylesheets/application.scss */
 .album .section blockquote {
   margin-bottom: 16px;
 }
-/* line 548, ../../../app/stylesheets/application.scss */
+/* line 561, ../../../app/stylesheets/application.scss */
 .album .section strong {
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 554, ../../../app/stylesheets/application.scss */
+/* line 567, ../../../app/stylesheets/application.scss */
 code {
   font-family: monospace;
   font-size: 0.85em;
 }
 
-/* line 559, ../../../app/stylesheets/application.scss */
+/* line 572, ../../../app/stylesheets/application.scss */
 .album_section_fields {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
 
-/* line 566, ../../../app/stylesheets/application.scss */
+/* line 579, ../../../app/stylesheets/application.scss */
 .subscriber {
   margin-bottom: 20px;
 }
 
-/* line 576, ../../../app/stylesheets/application.scss */
+/* line 589, ../../../app/stylesheets/application.scss */
 #ginsburge_on_sale p {
   margin-bottom: 8px;
 }
 
-/* line 580, ../../../app/stylesheets/application.scss */
+/* line 593, ../../../app/stylesheets/application.scss */
 .admin_links.new {
   margin-top: 20px;
   background-color: red;
@@ -765,12 +779,12 @@ code {
   -khtml-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 582, ../../../app/stylesheets/application.scss */
+/* line 595, ../../../app/stylesheets/application.scss */
 .admin_links.new a {
   color: white;
 }
 
-/* line 590, ../../../app/stylesheets/application.scss */
+/* line 603, ../../../app/stylesheets/application.scss */
 .simple_form label {
   float: left;
   width: 100px;
@@ -778,43 +792,43 @@ code {
   margin: 2px 10px;
 }
 
-/* line 597, ../../../app/stylesheets/application.scss */
+/* line 610, ../../../app/stylesheets/application.scss */
 .simple_form div.input {
   margin-bottom: 10px;
 }
 
-/* line 602, ../../../app/stylesheets/application.scss */
+/* line 615, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean, .simple_form input[type='submit'] {
   margin-left: 120px;
 }
 
-/* line 606, ../../../app/stylesheets/application.scss */
+/* line 619, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean label {
   float: none;
   margin: 0;
 }
 
-/* line 613, ../../../app/stylesheets/application.scss */
+/* line 626, ../../../app/stylesheets/application.scss */
 .page .section {
   clear: both;
   margin: 0px 40px 2em 40px;
 }
-/* line 618, ../../../app/stylesheets/application.scss */
+/* line 631, ../../../app/stylesheets/application.scss */
 .page .section img {
   float: right;
 }
-/* line 623, ../../../app/stylesheets/application.scss */
+/* line 636, ../../../app/stylesheets/application.scss */
 .page .section ul {
   list-style-type: disc;
   margin-left: 25px;
   margin-right: 25px;
   /*      background-color: #fff*/
 }
-/* line 631, ../../../app/stylesheets/application.scss */
+/* line 644, ../../../app/stylesheets/application.scss */
 .page .footer {
   text-align: center;
 }
-/* line 635, ../../../app/stylesheets/application.scss */
+/* line 648, ../../../app/stylesheets/application.scss */
 .page h1 {
   font-size: 24px;
   font-weight: bold;
@@ -823,7 +837,7 @@ code {
   line-height: 1em;
   font-family: 'Neuland W01 Black';
 }
-/* line 645, ../../../app/stylesheets/application.scss */
+/* line 658, ../../../app/stylesheets/application.scss */
 .page h2 {
   font-size: 20px;
   font-weight: bold;
@@ -832,42 +846,48 @@ code {
   color: #666;
   font-family: 'ITC Kabel W01 Bold';
 }
-/* line 654, ../../../app/stylesheets/application.scss */
+/* line 667, ../../../app/stylesheets/application.scss */
 .page strong {
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 658, ../../../app/stylesheets/application.scss */
+/* line 671, ../../../app/stylesheets/application.scss */
 strong {
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 662, ../../../app/stylesheets/application.scss */
+/* line 675, ../../../app/stylesheets/application.scss */
 span.telephone {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 667, ../../../app/stylesheets/application.scss */
+/* line 680, ../../../app/stylesheets/application.scss */
 span.copyright {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 673, ../../../app/stylesheets/application.scss */
+/* line 686, ../../../app/stylesheets/application.scss */
 #subway_map img {
   margin-left: 60px;
 }
 
-/* line 679, ../../../app/stylesheets/application.scss */
+/* line 692, ../../../app/stylesheets/application.scss */
 #sitemap ul {
+  width: 130px;
   margin-bottom: 30px;
 }
 
-/* line 682, ../../../app/stylesheets/application.scss */
+/* line 697, ../../../app/stylesheets/application.scss */
 a.cancel {
   font-size: 40px;
   background-color: red;
   color: black;
   /*  font-weight: bold;*/
+}
+
+/* line 703, ../../../app/stylesheets/application.scss */
+#subscribers_div {
+  padding: 20px 0 0 20px;
 }

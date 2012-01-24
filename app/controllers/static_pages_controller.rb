@@ -3,6 +3,10 @@ class StaticPagesController < ApplicationController
   
   def home
     @page = Page.find_by_title('home')
+    @albums_hash = Hash.new([])
+    Category.order('categories.id ASC').each do |cat|
+      @albums_hash[cat.name] = cat.albums.order('albums.name').all
+    end
   end
 
   def map
@@ -15,6 +19,10 @@ class StaticPagesController < ApplicationController
   end
 
   def donate
+    @albums_hash = Hash.new([])
+    Category.order('categories.id ASC').each do |cat|
+      @albums_hash[cat.name] = cat.albums.order('albums.name').all
+    end
   end
 
   def sitemap

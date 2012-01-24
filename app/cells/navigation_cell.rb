@@ -30,10 +30,12 @@ class NavigationCell < Cell::Rails
     end
     
     @categories = Category.ordered.all
-    if params[:category_id]
-      @selected_category = Category.find(params[:category_id])
+    #if params[:category_id]
+      #@selected_category = Category.find(params[:category_id])
+      #render
+    #end
+    @selected_category_name = params[:category_id] ? Category.find(params[:category_id]).name : "none"
       render
-    end
   end
   
   def category

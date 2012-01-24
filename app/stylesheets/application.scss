@@ -308,6 +308,19 @@ $stop_circum_hover: 40px;
 
 $sidebar_width: 130px;//$stop_circum * 10;
 
+#sidebarsitemapcategory{
+	font-size: 18px;
+  font-weight: bold;
+  padding: 0px 0px 0.6em 0px;
+  line-height: 1em;
+ // line-height: 1.1em;
+  font-family:'Neuland W01 Black';
+}
+
+.name {
+	padding: 0 0 5px 0;
+}
+
 #sidebar {
   width: $sidebar_width;
   height: 800px;
@@ -369,7 +382,7 @@ $sidebar_width: 130px;//$stop_circum * 10;
   height: 800px;
   float: left;
   margin-right: 30px;
-  margin-top: 125px;
+  margin-top: 0px;
  
   a img {
     margin-bottom: 50px;
@@ -676,7 +689,9 @@ span.copyright {
 
 // ------ sitemap
 #sitemap {
-  ul { margin-bottom: 30px; }
+  ul { 
+	width: $sidebar_width;
+	margin-bottom: 30px; }
 }
 // misc
 a.cancel {
@@ -684,4 +699,7 @@ a.cancel {
   background-color: red;
   color: black;
 /*  font-weight: bold;*/
+}
+#subscribers_div{
+	padding: 20px 0 0 20px;
 }
