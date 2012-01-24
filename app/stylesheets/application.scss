@@ -67,11 +67,13 @@ body {
   line-height: 22px;	
   margin-top: 30px;//remove
   margin: 0 auto;
+ 
 }
 
 #wrap {
 	margin: 20px auto;
 	width: 1100px;
+	
 }
 
 $main_content_width: 650px;
@@ -165,8 +167,8 @@ $main_nav_button_height: 40px;
   #line {
     position: absolute;
     height: 2000px;
-	  width: 130px;
-	  padding-left: 25px;
+	  width: 150px;
+	  //padding-left: 50px;
 	  margin-left: 10px;
     z-index: -1; 
   }
@@ -215,8 +217,8 @@ $main_nav_button_height: 40px;
 }
 
 #category_nav.essays {
-  #line { background: url(/images/shared/line/bg_green.png) repeat-y; }
-  ul    { background: url(/images/shared/line/top_bulb_green.png) no-repeat; }
+  #line { background: url(/images/shared/line/bg_green.png) 0 0 repeat-y;}
+  ul    { background: url(/images/shared/line/top_bulb_green.png) -11px 0  no-repeat;}
   li    { 
     background: url(/images/shared/line/essays.png) repeat-y;
     &:hover { background: url(/images/shared/line/essays.png) 0 -47px no-repeat; }
@@ -306,7 +308,7 @@ ol {
 $stop_circum: 20px;// should be even number
 $stop_circum_hover: 40px;
 
-$sidebar_width: 130px;//$stop_circum * 10;
+$sidebar_width: 150px;//$stop_circum * 10;
 
 #sidebarsitemapcategory{
 	font-size: 18px;
@@ -326,7 +328,8 @@ $sidebar_width: 130px;//$stop_circum * 10;
   height: 800px;
   float: left;
   margin-left: 30px;
-
+  
+  
   p.label {
     margin-top: -15px;
     position: absolute;
