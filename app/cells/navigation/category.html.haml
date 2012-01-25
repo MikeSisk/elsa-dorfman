@@ -1,6 +1,24 @@
+-# %nav
+-#   %div{:id => "category_nav", :class => "#{@category_name}"}
+-#     #line
+-#     %ul{:id => "line_list"}
+-#       - @links.each do |link|
+-#         = content_tag_for :li, link.resource do
+-#           =link_to link.label, link.dest, :class => (link.selected ? 'selected' : '')
+
 %nav
   %div{:id => "category_nav", :class => "#{@category_name}"}
     #line
-    %ul
+    -# %ul{:id => "line_list"}
+    %ul{:id => "categories", :class => "category_nav_items", "data-update-url" => "#{sort_path}"}
       - @links.each do |link|
-        %li= link_to link.label, link.dest, :class => (link.selected ? 'selected' : '')
+        = content_tag_for :li, link.resource do
+          =link_to link.label, link.dest, :class => (link.selected ? 'selected' : '')
+        
+
+-# %nav
+-#   %div{:id => "category_nav", :class => "#{@category_name}"}
+-#     #line
+-#     %ul
+-#       - @links.each do |link|
+-#         %li= link_to link.label, link.dest, :class => (link.selected ? 'selected' : '')

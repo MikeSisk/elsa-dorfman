@@ -1,30 +1,31 @@
-%p#notice= notice
-
-%p
-  %b Name:
-  = @subscriber.name
-%p
-  %b Address1:
-  = @subscriber.address1
-%p
-  %b Address2:
-  = @subscriber.address2
-%p
-  %b City:
-  = @subscriber.city
-%p
-  %b State:
-  = @subscriber.state
-%p
-  %b Postal code:
-  = @subscriber.postal_code
-%p
-  %b Country:
-  = @subscriber.country
-%p
-  %b Email:
-  = @subscriber.email
-
-= link_to 'Edit', edit_subscriber_path(@subscriber)
-\|
-= link_to 'Back', subscribers_path
+#subscribers_div  
+  %p#notice= notice
+  
+  %p
+    %b Name:
+    = @subscriber.name
+  %p
+    %b Address1:
+    = @subscriber.address1
+  %p
+    %b Address2:
+    = @subscriber.address2
+  %p
+    %b City:
+    = @subscriber.city
+  %p
+    %b State:
+    = @subscriber.state
+  %p
+    %b Postal code:
+    = @subscriber.postal_code
+  %p
+    %b Country:
+    = @subscriber.country
+  %p
+    %b Email:
+    = @subscriber.email
+  
+  = link_to 'Edit', edit_subscriber_path(@subscriber)
+  \|
+  = link_to 'Back', subscribers_path

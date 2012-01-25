@@ -6,4 +6,4 @@
   - @categories.each do |c|
     %a{:href => category_album_path(c, c.first_album)}
       %div{:class => "tab #{c.name}"}
-  %div{:id => "tab-base", :class => "#{@selected_category.name}"}
+  %div{:id => "tab-base", :class => "#{@selected_category_name}"}

@@ -27,7 +27,14 @@
   %body
     #wrap
       #sidebar
-        
+        %h1= "sitemap:"
+        #sitemap
+          - @albums_hash.each do |category_name, albums|
+            #sidebarsitemapcategory= category_name
+            %ul
+              - albums.each do |album|
+                %li
+                  .name= link_to(album.name, category_album_path(album.category, album))
       #main
         #user_nav
           - if admin_signed_in?
@@ -38,14 +45,17 @@
         - flash.each do |name, msg|
           = content_tag :div, msg, :id => "flash_#{name}"
         -# = link_to image_tag('/images/shared/elsa_dorfman_still_clickin.png'), root_path
-        = link_to image_tag('/images/shared/camera-still-banner-name.gif'), root_path
+        #legacywrapper
+          #mail-list-link
+            = link_to image_tag("/images/shared/mail-sm.jpg"), new_subscriber_path
+          = link_to image_tag('/images/shared/camera-still-banner-name.gif'), root_path
+          #donate-link
+            = link_to image_tag("/images/shared/donate_xs.jpg"), donate_path
         #content
           = render_cell :navigation, :primary_tabs
           = content_tag :h1, yield(:title) if show_title?
           = yield
       #right-sidebar
-        = link_to image_tag("/images/shared/mail-sm.jpg"), new_subscriber_path
-        = link_to image_tag("/images/shared/donate_xs.jpg"), donate_path
         = render_cell :right_sidebar, :books
       #footer
         .disclaimer 

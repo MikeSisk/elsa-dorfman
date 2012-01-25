@@ -67,32 +67,50 @@ body {
   line-height: 22px;	
   margin-top: 30px;//remove
   margin: 0 auto;
+ 
 }
 
 #wrap {
 	margin: 20px auto;
 	width: 1100px;
+	
 }
 
 $main_content_width: 650px;
 #main { 
   width: $main_content_width;
+  
   margin: 0 auto;
   padding: 0 20px;
   float: left;
-  //margin-top:70px;
-  background: url(/images/shared/20x24_sketch_ghosted.png) no-repeat 70px 180px;
-  @include min-height(790px);
+  
+  background: url(/images/shared/20x24_sketch_ghosted.png) no-repeat 70px 150px;
+  @include min-height(850px);
 }
  
-$main_nav_button_width: 108px;//$main_content_width / 6;
+$main_nav_button_width: 108px; //$main_content_width / 6;
 $main_nav_button_height: 40px;
-#content {
+#legacywrapper{
+	position: relative;
+	display: inline-block;
+	width: 650px;
+	#mail-list-link{
+		float: left;
+		margin-right: 15px;
+	}
 
+	#donate-link{
+		float: right;
+	
+	}
+}
+#content {
+  border-radius: 5px;
   border: 1px solid silver;
   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1) ;
      -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1) ;
           box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1) ;
+  @include min-height(850px);
 
   #primary-nav {
     .tab {
@@ -122,14 +140,14 @@ $main_nav_button_height: 40px;
 	  }
 	
 	  #tab-base {
-	    height: 7px;
+	    height: 10px;
 	    background-color: black;
 	    background: none;
 	    clear: both;
 	  }
 	  
 /*    #tab-base.portraits   { background-color: #CC0000; }*/
-	  #tab-base.portraits   { background-color: #E71B2E; }
+	  #tab-base.portraits   { background-color: red; }
 /*    #tab-base.essays      { background-color: darkgreen; }*/
 	  #tab-base.essays      { background-color: #006939; }
 /*    #tab-base.no_hair_day { background-color: #336699; }*/
@@ -149,14 +167,15 @@ $main_nav_button_height: 40px;
   #line {
     position: absolute;
     height: 2000px;
-	  width: 130px;
-	  padding-left: 25px;
+	  width: 150px;
+	  //padding-left: 50px;
 	  margin-left: 10px;
     z-index: -1; 
   }
   
   ul {
-    padding-top: 43px;
+
+    padding-top: 100px;
   }
   
   li {
@@ -198,8 +217,8 @@ $main_nav_button_height: 40px;
 }
 
 #category_nav.essays {
-  #line { background: url(/images/shared/line/bg_green.png) repeat-y; }
-  ul    { background: url(/images/shared/line/top_bulb_green.png) no-repeat; }
+  #line { background: url(/images/shared/line/bg_green.png) 0 0 repeat-y;}
+  ul    { background: url(/images/shared/line/top_bulb_green.png) -11px 0  no-repeat;}
   li    { 
     background: url(/images/shared/line/essays.png) repeat-y;
     &:hover { background: url(/images/shared/line/essays.png) 0 -47px no-repeat; }
@@ -289,14 +308,28 @@ ol {
 $stop_circum: 20px;// should be even number
 $stop_circum_hover: 40px;
 
-$sidebar_width: 130px;//$stop_circum * 10;
+$sidebar_width: 150px;//$stop_circum * 10;
+
+#sidebarsitemapcategory{
+	font-size: 18px;
+  font-weight: bold;
+  padding: 0px 0px 0.6em 0px;
+  line-height: 1em;
+ // line-height: 1.1em;
+  font-family:'Neuland W01 Black';
+}
+
+.name {
+	padding: 0 0 5px 0;
+}
 
 #sidebar {
   width: $sidebar_width;
   height: 800px;
   float: left;
   margin-left: 30px;
-
+  
+  
   p.label {
     margin-top: -15px;
     position: absolute;
@@ -352,17 +385,20 @@ $sidebar_width: 130px;//$stop_circum * 10;
   height: 800px;
   float: left;
   margin-right: 30px;
-  margin-top: 130px;
+  margin-top: 0px;
  
   a img {
     margin-bottom: 50px;
   }
   
   .book a img {
+    border: 1px black;
+    border-radius: 5px;
+	padding: 10px 10px 15px 10px;
     margin-bottom: 30px;
-/*    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
-            box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);*/
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -436,25 +472,38 @@ ul.album_thumbs {
   border: black dashed 1px;
 }
 
+.jcarousel-container{
+	padding-right: 6px;
+	padding-bottom: 10px;
+}
 #gallery {
   clear: both;
-
+  float: left;
+  margin-left: -10px;
+  padding-right: 6px;
+  
 /*  border: red solid 1px;*/
 //  padding: 2px;
   margin-top: 10px;
   margin-bottom: 10px;
 //  overflow: auto;
-  
   /*  #thumbs {width:1200px; height: 132px; padding: 6px;}*/
+
   a {
+	 
     img {
-	  //margin: 5px 1px;
-	  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
-	     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
-	          box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);	
+	    float: left;
+	    margin: 5px 5px 6px 5px;
+	    width: 100%;
+	    border: 1px black;
+	    border-radius: 5px;
+	    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+	       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+	            box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);	
     }
   }
 }
+
 
 .disclaimer {
   clear: both;
@@ -485,14 +534,22 @@ ul.album_thumbs {
     	  float: left;
     	//  width:181px;
      //   height:270px;
-        margin-right:8px;
-      	overflow: hidden;
+          margin-right:8px;
+          margin-bottom: 8px;
+      	 overflow: hidden;
+          border: 1px black;
+		    border-radius: 5px;
+			 padding: 5px 5px 7px 5px;
+		    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+		       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+		            box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
     	}
     	
       ul {
         list-style-type: disc; 
         margin-left: 25px;
         margin-right: 25px;
+     
       }
     }
     
@@ -635,7 +692,9 @@ span.copyright {
 
 // ------ sitemap
 #sitemap {
-  ul { margin-bottom: 30px; }
+  ul { 
+	width: $sidebar_width;
+	margin-bottom: 30px; }
 }
 // misc
 a.cancel {
@@ -643,4 +702,7 @@ a.cancel {
   background-color: red;
   color: black;
 /*  font-weight: bold;*/
+}
+#subscribers_div{
+	padding: 20px 0 0 20px;
 }
