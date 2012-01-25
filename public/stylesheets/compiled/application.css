@@ -655,60 +655,59 @@ ul.album_thumbs li a {
   padding-right: 40px;
   clear: both;
 }
-/* line 477, ../../../app/stylesheets/application.scss */
+/* line 476, ../../../app/stylesheets/application.scss */
 .album .section {
   clear: both;
-  margin-bottom: 16px;
 }
-/* line 484, ../../../app/stylesheets/application.scss */
+/* line 481, ../../../app/stylesheets/application.scss */
 .album .section .images .image {
   float: left;
   margin-right: 8px;
   overflow: hidden;
 }
-/* line 492, ../../../app/stylesheets/application.scss */
+/* line 489, ../../../app/stylesheets/application.scss */
 .album .section .images ul {
   list-style-type: disc;
   margin-left: 25px;
   margin-right: 25px;
 }
-/* line 499, ../../../app/stylesheets/application.scss */
+/* line 496, ../../../app/stylesheets/application.scss */
 .album .section p {
   margin-bottom: 16px;
 }
-/* line 503, ../../../app/stylesheets/application.scss */
+/* line 500, ../../../app/stylesheets/application.scss */
 .album .section blockquote {
   margin-bottom: 16px;
 }
-/* line 507, ../../../app/stylesheets/application.scss */
+/* line 504, ../../../app/stylesheets/application.scss */
 .album .section strong {
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 513, ../../../app/stylesheets/application.scss */
+/* line 510, ../../../app/stylesheets/application.scss */
 code {
   font-family: monospace;
   font-size: 0.85em;
 }
 
-/* line 518, ../../../app/stylesheets/application.scss */
+/* line 515, ../../../app/stylesheets/application.scss */
 .album_section_fields {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
 
-/* line 525, ../../../app/stylesheets/application.scss */
+/* line 522, ../../../app/stylesheets/application.scss */
 .subscriber {
   margin-bottom: 20px;
 }
 
-/* line 535, ../../../app/stylesheets/application.scss */
+/* line 532, ../../../app/stylesheets/application.scss */
 #ginsburge_on_sale p {
   margin-bottom: 8px;
 }
 
-/* line 539, ../../../app/stylesheets/application.scss */
+/* line 536, ../../../app/stylesheets/application.scss */
 .admin_links.new {
   margin-top: 20px;
   background-color: red;
@@ -721,12 +720,12 @@ code {
   -khtml-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 541, ../../../app/stylesheets/application.scss */
+/* line 538, ../../../app/stylesheets/application.scss */
 .admin_links.new a {
   color: white;
 }
 
-/* line 549, ../../../app/stylesheets/application.scss */
+/* line 546, ../../../app/stylesheets/application.scss */
 .simple_form label {
   float: left;
   width: 100px;
@@ -734,43 +733,43 @@ code {
   margin: 2px 10px;
 }
 
-/* line 556, ../../../app/stylesheets/application.scss */
+/* line 553, ../../../app/stylesheets/application.scss */
 .simple_form div.input {
   margin-bottom: 10px;
 }
 
-/* line 561, ../../../app/stylesheets/application.scss */
+/* line 558, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean, .simple_form input[type='submit'] {
   margin-left: 120px;
 }
 
-/* line 565, ../../../app/stylesheets/application.scss */
+/* line 562, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean label {
   float: none;
   margin: 0;
 }
 
-/* line 572, ../../../app/stylesheets/application.scss */
+/* line 569, ../../../app/stylesheets/application.scss */
 .page .section {
   clear: both;
   margin: 0px 40px 2em 40px;
 }
-/* line 577, ../../../app/stylesheets/application.scss */
+/* line 574, ../../../app/stylesheets/application.scss */
 .page .section img {
   float: right;
 }
-/* line 582, ../../../app/stylesheets/application.scss */
+/* line 579, ../../../app/stylesheets/application.scss */
 .page .section ul {
   list-style-type: disc;
   margin-left: 25px;
   margin-right: 25px;
   /*      background-color: #fff*/
 }
-/* line 590, ../../../app/stylesheets/application.scss */
+/* line 587, ../../../app/stylesheets/application.scss */
 .page .footer {
   text-align: center;
 }
-/* line 594, ../../../app/stylesheets/application.scss */
+/* line 591, ../../../app/stylesheets/application.scss */
 .page h1 {
   font-size: 24px;
   font-weight: bold;
@@ -779,7 +778,7 @@ code {
   line-height: 1em;
   font-family: 'Neuland W01 Black';
 }
-/* line 604, ../../../app/stylesheets/application.scss */
+/* line 601, ../../../app/stylesheets/application.scss */
 .page h2 {
   font-size: 20px;
   font-weight: bold;
@@ -788,39 +787,39 @@ code {
   color: #666;
   font-family: 'ITC Kabel W01 Bold';
 }
-/* line 613, ../../../app/stylesheets/application.scss */
+/* line 610, ../../../app/stylesheets/application.scss */
 .page strong {
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 617, ../../../app/stylesheets/application.scss */
+/* line 614, ../../../app/stylesheets/application.scss */
 strong {
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 621, ../../../app/stylesheets/application.scss */
+/* line 618, ../../../app/stylesheets/application.scss */
 span.telephone {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 626, ../../../app/stylesheets/application.scss */
+/* line 623, ../../../app/stylesheets/application.scss */
 span.copyright {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 632, ../../../app/stylesheets/application.scss */
+/* line 629, ../../../app/stylesheets/application.scss */
 #subway_map img {
   margin-left: 60px;
 }
 
-/* line 638, ../../../app/stylesheets/application.scss */
+/* line 635, ../../../app/stylesheets/application.scss */
 #sitemap ul {
   margin-bottom: 30px;
 }
 
-/* line 641, ../../../app/stylesheets/application.scss */
+/* line 638, ../../../app/stylesheets/application.scss */
 a.cancel {
   font-size: 40px;
   background-color: red;

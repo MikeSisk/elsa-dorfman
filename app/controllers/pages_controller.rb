@@ -28,9 +28,7 @@ class PagesController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.xml  { render :xml => @page }
-    end
-  end
+      format.xml  { render :xml => @page } end end
 
   # GET /pages/1/edit
   def edit
