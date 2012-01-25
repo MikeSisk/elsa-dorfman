@@ -18,7 +18,12 @@ $(document).ready(function() {
 	{
 		axis: 'y',
 		update: function() {
-			jQuery.post($(this).data('update-url'), $(this).sortable('serialize'));
+		  var classes = $(this).attr('class');
+	    reg = /\b[A-Za-z0-9.]+(?=_model)/
+		  modelName = reg.exec(classes);
+		  
+		  modelName = $(this).data('model');
+			jQuery.post($(this).data('update-url'), $(this).sortable('serialize') + '&model='+modelName);
 		}
 	}
 	);
