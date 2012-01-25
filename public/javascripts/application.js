@@ -25,8 +25,6 @@ $(document).ready(function() {
     });	  
 	}
 	
-	jQuery('ul#line_list').sortable();
-	
 	// train line refactor
   // var STOP_HOVER_SIZE = 40;
   // var STOP_HOVER_BORDER_RAD = STOP_HOVER_SIZE / 2;

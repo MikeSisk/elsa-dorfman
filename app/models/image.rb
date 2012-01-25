@@ -3,6 +3,7 @@ class Image < ActiveRecord::Base
   belongs_to :imageable, :polymorphic => true
   
   has_attached_file :resource, 
+    # :styles => { :thumb => "128x128#", :small => "87x119#", :medium => "256x256>" },
     :styles => { :thumb => "128x128#", :small => "87x119#", :medium => "181x256>", :inline => "x256>" },
     :storage => :s3,
     :bucket => 'elsadorfman-production',
