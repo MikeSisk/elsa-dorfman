@@ -1,25 +1,25 @@
 class NavigationCell < Cell::Rails
   class NavLink 
-    attr_accessor :dest, :label, :resource, :selected
-    def initialize(dest, label, resource, selected = false)
-      self.dest, self.label, self.resource, self.selected = dest, label, resource, selected
+    attr_accessor :dest, :label, :selected
+    def initialize(dest, label, selected = false)
+      self.dest, self.label, self.selected = dest, label, selected
     end  
   end
   
-  # def all_lines
-  #   @ginsburge_stops = [NavLink.new(ginsburge_sale_path, 'Ginsburge on sale')]
-  #   @ginsburge_stops.concat(Album.all.map {|s| NavLink.new(s, s.name)})
-  #   
-  #   
-  #   @no_hair_day_stops = Album.all + Album.all
-  #   
-  #   @portraits_stops = Album.all.map {|s| NavLink.new(s, s.name)}
-  #   @portraits_stops << NavLink.new(about_camera_path, 'About the camera')
-  #   
-  #   @essays = Album.all + Album.all + Album.all
-  #   @friends = Album.all + Album.limit(4)
-  #   render
-  # end
+  def all_lines
+    @ginsburge_stops = [NavLink.new(ginsburge_sale_path, 'Ginsburge on sale')]
+    @ginsburge_stops.concat(Album.all.map {|s| NavLink.new(s, s.name)})
+    
+    
+    @no_hair_day_stops = Album.all + Album.all
+    
+    @portraits_stops = Album.all.map {|s| NavLink.new(s, s.name)}
+    @portraits_stops << NavLink.new(about_camera_path, 'About the camera')
+    
+    @essays = Album.all + Album.all + Album.all
+    @friends = Album.all + Album.limit(4)
+    render
+  end
 
   def primary_tabs
     @links = {}
@@ -34,9 +34,6 @@ class NavigationCell < Cell::Rails
       @selected_category = Category.find(params[:category_id])
       render
     end
-    
-    @selected_category_name = params[:category_id] ? Category.find(params[:category_id]).name : "none"
-    render
   end
   
   def category
@@ -48,7 +45,7 @@ class NavigationCell < Cell::Rails
     if @category
       @category.albums.each do |album|
         selected = album.id.to_s == params[:id]
-        @links << NavLink.new(category_album_path(@category, album), album.menu_name, album, selected) unless album.hidden
+        @links << NavLink.new(category_album_path(@category, album), album.menu_name, selected) unless album.hidden
       end
       render
     end
