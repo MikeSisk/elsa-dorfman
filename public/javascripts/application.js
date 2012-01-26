@@ -24,7 +24,7 @@ $(document).ready(function() {
 	);
 
 	// lightbox image viewing
-	$('#gallery a, .image').lightBox();
+	$('#gallery a, .image a').lightBox();
 	
 	$galleries = jQuery('.album #gallery');
 	if($galleries.length > 0) {
