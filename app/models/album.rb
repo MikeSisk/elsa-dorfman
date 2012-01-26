@@ -13,6 +13,8 @@ class Album < ActiveRecord::Base
   belongs_to :category
  # validates_associated :category
  
+ scope :ordered, order("albums.position ASC")
+ 
   def self.by_name(name)
     Album.where(:name => name).first
   end
