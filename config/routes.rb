@@ -15,6 +15,8 @@ Dorfman::Application.routes.draw do
   resources :albums do
     resources :images
   end
+  
+  match 'albums/:id/sort_images' => 'albums#sort_images', :as => :sort_album_images
     
   match 'control-panel'     => 'static_pages#control_panel', :as => :control
   match 'map'               => 'static_pages#map',          :as => :map

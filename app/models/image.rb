@@ -12,6 +12,8 @@ class Image < ActiveRecord::Base
   
   validates_attachment_presence :resource
   
+  scope :ordered, order("images.position ASC")
+  
   def url(size = nil)
     self.resource.url(size)
   end

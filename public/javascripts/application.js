@@ -25,9 +25,16 @@ $(document).ready(function() {
 		  modelName = $(this).data('model');
 			jQuery.post($(this).data('update-url'), $(this).sortable('serialize') + '&model='+modelName);
 		}
-	}
-	);
+	});
 
+   $('ul.sortable_images').sortable(
+	{
+		update: function() {		  
+		  modelName = $(this).data('model');
+		  jQuery.post($(this).data('update-url'), $(this).sortable('serialize') + '&model='+modelName);
+		}
+	});
+	
 	// lightbox image viewing
 	$('#gallery a, .image a').lightBox();
 	

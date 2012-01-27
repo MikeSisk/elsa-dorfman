@@ -10,6 +10,7 @@ class AlbumsController < ApplicationController
   def show
     @album = Album.find(params[:id])
     @sections = @album.album_sections.order(:position)
+    @images = @album.images.ordered
     respond_with @album
   end
 
@@ -53,5 +54,10 @@ class AlbumsController < ApplicationController
     @album = Album.find(params[:id])
     @album.destroy
     respond_with @album
+  end
+  
+  def sort_images
+    @album = Album.find(params[:id])
+    @images = @album.images.ordered
   end
 end

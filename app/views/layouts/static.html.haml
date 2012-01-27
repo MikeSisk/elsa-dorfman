@@ -27,14 +27,7 @@
   %body
     #wrap
       #sidebar
-        %h1= "sitemap:"
-        #sitemap
-          - @albums_hash.each do |category_name, albums|
-            #sidebarsitemapcategory= category_name
-            %ul
-              - albums.each do |album|
-                %li
-                  .name= link_to(album.name, category_album_path(album.category, album))
+        
       #main
         #user_nav
           - if admin_signed_in?

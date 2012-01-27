@@ -1,0 +1,7 @@
+= link_to 'BACK', category_album_path(@album.category, @album)
+
+%ul{:class => "sortable_images", "data-update-url" => "#{sort_path}", "data-model" => "image"}
+  - @images.each do |image|
+    = content_tag_for :li, image do
+      = image_tag image.url(:thumb)
+
