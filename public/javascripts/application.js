@@ -14,7 +14,7 @@ function add_fields(link, association, content) {
 // $('div.content').css('display', 'block');
 
 $(document).ready(function() {	
-   $('ul.category_nav_items').sortable(
+   $('ul.sortable_category_nav').sortable(
 	{
 		axis: 'y',
 		update: function() {

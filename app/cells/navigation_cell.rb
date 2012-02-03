@@ -1,4 +1,6 @@
 class NavigationCell < Cell::Rails
+include Devise::Controllers::Helpers
+helper_method :admin_signed_in?
   class NavLink 
     attr_accessor :dest, :label, :resource, :selected
     def initialize(dest, label, resource, selected = false)
