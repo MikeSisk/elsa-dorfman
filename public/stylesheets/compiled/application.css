@@ -225,6 +225,11 @@ body {
   background: none;
   clear: both;
 }
+/* line 148, ../../../app/stylesheets/application.scss */
+#content #primary-nav #tab-base.uncategorized {
+  height: 2px;
+  background-color: #000;
+}
 /* line 150, ../../../app/stylesheets/application.scss */
 #content #primary-nav #tab-base.portraits {
   background-color: red;

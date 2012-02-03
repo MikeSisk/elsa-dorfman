@@ -36,7 +36,7 @@ helper_method :admin_signed_in?
       #@selected_category = Category.find(params[:category_id])
       #render
     #end
-    @selected_category_name = params[:category_id] ? Category.find(params[:category_id]).name : "none"
+    @selected_category_name = params[:category_id] ? Category.find(params[:category_id]).name : "uncategorized"
       render
   end
   
