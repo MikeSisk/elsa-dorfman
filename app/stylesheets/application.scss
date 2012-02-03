@@ -207,6 +207,8 @@ $main_nav_button_height: 40px;
   }
 }
 
+
+
 #category_nav.portraits {
   #line { background: url(/images/shared/line/bg_red.png) repeat-y; }
   ul    { background: url(/images/shared/line/top_bulb_red.png) no-repeat; }
@@ -223,6 +225,14 @@ $main_nav_button_height: 40px;
     background: url(/images/shared/line/essays.png) repeat-y;
 	 margin-left: 21px;
     &:hover { background: url(/images/shared/line/essays.png) 0 -47px no-repeat; }
+  }
+  
+  &:after {
+    display: block;
+    content:"";
+    background: url(/images/shared/line/bottom_bulb.png) no-repeat;
+    width: 65px;
+    height: 66px;
   }
 }
 
