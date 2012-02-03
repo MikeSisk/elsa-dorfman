@@ -257,7 +257,7 @@ body {
 /* line 167, ../../../app/stylesheets/application.scss */
 #category_nav #line {
   position: absolute;
-  height: 2000px;
+  height: 200px;
   width: 150px;
   margin-left: 10px;
   z-index: -1;
