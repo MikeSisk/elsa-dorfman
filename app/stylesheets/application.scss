@@ -145,7 +145,7 @@ $main_nav_button_height: 40px;
 	    background: none;
 	    clear: both;
 	  }
-	   #tab-base.uncategorized{ height: 2px; background-color: #000;}
+	   #tab-base.uncategorized { height: 2px; background-color: #000;}
 /*    #tab-base.portraits   { background-color: #CC0000; }*/
 	  #tab-base.portraits   { background-color: red; }
 /*    #tab-base.essays      { background-color: darkgreen; }*/
@@ -210,11 +210,20 @@ $main_nav_button_height: 40px;
 
 
 #category_nav.portraits {
-  #line { background: url(/images/shared/line/bg_red.png) repeat-y; }
+  #line { background: url(/images/shared/line/bg_red.png) repeat-y; margin-left: 34px; }
   ul    { background: url(/images/shared/line/top_bulb_red.png) no-repeat; }
   li    { 
-    background: url(/images/shared/line/portraits.png) no-repeat; 
+    background: url(/images/shared/line/portraits.png) no-repeat;
+	 margin-left: 34px;
     &:hover { background: url(/images/shared/line/portraits.png) 0 -47px no-repeat; }
+  }
+ &:after {
+    display: block;
+    content:"";
+    background: url(/images/shared/line/base.png) no-repeat;
+    width: 55px;
+    height: 167px;
+    margin-left: 18px;
   }
 }
 
@@ -230,9 +239,10 @@ $main_nav_button_height: 40px;
   &:after {
     display: block;
     content:"";
-    background: url(/images/shared/line/bottom_bulb.png) no-repeat;
-    width: 65px;
-    height: 66px;
+    background: url(/images/shared/line/base.png) no-repeat;
+    width: 55px;
+    height: 167px;
+    margin-left: 5px;
   }
 }
 
@@ -244,15 +254,31 @@ $main_nav_button_height: 40px;
     margin-left: 40px;
     &:hover { background: url(/images/shared/line/no_hair_day.png) 0 -47px no-repeat; }
   }
+ &:after {
+    display: block;
+    content:"";
+    background: url(/images/shared/line/base.png) no-repeat;
+    width: 55px;
+    height: 167px;
+    margin-left: 23px;
+  }
 }
 
 #category_nav.ginsberg {
-  #line { background: url(/images/shared/line/bg_orange.png) repeat-y; margin-left: 37px; }
+  #line { background: url(/images/shared/line/bg_orange.png) repeat-y; margin-left: 33px; }
   ul    { background: url(/images/shared/line/top_bulb_orange.png) no-repeat; }
   li    {
     background: url(/images/shared/line/ginsberg.png) repeat-y;
-    margin-left: 37px;
+    margin-left: 33px;
     &:hover { background: url(/images/shared/line/ginsberg.png) 0 -47px no-repeat; }
+  }
+ &:after {
+    display: block;
+    content:"";
+    background: url(/images/shared/line/base.png) no-repeat;
+    width: 55px;
+    height: 167px;
+    margin-left: 17px;
   }
 }
 
@@ -264,14 +290,31 @@ $main_nav_button_height: 40px;
     margin-left: 27px;
     &:hover { background: url(/images/shared/line/friends.png) 0 -47px no-repeat; }
   }
+ &:after {
+    display: block;
+    content:"";
+    background: url(/images/shared/line/base.png) no-repeat;
+    width: 55px;
+    height: 167px;
+    margin-left: 11px;
+  }
 }
 
 #category_nav.commutes {
-  #line { background: url(/images/shared/line/bg_purple.png) repeat-y; }
+  #line { background: url(/images/shared/line/bg_purple.png) repeat-y; margin-left: 28px; }
   ul    { background: url(/images/shared/line/top_bulb_purple.png) no-repeat; }
   li    {
     background: url(/images/shared/line/commutes.png) repeat-y;
+    margin-left: 28px;
     &:hover { background: url(/images/shared/line/commutes.png) 0 -47px no-repeat; }
+  }
+ &:after {
+    display: block;
+    content:"";
+    background: url(/images/shared/line/base.png) no-repeat;
+    width: 55px;
+    height: 167px;
+    margin-left: 12px;
   }
 }
 
@@ -567,7 +610,7 @@ div.album {
     	  float: left;
     	//  width:181px;
      //   height:270px;
-          margin-right:8px;
+          margin-right:18px;
           margin-bottom: 8px;
       	 overflow: hidden;
           border: 1px black;
