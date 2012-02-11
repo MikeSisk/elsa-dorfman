@@ -1,4 +1,4 @@
-- title "sitemap:"
+-title "sitemap:"
 
 -# #album-index  
 -#   - @albums.group_by(&:category_id).each do |c, albums|
@@ -13,7 +13,7 @@
           
 #sitemap
   - @albums_hash.each do |category_name, albums|
-    %h1= category_name
+    %h2= category_name
     %ul
       - albums.each do |album|
         %li
