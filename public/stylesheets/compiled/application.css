@@ -232,7 +232,7 @@ body {
 }
 /* line 150, ../../../app/stylesheets/application.scss */
 #content #primary-nav #tab-base.portraits {
-  background-color: red;
+  background-color: #FF0033;
 }
 /* line 152, ../../../app/stylesheets/application.scss */
 #content #primary-nav #tab-base.essays {
@@ -244,7 +244,7 @@ body {
 }
 /* line 156, ../../../app/stylesheets/application.scss */
 #content #primary-nav #tab-base.ginsberg {
-  background-color: #DC9046;
+  background-color: #FF9933;
 }
 /* line 158, ../../../app/stylesheets/application.scss */
 #content #primary-nav #tab-base.friends {
@@ -335,17 +335,17 @@ body {
 
 /* line 231, ../../../app/stylesheets/application.scss */
 #category_nav.essays #line {
-  background: url(/images/shared/line/bg_green.png) 0 0 repeat-y;
-  margin-left: 21px;
+  background: url(/images/shared/line/bg_green.png) repeat-y;
+  margin-left: 23px;
 }
 /* line 232, ../../../app/stylesheets/application.scss */
 #category_nav.essays ul {
-  background: url(/images/shared/line/top_bulb_green.png) 0 0 no-repeat;
+  background: url(/images/shared/line/top_bulb_green.png) no-repeat;
 }
 /* line 233, ../../../app/stylesheets/application.scss */
 #category_nav.essays li {
-  background: url(/images/shared/line/essays.png) repeat-y;
-  margin-left: 21px;
+  background: url(/images/shared/line/essays.png) no-repeat;
+  margin-left: 23px;
 }
 /* line 236, ../../../app/stylesheets/application.scss */
 #category_nav.essays li:hover {
@@ -980,4 +980,9 @@ a.cancel {
 /* line 782, ../../../app/stylesheets/application.scss */
 #subscribers_div {
   padding: 20px 0 0 20px;
+}
+
+/* line 785, ../../../app/stylesheets/application.scss */
+#user_nav {
+  margin-left: 80px;
 }
