@@ -984,22 +984,26 @@ span.copyright {
 /* line 786, ../../../app/stylesheets/application.scss */
 a.cancel {
   font-size: 40px;
-  background-color: red;
-  color: black;
+  background-color: #FF0033;
+  color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
   /*  font-weight: bold;*/
 }
 
-/* line 792, ../../../app/stylesheets/application.scss */
+/* line 796, ../../../app/stylesheets/application.scss */
 #subscribers_div {
   padding: 20px 0 0 20px;
 }
 
-/* line 795, ../../../app/stylesheets/application.scss */
+/* line 799, ../../../app/stylesheets/application.scss */
 #user_nav {
   margin-left: 80px;
 }
 
-/* line 798, ../../../app/stylesheets/application.scss */
+/* line 802, ../../../app/stylesheets/application.scss */
 #sign-in-form {
   margin-left: 80px;
   margin-top: 80px;

@@ -785,8 +785,12 @@ span.copyright {
 // misc
 a.cancel {
   font-size: 40px;
-  background-color: red;
-  color: black;
+  background-color: #FF0033;
+  color: white;
+  border-radius: 10px;
+ 	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+           box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
 /*  font-weight: bold;*/
 }
 #subscribers_div{
