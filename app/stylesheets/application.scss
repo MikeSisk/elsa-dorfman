@@ -238,11 +238,11 @@ $main_nav_button_height: 40px;
 }
 
 #category_nav.essays {
-  #line { background: url(/images/shared/line/bg_green.png) repeat-y; margin-left: 22px;}
+  #line { background: url(/images/shared/line/bg_green.png) repeat-y; margin-left: 23px;}
   ul    { background: url(/images/shared/line/top_bulb_green.png) no-repeat;}
   li    { 
     background: url(/images/shared/line/essays.png) no-repeat;
-	 margin-left: 22px; 
+	 margin-left: 23px; 
     &:hover { background: url(/images/shared/line/essays.png) 0 -47px no-repeat; }
   }
   
@@ -252,7 +252,7 @@ $main_nav_button_height: 40px;
     background: url(/images/shared/line/base.png) no-repeat;
     width: 55px;
     height: 167px;
-    margin-left: 5px;
+    margin-left: 7px;
   }
 }
 
