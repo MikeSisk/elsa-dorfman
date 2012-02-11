@@ -19,7 +19,7 @@
   display: relative;
   background-color: #CFC;
   border: white dotted 3px;
-  width: 100%;
+  width: 95%;
   margin: 20px 0px;
 }
 
@@ -28,7 +28,7 @@
 
   background-color: #FCC;
   border: red dotted 3px;
-  width: 100%;
+  width: 95%;
   margin: 20px 0px;
 }
 
@@ -145,7 +145,7 @@ $main_nav_button_height: 40px;
     .friends {
 	    background: url(/images/shared/tabs/friends_tab.png) no-repeat;
 	  }
-    .commutes {
+    .analog {
 	    background: url(/images/shared/tabs/commutes_tab.png) no-repeat;
 	  }
 	
@@ -166,8 +166,8 @@ $main_nav_button_height: 40px;
 	  #tab-base.ginsberg    { background-color: #FF9933; }
 /*    #tab-base.friends     { background-color: lightgrey; }*/
 	  #tab-base.friends     { background-color: #BCBCBC; }
-/*    #tab-base.commutes    { background-color: purple; }*/
-	  #tab-base.commutes    { background-color: #8F418C; }
+/*    #tab-base.analog    { background-color: purple; }*/
+	  #tab-base.analog    { background-color: #8F418C; }
   }
 }
 
@@ -310,7 +310,7 @@ $main_nav_button_height: 40px;
   }
 }
 
-#category_nav.commutes {
+#category_nav.analog {
   #line { background: url(/images/shared/line/bg_purple.png) repeat-y; margin-left: 28px; }
   ul    { background: url(/images/shared/line/top_bulb_purple.png) no-repeat; }
   li    {
@@ -331,7 +331,7 @@ $main_nav_button_height: 40px;
 /*#category_nav.no_hair_day li { background: url(/images/shared/line/no_hair_day.png) repeat-y; }
 #category_nav.ginsberg li    { background: url(/images/shared/line/ginsberg.png) repeat-y; }
 #category_nav.friends li     { background: url(/images/shared/line/friends.png) repeat-y; }
-#category_nav.commutes li    { background: url(/images/shared/line/commutes.png) repeat-y; }*/
+#category_nav.analog li    { background: url(/images/shared/line/commutes.png) repeat-y; }*/
 
 /*#category_nav.portraits   { background: url(/images/shared/line/portraits.png) repeat-y; }
 #category_nav.essays      { background: url(/images/shared/line/essays.png) repeat-y; }
@@ -794,4 +794,8 @@ a.cancel {
 }
 #user_nav {
 	margin-left: 80px;
+}
+#sign-in-form {
+	margin-left: 80px;
+	margin-top: 80px;
 }

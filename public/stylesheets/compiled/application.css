@@ -73,7 +73,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: relative;
   background-color: #CFC;
   border: white dotted 3px;
-  width: 100%;
+  width: 95%;
   margin: 20px 0px;
 }
 
@@ -85,7 +85,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border: red dotted 3px;
   background-color: #FCC;
   border: red dotted 3px;
-  width: 100%;
+  width: 95%;
   margin: 20px 0px;
 }
 
@@ -197,7 +197,7 @@ body {
   /*    #tab-base.no_hair_day { background-color: #336699; }*/
   /*    #tab-base.ginsberg    { background-color: darkorange; }*/
   /*    #tab-base.friends     { background-color: lightgrey; }*/
-  /*    #tab-base.commutes    { background-color: purple; }*/
+  /*    #tab-base.analog    { background-color: purple; }*/
 }
 /* line 126, ../../../app/stylesheets/application.scss */
 #content #primary-nav .tab {
@@ -227,7 +227,7 @@ body {
   background: url(/images/shared/tabs/friends_tab.png) no-repeat;
 }
 /* line 148, ../../../app/stylesheets/application.scss */
-#content #primary-nav .commutes {
+#content #primary-nav .analog {
   background: url(/images/shared/tabs/commutes_tab.png) no-repeat;
 }
 /* line 152, ../../../app/stylesheets/application.scss */
@@ -263,7 +263,7 @@ body {
   background-color: #BCBCBC;
 }
 /* line 170, ../../../app/stylesheets/application.scss */
-#content #primary-nav #tab-base.commutes {
+#content #primary-nav #tab-base.analog {
   background-color: #8F418C;
 }
 
@@ -458,25 +458,25 @@ body {
 }
 
 /* line 314, ../../../app/stylesheets/application.scss */
-#category_nav.commutes #line {
+#category_nav.analog #line {
   background: url(/images/shared/line/bg_purple.png) repeat-y;
   margin-left: 28px;
 }
 /* line 315, ../../../app/stylesheets/application.scss */
-#category_nav.commutes ul {
+#category_nav.analog ul {
   background: url(/images/shared/line/top_bulb_purple.png) no-repeat;
 }
 /* line 316, ../../../app/stylesheets/application.scss */
-#category_nav.commutes li {
+#category_nav.analog li {
   background: url(/images/shared/line/commutes.png) repeat-y;
   margin-left: 28px;
 }
 /* line 319, ../../../app/stylesheets/application.scss */
-#category_nav.commutes li:hover {
+#category_nav.analog li:hover {
   background: url(/images/shared/line/commutes.png) 0 -47px no-repeat;
 }
 /* line 321, ../../../app/stylesheets/application.scss */
-#category_nav.commutes:after {
+#category_nav.analog:after {
   display: block;
   content: "";
   background: url(/images/shared/line/base.png) no-repeat;
@@ -488,7 +488,7 @@ body {
 /*#category_nav.no_hair_day li { background: url(/images/shared/line/no_hair_day.png) repeat-y; }
 #category_nav.ginsberg li    { background: url(/images/shared/line/ginsberg.png) repeat-y; }
 #category_nav.friends li     { background: url(/images/shared/line/friends.png) repeat-y; }
-#category_nav.commutes li    { background: url(/images/shared/line/commutes.png) repeat-y; }*/
+#category_nav.analog li    { background: url(/images/shared/line/commutes.png) repeat-y; }*/
 /*#category_nav.portraits   { background: url(/images/shared/line/portraits.png) repeat-y; }
 #category_nav.essays      { background: url(/images/shared/line/essays.png) repeat-y; }
 #category_nav.no_hair_day { background: url(/images/shared/line/no_hair_day.png) repeat-y; }
@@ -997,4 +997,10 @@ a.cancel {
 /* line 795, ../../../app/stylesheets/application.scss */
 #user_nav {
   margin-left: 80px;
+}
+
+/* line 798, ../../../app/stylesheets/application.scss */
+#sign-in-form {
+  margin-left: 80px;
+  margin-top: 80px;
 }
