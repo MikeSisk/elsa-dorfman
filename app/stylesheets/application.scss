@@ -238,11 +238,11 @@ $main_nav_button_height: 40px;
 }
 
 #category_nav.essays {
-  #line { background: url(/images/shared/line/bg_green.png) repeat-y; margin-left: 23px;}
+  #line { background: url(/images/shared/line/bg_green.png) repeat-y; margin-left: 22px;}
   ul    { background: url(/images/shared/line/top_bulb_green.png) no-repeat;}
   li    { 
     background: url(/images/shared/line/essays.png) no-repeat;
-	 margin-left: 23px; 
+	 margin-left: 22px; 
     &:hover { background: url(/images/shared/line/essays.png) 0 -47px no-repeat; }
   }
   
