@@ -87,6 +87,16 @@ $main_content_width: 650px;
   background: url(/images/shared/20x24_sketch_ghosted.png) no-repeat 70px 150px;
   @include min-height(850px);
 }
+#main2 { 
+  width: $main_content_width;
+  
+  margin: 0 auto;
+  padding: 0 20px;
+  float: left;
+  
+  background: url(/images/shared/20x24_sketch_ghosted2.png) no-repeat 70px 150px;
+  @include min-height(850px);
+}
  
 $main_nav_button_width: 108px; //$main_content_width / 6;
 $main_nav_button_height: 40px;
