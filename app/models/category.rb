@@ -5,6 +5,6 @@ class Category < ActiveRecord::Base
  scope :ordered, order("categories.position ASC")
  
   def first_album
-    albums.empty? ? '#' : albums.first
+    albums.empty? ? '#' : albums.order(:position).first
   end
 end
