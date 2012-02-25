@@ -115,10 +115,6 @@ $main_nav_button_height: 40px;
 	}
 }
 #content {
-  zoom: 1;
-  position: relative;
-  display: block;	
-  behavior: url(/stylesheets/border-radius.htc);
   border-radius: 5px;
   border: 1px solid silver;
   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1) ;
@@ -465,8 +461,6 @@ $sidebar_width: 150px;//$stop_circum * 10;
   }
   
   .book a img {
-    position: relative;
-	behavior: url(/stylesheets/border-radius.htc);
     border: 1px black;
     border-radius: 5px;
 	padding: 10px 10px 15px 10px;
@@ -567,10 +561,6 @@ ul.album_thumbs {
   a {
 	 
     img {
-	 	zoom: 1;
-		position: relative;
-		display: block;	
-		behavior: url(/stylesheets/border-radius.htc);
 	    float: left;
 	    margin: 5px 5px 6px 5px;
 	    width: 100%;
