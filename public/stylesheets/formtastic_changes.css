@@ -18,30 +18,37 @@ form.formtastic fieldset ol li fieldset legend { margin-left: -6px;}
 
 /* LABELS
 --------------------------------------------------------------------------------------------------*/
-form.formtastic fieldset > ol > li label { display:block; width:20%; float:left; padding-top:.2em; margin-right:1.9em; text-align:right;}
+form.formtastic fieldset > ol > li label { display:block; width:20%; float:left; padding-top:.2em; margin-right:1.9em; text-align:right; color: black;}
 
 .album_section_fields .inputs {
+  color: white;
   background-color: #dfd;
 }
 
 form input.commit{
+  color: white;
   width: 400px;
   font-size: 40px;
-  background-color: #0f0;
+  background-color: #006939;
+  border-radius: 10px;
 }
 
 form input.remove{
+  color: white;
   width: 400px;
   font-size: 25px;
-  background-color: #f00;
+  background-color: #FF0033;
   margin-left: 50px;
+  border-radius: 10px;
 }
 
 form input.add{
+  color: white;
   width: 400px;
   font-size: 25px;
-  background-color: #f0f;
+  background-color: #2C7DAF;
   margin-left: 50px;
+  border-radius: 10px;
 }
 
 form #images {

@@ -19,7 +19,7 @@
   display: relative;
   background-color: #CFC;
   border: white dotted 3px;
-  width: 100%;
+  width: 95%;
   margin: 20px 0px;
 }
 
@@ -28,7 +28,7 @@
 
   background-color: #FCC;
   border: red dotted 3px;
-  width: 100%;
+  width: 95%;
   margin: 20px 0px;
 }
 
@@ -87,6 +87,16 @@ $main_content_width: 650px;
   background: url(/images/shared/20x24_sketch_ghosted.png) no-repeat 70px 150px;
   @include min-height(850px);
 }
+#main2 { 
+  width: $main_content_width;
+  
+  margin: 0 auto;
+  padding: 0 20px;
+  float: left;
+  
+  background: url(/images/shared/20x24_sketch_ghosted2.png) no-repeat 70px 150px;
+  @include min-height(850px);
+}
  
 $main_nav_button_width: 108px; //$main_content_width / 6;
 $main_nav_button_height: 40px;
@@ -136,7 +146,7 @@ $main_nav_button_height: 40px;
     .friends {
 	    background: url(/images/shared/tabs/friends_tab.png) no-repeat;
 	  }
-    .commutes {
+    .analog {
 	    background: url(/images/shared/tabs/commutes_tab.png) no-repeat;
 	  }
 	
@@ -146,19 +156,19 @@ $main_nav_button_height: 40px;
 	    background: none;
 	    clear: both;
 	  }
-	   #tab-base.uncategorized{ height: 2px; background-color: #000;}
+	   #tab-base.uncategorized { height: 2px; background-color: #000;}
 /*    #tab-base.portraits   { background-color: #CC0000; }*/
-	  #tab-base.portraits   { background-color: red; }
+	  #tab-base.portraits   { background-color: #FF0033; }
 /*    #tab-base.essays      { background-color: darkgreen; }*/
 	  #tab-base.essays      { background-color: #006939; }
 /*    #tab-base.no_hair_day { background-color: #336699; }*/
 	  #tab-base.no_hair_day { background-color: #2C7DAF; }
 /*    #tab-base.ginsberg    { background-color: darkorange; }*/
-	  #tab-base.ginsberg    { background-color: #DC9046; }
+	  #tab-base.ginsberg    { background-color: #FF9933; }
 /*    #tab-base.friends     { background-color: lightgrey; }*/
 	  #tab-base.friends     { background-color: #BCBCBC; }
-/*    #tab-base.commutes    { background-color: purple; }*/
-	  #tab-base.commutes    { background-color: #8F418C; }
+/*    #tab-base.analog    { background-color: purple; }*/
+	  #tab-base.analog    { background-color: #8F418C; }
   }
 }
 
@@ -211,29 +221,39 @@ $main_nav_button_height: 40px;
 
 
 #category_nav.portraits {
-  #line { background: url(/images/shared/line/bg_red.png) repeat-y; }
+  #line { background: url(/images/shared/line/bg_red.png) repeat-y; margin-left: 34px; }
   ul    { background: url(/images/shared/line/top_bulb_red.png) no-repeat; }
   li    { 
-    background: url(/images/shared/line/portraits.png) no-repeat; 
+    background: url(/images/shared/line/portraits.png) no-repeat;
+	 margin-left: 34px;
     &:hover { background: url(/images/shared/line/portraits.png) 0 -47px no-repeat; }
+  }
+ &:after {
+    display: block;
+    content:"";
+    background: url(/images/shared/line/base.png) no-repeat;
+    width: 55px;
+    height: 167px;
+    margin-left: 18px;
   }
 }
 
 #category_nav.essays {
-  #line { background: url(/images/shared/line/bg_green.png) 0 0 repeat-y; margin-left: 21px;}
-  ul    { background: url(/images/shared/line/top_bulb_green.png) 0 0  no-repeat;}
+  #line { background: url(/images/shared/line/bg_green.png) repeat-y; margin-left: 23px;}
+  ul    { background: url(/images/shared/line/top_bulb_green.png) no-repeat;}
   li    { 
-    background: url(/images/shared/line/essays.png) repeat-y;
-	 margin-left: 21px;
+    background: url(/images/shared/line/essays.png) no-repeat;
+	 margin-left: 23px; 
     &:hover { background: url(/images/shared/line/essays.png) 0 -47px no-repeat; }
   }
   
   &:after {
     display: block;
     content:"";
-    background: url(/images/shared/line/bottom_bulb.png) no-repeat;
-    width: 65px;
-    height: 66px;
+    background: url(/images/shared/line/base.png) no-repeat;
+    width: 55px;
+    height: 167px;
+    margin-left: 7px;
   }
 }
 
@@ -245,15 +265,31 @@ $main_nav_button_height: 40px;
     margin-left: 40px;
     &:hover { background: url(/images/shared/line/no_hair_day.png) 0 -47px no-repeat; }
   }
+ &:after {
+    display: block;
+    content:"";
+    background: url(/images/shared/line/base.png) no-repeat;
+    width: 55px;
+    height: 167px;
+    margin-left: 23px;
+  }
 }
 
 #category_nav.ginsberg {
-  #line { background: url(/images/shared/line/bg_orange.png) repeat-y; margin-left: 37px; }
+  #line { background: url(/images/shared/line/bg_orange.png) repeat-y; margin-left: 33px; }
   ul    { background: url(/images/shared/line/top_bulb_orange.png) no-repeat; }
   li    {
     background: url(/images/shared/line/ginsberg.png) repeat-y;
-    margin-left: 37px;
+    margin-left: 33px;
     &:hover { background: url(/images/shared/line/ginsberg.png) 0 -47px no-repeat; }
+  }
+ &:after {
+    display: block;
+    content:"";
+    background: url(/images/shared/line/base.png) no-repeat;
+    width: 55px;
+    height: 167px;
+    margin-left: 17px;
   }
 }
 
@@ -265,21 +301,38 @@ $main_nav_button_height: 40px;
     margin-left: 27px;
     &:hover { background: url(/images/shared/line/friends.png) 0 -47px no-repeat; }
   }
+ &:after {
+    display: block;
+    content:"";
+    background: url(/images/shared/line/base.png) no-repeat;
+    width: 55px;
+    height: 167px;
+    margin-left: 11px;
+  }
 }
 
-#category_nav.commutes {
-  #line { background: url(/images/shared/line/bg_purple.png) repeat-y; }
+#category_nav.analog {
+  #line { background: url(/images/shared/line/bg_purple.png) repeat-y; margin-left: 28px; }
   ul    { background: url(/images/shared/line/top_bulb_purple.png) no-repeat; }
   li    {
     background: url(/images/shared/line/commutes.png) repeat-y;
+    margin-left: 28px;
     &:hover { background: url(/images/shared/line/commutes.png) 0 -47px no-repeat; }
+  }
+ &:after {
+    display: block;
+    content:"";
+    background: url(/images/shared/line/base.png) no-repeat;
+    width: 55px;
+    height: 167px;
+    margin-left: 12px;
   }
 }
 
 /*#category_nav.no_hair_day li { background: url(/images/shared/line/no_hair_day.png) repeat-y; }
 #category_nav.ginsberg li    { background: url(/images/shared/line/ginsberg.png) repeat-y; }
 #category_nav.friends li     { background: url(/images/shared/line/friends.png) repeat-y; }
-#category_nav.commutes li    { background: url(/images/shared/line/commutes.png) repeat-y; }*/
+#category_nav.analog li    { background: url(/images/shared/line/commutes.png) repeat-y; }*/
 
 /*#category_nav.portraits   { background: url(/images/shared/line/portraits.png) repeat-y; }
 #category_nav.essays      { background: url(/images/shared/line/essays.png) repeat-y; }
@@ -407,7 +460,7 @@ $sidebar_width: 150px;//$stop_circum * 10;
   }
   
   .book a img {
-    position:relative;
+    position: relative;
 	behavior: url(/public/stylesheets/border-radius.htc);
     border: 1px black;
     border-radius: 5px;
@@ -570,7 +623,7 @@ div.album {
     	  float: left;
     	//  width:181px;
      //   height:270px;
-          margin-right:8px;
+          margin-right:18px;
           margin-bottom: 8px;
       	 overflow: hidden;
           border: 1px black;
@@ -735,10 +788,21 @@ span.copyright {
 // misc
 a.cancel {
   font-size: 40px;
-  background-color: red;
-  color: black;
+  background-color: #FF0033;
+  color: white;
+  border-radius: 10px;
+ 	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+           box-shadow:0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
 /*  font-weight: bold;*/
 }
 #subscribers_div{
 	padding: 20px 0 0 20px;
+}
+#user_nav {
+	margin-left: 80px;
+}
+#sign-in-form {
+	margin-left: 80px;
+	margin-top: 80px;
 }
