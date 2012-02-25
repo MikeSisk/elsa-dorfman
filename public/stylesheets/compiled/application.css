@@ -660,7 +660,7 @@ ol li span.text {
 /* line 462, ../../../app/stylesheets/application.scss */
 #right-sidebar .book a img {
   position: relative;
-  behavior: url(/public/stylesheets/border-radius.htc);
+  behavior: url(/stylesheets/border-radius.htc);
   border: 1px black;
   border-radius: 5px;
   padding: 10px 10px 15px 10px;
