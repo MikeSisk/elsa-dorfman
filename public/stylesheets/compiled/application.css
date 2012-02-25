@@ -768,6 +768,10 @@ ul.album_thumbs li a {
 }
 /* line 567, ../../../app/stylesheets/application.scss */
 #gallery a img {
+  zoom: 1;
+  position: relative;
+  display: block;
+  behavior: url(/stylesheets/border-radius.htc);
   float: left;
   margin: 5px 5px 6px 5px;
   width: 100%;
@@ -778,7 +782,7 @@ ul.album_thumbs li a {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* line 581, ../../../app/stylesheets/application.scss */
+/* line 585, ../../../app/stylesheets/application.scss */
 .disclaimer {
   clear: both;
   font-weight: bold;
@@ -786,7 +790,7 @@ ul.album_thumbs li a {
   margin-bottom: 1em;
 }
 
-/* line 588, ../../../app/stylesheets/application.scss */
+/* line 592, ../../../app/stylesheets/application.scss */
 ul.sortable_images {
   list-style-type: none;
   margin: 0;
@@ -796,7 +800,7 @@ ul.sortable_images {
   clear: both;
 }
 
-/* line 597, ../../../app/stylesheets/application.scss */
+/* line 601, ../../../app/stylesheets/application.scss */
 ul.sortable_images li {
   cursor: move;
   margin: 0;
@@ -807,19 +811,19 @@ ul.sortable_images li {
 }
 
 /* ----- Album Pages ----- */
-/* line 608, ../../../app/stylesheets/application.scss */
+/* line 612, ../../../app/stylesheets/application.scss */
 div.album {
   padding-top: 20px;
   padding-left: 40px;
   padding-right: 40px;
   clear: both;
 }
-/* line 618, ../../../app/stylesheets/application.scss */
+/* line 622, ../../../app/stylesheets/application.scss */
 div.album .section {
   clear: both;
   margin-bottom: 16px;
 }
-/* line 625, ../../../app/stylesheets/application.scss */
+/* line 629, ../../../app/stylesheets/application.scss */
 div.album .section .images .image {
   float: left;
   margin-right: 18px;
@@ -832,49 +836,49 @@ div.album .section .images .image {
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
 }
-/* line 640, ../../../app/stylesheets/application.scss */
+/* line 644, ../../../app/stylesheets/application.scss */
 div.album .section .images ul {
   list-style-type: disc;
   margin-left: 25px;
   margin-right: 25px;
 }
-/* line 648, ../../../app/stylesheets/application.scss */
+/* line 652, ../../../app/stylesheets/application.scss */
 div.album .section p {
   margin-bottom: 16px;
 }
-/* line 652, ../../../app/stylesheets/application.scss */
+/* line 656, ../../../app/stylesheets/application.scss */
 div.album .section blockquote {
   margin-bottom: 16px;
 }
-/* line 656, ../../../app/stylesheets/application.scss */
+/* line 660, ../../../app/stylesheets/application.scss */
 div.album .section strong {
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 662, ../../../app/stylesheets/application.scss */
+/* line 666, ../../../app/stylesheets/application.scss */
 code {
   font-family: monospace;
   font-size: 0.85em;
 }
 
-/* line 667, ../../../app/stylesheets/application.scss */
+/* line 671, ../../../app/stylesheets/application.scss */
 .album_section_fields {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
 
-/* line 674, ../../../app/stylesheets/application.scss */
+/* line 678, ../../../app/stylesheets/application.scss */
 .subscriber {
   margin-bottom: 20px;
 }
 
-/* line 684, ../../../app/stylesheets/application.scss */
+/* line 688, ../../../app/stylesheets/application.scss */
 #ginsburge_on_sale p {
   margin-bottom: 8px;
 }
 
-/* line 688, ../../../app/stylesheets/application.scss */
+/* line 692, ../../../app/stylesheets/application.scss */
 .admin_links.new {
   margin-top: 20px;
   background-color: red;
@@ -887,12 +891,12 @@ code {
   -khtml-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 690, ../../../app/stylesheets/application.scss */
+/* line 694, ../../../app/stylesheets/application.scss */
 .admin_links.new a {
   color: white;
 }
 
-/* line 698, ../../../app/stylesheets/application.scss */
+/* line 702, ../../../app/stylesheets/application.scss */
 .simple_form label {
   float: left;
   width: 100px;
@@ -900,43 +904,43 @@ code {
   margin: 2px 10px;
 }
 
-/* line 705, ../../../app/stylesheets/application.scss */
+/* line 709, ../../../app/stylesheets/application.scss */
 .simple_form div.input {
   margin-bottom: 10px;
 }
 
-/* line 710, ../../../app/stylesheets/application.scss */
+/* line 714, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean, .simple_form input[type='submit'] {
   margin-left: 120px;
 }
 
-/* line 714, ../../../app/stylesheets/application.scss */
+/* line 718, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean label {
   float: none;
   margin: 0;
 }
 
-/* line 721, ../../../app/stylesheets/application.scss */
+/* line 725, ../../../app/stylesheets/application.scss */
 .page .section {
   clear: both;
   margin: 0px 40px 2em 40px;
 }
-/* line 726, ../../../app/stylesheets/application.scss */
+/* line 730, ../../../app/stylesheets/application.scss */
 .page .section img {
   float: right;
 }
-/* line 731, ../../../app/stylesheets/application.scss */
+/* line 735, ../../../app/stylesheets/application.scss */
 .page .section ul {
   list-style-type: disc;
   margin-left: 25px;
   margin-right: 25px;
   /*      background-color: #fff*/
 }
-/* line 739, ../../../app/stylesheets/application.scss */
+/* line 743, ../../../app/stylesheets/application.scss */
 .page .footer {
   text-align: center;
 }
-/* line 743, ../../../app/stylesheets/application.scss */
+/* line 747, ../../../app/stylesheets/application.scss */
 .page h1 {
   font-size: 24px;
   font-weight: bold;
@@ -945,7 +949,7 @@ code {
   line-height: 1em;
   font-family: 'Neuland W01 Black';
 }
-/* line 753, ../../../app/stylesheets/application.scss */
+/* line 757, ../../../app/stylesheets/application.scss */
 .page h2 {
   font-size: 20px;
   font-weight: bold;
@@ -954,40 +958,40 @@ code {
   color: #666;
   font-family: 'ITC Kabel W01 Bold';
 }
-/* line 762, ../../../app/stylesheets/application.scss */
+/* line 766, ../../../app/stylesheets/application.scss */
 .page strong {
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 766, ../../../app/stylesheets/application.scss */
+/* line 770, ../../../app/stylesheets/application.scss */
 strong {
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 770, ../../../app/stylesheets/application.scss */
+/* line 774, ../../../app/stylesheets/application.scss */
 span.telephone {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 775, ../../../app/stylesheets/application.scss */
+/* line 779, ../../../app/stylesheets/application.scss */
 span.copyright {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 781, ../../../app/stylesheets/application.scss */
+/* line 785, ../../../app/stylesheets/application.scss */
 #subway_map img {
   margin-left: 60px;
 }
 
-/* line 787, ../../../app/stylesheets/application.scss */
+/* line 791, ../../../app/stylesheets/application.scss */
 #sitemap ul {
   width: 150px;
   margin-bottom: 30px;
 }
 
-/* line 792, ../../../app/stylesheets/application.scss */
+/* line 796, ../../../app/stylesheets/application.scss */
 a.cancel {
   font-size: 40px;
   background-color: #FF0033;
@@ -999,17 +1003,17 @@ a.cancel {
   /*  font-weight: bold;*/
 }
 
-/* line 802, ../../../app/stylesheets/application.scss */
+/* line 806, ../../../app/stylesheets/application.scss */
 #subscribers_div {
   padding: 20px 0 0 20px;
 }
 
-/* line 805, ../../../app/stylesheets/application.scss */
+/* line 809, ../../../app/stylesheets/application.scss */
 #user_nav {
   margin-left: 80px;
 }
 
-/* line 808, ../../../app/stylesheets/application.scss */
+/* line 812, ../../../app/stylesheets/application.scss */
 #sign-in-form {
   margin-left: 80px;
   margin-top: 80px;
