@@ -115,7 +115,10 @@ $main_nav_button_height: 40px;
 	}
 }
 #content {
- 
+  zoom: 1;
+  position: relative;
+  display: block;	
+  behavior: url(/stylesheets/border-radius.htc);
   border-radius: 5px;
   border: 1px solid silver;
   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1) ;
