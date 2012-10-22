@@ -7,7 +7,7 @@ gem 'rake', '~> 0.8.7'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
+#gem 'sqlite3-ruby', :require => 'sqlite3'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -22,7 +22,9 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'bj'
 # gem 'nokogiri'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
-gem 'aws-s3', :require => 'aws/s3'
+#gem 'aws-s3', :require => 'aws/s3'
+
+gem 'pg'
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
@@ -51,6 +53,7 @@ gem 'haml-rails'
 gem 'mocha'
 gem "capybara"
 gem "bluecloth"
+
 group :test, :development do
  # gem "ruby-debug19"
   gem "webrat"
