@@ -22,7 +22,7 @@ gem 'rake', '~> 0.8.7'
 # gem 'bj'
 # gem 'nokogiri'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
-#gem 'aws-s3', :require => 'aws/s3'
+gem 'aws-s3', :require => 'aws/s3'
 
 group :development, :test do
   gem 'sqlite3-ruby', :require => 'sqlite3'
