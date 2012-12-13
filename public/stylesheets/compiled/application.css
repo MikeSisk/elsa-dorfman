@@ -1,4 +1,4 @@
-/* line 17, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 114, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -655,13 +655,13 @@ ol li span.text {
   height: 800px;
   float: left;
   margin-right: 30px;
-  margin-top: 175px;
+  margin-top: 125px;
 }
-/* line 459, ../../../app/stylesheets/application.scss */
+/* line 461, ../../../app/stylesheets/application.scss */
 #right-sidebar a img {
   margin-bottom: 50px;
 }
-/* line 463, ../../../app/stylesheets/application.scss */
+/* line 465, ../../../app/stylesheets/application.scss */
 #right-sidebar .book a img {
   border: 1px black;
   border-radius: 5px;
@@ -672,7 +672,7 @@ ol li span.text {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* line 474, ../../../app/stylesheets/application.scss */
+/* line 476, ../../../app/stylesheets/application.scss */
 #footer {
   clear: both;
   width: 650px;
@@ -683,49 +683,49 @@ ol li span.text {
 }
 
 /* ------ Album Index ------ */
-/* line 484, ../../../app/stylesheets/application.scss */
+/* line 486, ../../../app/stylesheets/application.scss */
 #album-index {
   /*  .indexed-album {
       margin-bottom: 20px;
     }*/
 }
-/* line 489, ../../../app/stylesheets/application.scss */
+/* line 491, ../../../app/stylesheets/application.scss */
 #album-index th {
   font-family: 'ITC Kabel W01 Bold';
 }
-/* line 493, ../../../app/stylesheets/application.scss */
+/* line 495, ../../../app/stylesheets/application.scss */
 #album-index td {
   padding-right: 10px;
 }
-/* line 497, ../../../app/stylesheets/application.scss */
+/* line 499, ../../../app/stylesheets/application.scss */
 #album-index td.name {
   width: 300px;
 }
-/* line 501, ../../../app/stylesheets/application.scss */
+/* line 503, ../../../app/stylesheets/application.scss */
 #album-index td.count, #album-index td.coords {
   width: 200px;
 }
 
 /* ------ Albums ------ */
-/* line 508, ../../../app/stylesheets/application.scss */
+/* line 510, ../../../app/stylesheets/application.scss */
 blockquote {
   font-size: 0.95em;
   margin-left: 20px;
   margin-right: 20px;
 }
 
-/* line 514, ../../../app/stylesheets/application.scss */
+/* line 516, ../../../app/stylesheets/application.scss */
 ul.album_thumbs {
   clear: both;
   display: block;
   margin: auto;
   overflow: hidden;
 }
-/* line 520, ../../../app/stylesheets/application.scss */
+/* line 522, ../../../app/stylesheets/application.scss */
 ul.album_thumbs li {
   display: inline;
 }
-/* line 523, ../../../app/stylesheets/application.scss */
+/* line 525, ../../../app/stylesheets/application.scss */
 ul.album_thumbs li a {
   display: block;
   float: left;
@@ -733,27 +733,27 @@ ul.album_thumbs li a {
   padding: 5px 5px;
 }
 
-/* line 532, ../../../app/stylesheets/application.scss */
+/* line 534, ../../../app/stylesheets/application.scss */
 .album_page_element_fields {
   padding: 10px;
   margin: 10px;
   border: black solid 1px;
 }
 
-/* line 538, ../../../app/stylesheets/application.scss */
+/* line 540, ../../../app/stylesheets/application.scss */
 .image_fields {
   padding: 10px 0px;
   margin: 10px 0px;
   border: black dashed 1px;
 }
 
-/* line 544, ../../../app/stylesheets/application.scss */
+/* line 546, ../../../app/stylesheets/application.scss */
 .jcarousel-container {
   padding-right: 6px;
   padding-bottom: 10px;
 }
 
-/* line 548, ../../../app/stylesheets/application.scss */
+/* line 550, ../../../app/stylesheets/application.scss */
 #gallery {
   clear: both;
   float: left;
@@ -764,7 +764,7 @@ ul.album_thumbs li a {
   margin-bottom: 10px;
   /*  #thumbs {width:1200px; height: 132px; padding: 6px;}*/
 }
-/* line 563, ../../../app/stylesheets/application.scss */
+/* line 565, ../../../app/stylesheets/application.scss */
 #gallery a img {
   float: left;
   margin: 5px 5px 6px 5px;
@@ -776,7 +776,7 @@ ul.album_thumbs li a {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* line 577, ../../../app/stylesheets/application.scss */
+/* line 579, ../../../app/stylesheets/application.scss */
 .disclaimer {
   clear: both;
   font-weight: bold;
@@ -784,7 +784,7 @@ ul.album_thumbs li a {
   margin-bottom: 1em;
 }
 
-/* line 584, ../../../app/stylesheets/application.scss */
+/* line 586, ../../../app/stylesheets/application.scss */
 ul.sortable_images {
   list-style-type: none;
   margin: 0;
@@ -794,7 +794,7 @@ ul.sortable_images {
   clear: both;
 }
 
-/* line 593, ../../../app/stylesheets/application.scss */
+/* line 595, ../../../app/stylesheets/application.scss */
 ul.sortable_images li {
   cursor: move;
   margin: 0;
@@ -805,19 +805,19 @@ ul.sortable_images li {
 }
 
 /* ----- Album Pages ----- */
-/* line 604, ../../../app/stylesheets/application.scss */
+/* line 606, ../../../app/stylesheets/application.scss */
 div.album {
   padding-top: 20px;
   padding-left: 40px;
   padding-right: 40px;
   clear: both;
 }
-/* line 614, ../../../app/stylesheets/application.scss */
+/* line 616, ../../../app/stylesheets/application.scss */
 div.album .section {
   clear: both;
   margin-bottom: 16px;
 }
-/* line 621, ../../../app/stylesheets/application.scss */
+/* line 623, ../../../app/stylesheets/application.scss */
 div.album .section .images .image {
   float: left;
   margin-right: 18px;
@@ -830,49 +830,49 @@ div.album .section .images .image {
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
 }
-/* line 636, ../../../app/stylesheets/application.scss */
+/* line 638, ../../../app/stylesheets/application.scss */
 div.album .section .images ul {
   list-style-type: disc;
   margin-left: 25px;
   margin-right: 25px;
 }
-/* line 644, ../../../app/stylesheets/application.scss */
+/* line 646, ../../../app/stylesheets/application.scss */
 div.album .section p {
   margin-bottom: 16px;
 }
-/* line 648, ../../../app/stylesheets/application.scss */
+/* line 650, ../../../app/stylesheets/application.scss */
 div.album .section blockquote {
   margin-bottom: 16px;
 }
-/* line 652, ../../../app/stylesheets/application.scss */
+/* line 654, ../../../app/stylesheets/application.scss */
 div.album .section strong {
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 658, ../../../app/stylesheets/application.scss */
+/* line 660, ../../../app/stylesheets/application.scss */
 code {
   font-family: monospace;
   font-size: 0.85em;
 }
 
-/* line 663, ../../../app/stylesheets/application.scss */
+/* line 665, ../../../app/stylesheets/application.scss */
 .album_section_fields {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
 
-/* line 670, ../../../app/stylesheets/application.scss */
+/* line 672, ../../../app/stylesheets/application.scss */
 .subscriber {
   margin-bottom: 20px;
 }
 
-/* line 680, ../../../app/stylesheets/application.scss */
+/* line 682, ../../../app/stylesheets/application.scss */
 #ginsburge_on_sale p {
   margin-bottom: 8px;
 }
 
-/* line 684, ../../../app/stylesheets/application.scss */
+/* line 686, ../../../app/stylesheets/application.scss */
 .admin_links.new {
   margin-top: 20px;
   background-color: red;
@@ -885,12 +885,12 @@ code {
   -khtml-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 686, ../../../app/stylesheets/application.scss */
+/* line 688, ../../../app/stylesheets/application.scss */
 .admin_links.new a {
   color: white;
 }
 
-/* line 694, ../../../app/stylesheets/application.scss */
+/* line 696, ../../../app/stylesheets/application.scss */
 .simple_form label {
   float: left;
   width: 100px;
@@ -898,43 +898,43 @@ code {
   margin: 2px 10px;
 }
 
-/* line 701, ../../../app/stylesheets/application.scss */
+/* line 703, ../../../app/stylesheets/application.scss */
 .simple_form div.input {
   margin-bottom: 10px;
 }
 
-/* line 706, ../../../app/stylesheets/application.scss */
+/* line 708, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean, .simple_form input[type='submit'] {
   margin-left: 120px;
 }
 
-/* line 710, ../../../app/stylesheets/application.scss */
+/* line 712, ../../../app/stylesheets/application.scss */
 .simple_form div.boolean label {
   float: none;
   margin: 0;
 }
 
-/* line 717, ../../../app/stylesheets/application.scss */
+/* line 719, ../../../app/stylesheets/application.scss */
 .page .section {
   clear: both;
   margin: 0px 40px 2em 40px;
 }
-/* line 722, ../../../app/stylesheets/application.scss */
+/* line 724, ../../../app/stylesheets/application.scss */
 .page .section img {
   float: right;
 }
-/* line 727, ../../../app/stylesheets/application.scss */
+/* line 729, ../../../app/stylesheets/application.scss */
 .page .section ul {
   list-style-type: disc;
   margin-left: 25px;
   margin-right: 25px;
   /*      background-color: #fff*/
 }
-/* line 735, ../../../app/stylesheets/application.scss */
+/* line 737, ../../../app/stylesheets/application.scss */
 .page .footer {
   text-align: center;
 }
-/* line 739, ../../../app/stylesheets/application.scss */
+/* line 741, ../../../app/stylesheets/application.scss */
 .page h1 {
   font-size: 24px;
   font-weight: bold;
@@ -943,7 +943,7 @@ code {
   line-height: 1em;
   font-family: 'Neuland W01 Black';
 }
-/* line 749, ../../../app/stylesheets/application.scss */
+/* line 751, ../../../app/stylesheets/application.scss */
 .page h2 {
   font-size: 20px;
   font-weight: bold;
@@ -952,40 +952,40 @@ code {
   color: #666;
   font-family: 'ITC Kabel W01 Bold';
 }
-/* line 758, ../../../app/stylesheets/application.scss */
+/* line 760, ../../../app/stylesheets/application.scss */
 .page strong {
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 762, ../../../app/stylesheets/application.scss */
+/* line 764, ../../../app/stylesheets/application.scss */
 strong {
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 766, ../../../app/stylesheets/application.scss */
+/* line 768, ../../../app/stylesheets/application.scss */
 span.telephone {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 771, ../../../app/stylesheets/application.scss */
+/* line 773, ../../../app/stylesheets/application.scss */
 span.copyright {
   font-weight: bold;
   font-family: 'ITC Kabel W01 Bold';
 }
 
-/* line 777, ../../../app/stylesheets/application.scss */
+/* line 779, ../../../app/stylesheets/application.scss */
 #subway_map img {
   margin-left: 60px;
 }
 
-/* line 783, ../../../app/stylesheets/application.scss */
+/* line 785, ../../../app/stylesheets/application.scss */
 #sitemap ul {
   width: 150px;
   margin-bottom: 30px;
 }
 
-/* line 788, ../../../app/stylesheets/application.scss */
+/* line 790, ../../../app/stylesheets/application.scss */
 a.cancel {
   font-size: 40px;
   background-color: #FF0033;
@@ -997,17 +997,17 @@ a.cancel {
   /*  font-weight: bold;*/
 }
 
-/* line 798, ../../../app/stylesheets/application.scss */
+/* line 800, ../../../app/stylesheets/application.scss */
 #subscribers_div {
   padding: 20px 0 0 20px;
 }
 
-/* line 801, ../../../app/stylesheets/application.scss */
+/* line 803, ../../../app/stylesheets/application.scss */
 #user_nav {
   margin-left: 80px;
 }
 
-/* line 804, ../../../app/stylesheets/application.scss */
+/* line 806, ../../../app/stylesheets/application.scss */
 #sign-in-form {
   margin-left: 80px;
   margin-top: 80px;
