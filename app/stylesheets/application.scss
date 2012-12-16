@@ -215,6 +215,7 @@ $main_nav_button_height: 40px;
 	  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);
 	     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);
 	          box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.1);
+	
 	}
   }
 }
@@ -804,6 +805,9 @@ span.copyright {
 	margin-bottom: 30px; }
 }
 // misc
+a.hover{
+	text-decoration: underline;
+}
 a.cancel {
   font-size: 40px;
   background-color: #FF0033;
