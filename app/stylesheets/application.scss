@@ -219,7 +219,24 @@ $main_nav_button_height: 40px;
   }
 }
 
-
+#category_nav.home {
+  #line { background: url(/images/shared/line/bg_black.png) repeat-y; margin-left: 23px;}
+  ul    { background: url(/images/shared/line/top_bulb_black.png) no-repeat;}
+  li    { 
+    background: url(/images/shared/line/home.png) no-repeat;
+	 margin-left: 23px; 
+    &:hover { background: url(/images/shared/line/home.png) 0 -47px no-repeat; }
+  }
+  
+  &:after {
+    display: block;
+    content:"";
+    background: url(/images/shared/line/base.png) no-repeat;
+    width: 55px;
+    height: 167px;
+    margin-left: 7px;
+  }
+}
 
 #category_nav.portraits {
   #line { background: url(/images/shared/line/bg_red.png) repeat-y; margin-left: 34px; }
