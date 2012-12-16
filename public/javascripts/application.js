@@ -42,8 +42,48 @@ $(document).ready(function() {
 	if($galleries.length > 0) {
     jQuery('.album #gallery').jcarousel({
         // Configuration goes here
-    });	  
+    });	
+
+			
+  
 	}
+	
+	$(function(){ // document ready
+
+	  var stickyTop = $('#books').offset().top; // returns number   
+
+	});
+
+	$(function(){ // document ready 
+
+	  var stickyTop = $('#books').offset().top; // returns number    
+
+	  $(window).scroll(function(){ // scroll event
+
+	    var windowTop = $(window).scrollTop(); // returns number
+
+	  });
+
+	});
+
+	$(function(){ // document ready
+
+	  var stickyTop = $('#books').offset().top; // returns number 
+
+	  $(window).scroll(function(){ // scroll event  
+
+	    var windowTop = $(window).scrollTop(); // returns number
+
+	    if (stickyTop < windowTop) {
+	      $('#books').css({ position: 'fixed', top: 0 });
+	    }
+	    else {
+	      $('#books').css('position','static');
+	    }
+
+	  });
+
+	});
 	
 	// train line refactor
   // var STOP_HOVER_SIZE = 40;
