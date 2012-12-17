@@ -44,7 +44,7 @@ $(document).ready(function() {
         // Configuration goes here
     });	
 
-			
+	
   
 	}
 	

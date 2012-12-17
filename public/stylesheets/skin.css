@@ -16,7 +16,7 @@
 .jcarousel-skin-3s .jcarousel-clip-horizontal {
 	width:575px;
 /*  height: 130px;*/
-  height: 280px;
+  /*height: 280px;*/
  padding-right: 6px;
  padding-bottom: 6px;
 }
@@ -30,16 +30,17 @@
 /*  width: 89px;
   height:124px;*/
   width:181px;
-  height:270px;
+  height: 285px;
 	padding: 5px 6px 5px 6px;
 	overflow: hidden;
+
 /*	border-right: 2px solid black;*/
 }
 
 .jcarousel-skin-3s .jcarousel-item-horizontal {
+     
 
-	
-	margin-left: 0;
+	  margin-left: 0;
     margin-right: 1px;
     padding-right: 6px;
     padding-bottom: 10px;
@@ -47,7 +48,7 @@
 
 .jcarousel-skin-3s .jcarousel-direction-rtl .jcarousel-item-horizontal {
 	margin-left: 0px;
-    margin-right: 0;
+    margin-right: 0px;
 }
 
 .jcarousel-skin-3s .jcarousel-item-vertical {
@@ -78,7 +79,7 @@
     height: 121px;
     cursor: pointer;
     background: transparent url(../images/right-arrow.png) no-repeat 0 0;
-    z-index: 101;
+    z-index: 2;
 }
 
 .jcarousel-skin-3s .jcarousel-direction-rtl .jcarousel-next-horizontal {
@@ -117,7 +118,7 @@
     height: 121px;
     cursor: pointer;
     background: transparent url(../images/left-arrow.png) no-repeat 0 0;
-    z-index: 101;
+    z-index: 2;
 }
 
 .jcarousel-skin-3s .jcarousel-direction-rtl .jcarousel-prev-horizontal {
