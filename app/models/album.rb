@@ -14,7 +14,9 @@ class Album < ActiveRecord::Base
  # validates_associated :category
  
  scope :ordered, order("albums.position ASC")
- 
+  def to_param
+   "#{id}-#{name.parameterize}"
+  end
   def self.by_name(name)
     Album.where(:name => name).first
   end
