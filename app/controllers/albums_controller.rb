@@ -9,7 +9,7 @@ class AlbumsController < ApplicationController
 
   def show
     @album = Album.find(params[:id])
-    @sections = @album.album_sections.order(:position)
+    @sections = @album.album_sections.order(:created_at)
     @images = @album.images.ordered
     respond_with @album
   end
