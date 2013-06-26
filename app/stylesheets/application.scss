@@ -331,11 +331,11 @@ $main_nav_button_height: 40px;
 }
 
 #category_nav.analog {
-  #line { background: url(/images/shared/line/bg_purple.png) repeat-y; margin-left: 28px; }
+  #line { background: url(/images/shared/line/bg_purple.png) repeat-y; margin-left: 40px; }
   ul    { background: url(/images/shared/line/top_bulb_purple.png) no-repeat; }
   li    {
     background: url(/images/shared/line/commutes.png) repeat-y;
-    margin-left: 28px;
+    margin-left: 40px;
     &:hover { background: url(/images/shared/line/commutes.png) 0 -47px no-repeat; }
   }
  &:after {
@@ -344,7 +344,7 @@ $main_nav_button_height: 40px;
     background: url(/images/shared/line/base.png) no-repeat;
     width: 55px;
     height: 167px;
-    margin-left: 12px;
+    margin-left: 23px;
   }
 }
 
