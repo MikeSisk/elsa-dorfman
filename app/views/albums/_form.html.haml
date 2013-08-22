@@ -5,17 +5,23 @@
       %ul
         - @album.errors.full_messages.each do |msg|
           %li= msg
+  = form.buttons do
+    = form.commit_button :label => "Save Album", :button_html => { :class => 'commit' }
   = form.inputs do
     = form.input :name
     = form.input :short_name, :label => "Name as it will appear in menu"
     = form.input :category, :as => :select, :collection => Category.all  
     = form.input :hidden , :label => "Hidden in menu"
     = form.input :coordinates, :label => 'Map Coordinates'
+  = form.buttons do
+    = form.commit_button :label => "Save Album", :button_html => { :class => 'commit' }
     #album_sections
       = form.semantic_fields_for :album_sections do |builder|
         = render :partial => "album_section_fields", :locals => { :f => builder }
       .links
-        = link_to_add_fields "Add a New Section to this Album", form, :album_sections 
+        = link_to_add_fields "Add a New Section to this Album", form, :album_sections
+  = form.buttons do
+    = form.commit_button :label => "Save Album", :button_html => { :class => 'commit' } 
     #images
       %h2 Gallery Images (aka "the trolley")
       = form.semantic_fields_for :images do |builder|
